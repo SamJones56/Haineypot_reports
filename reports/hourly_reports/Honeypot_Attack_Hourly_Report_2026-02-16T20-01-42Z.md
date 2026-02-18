@@ -1,0 +1,201 @@
+# Hourly Honeypot Attack Report - 2026-02-16T20:00:52Z
+
+- Executive Summary:
+The honeypot network detected 2475 attacks in the last hour. The top attacking countries were Australia and the United States. "Misc activity" was the most common alert category, and "GPL INFO VNC server response" was the most frequent alert signature. Telstra Limited (ASN 1221) and DigitalOcean, LLC (ASN 14061) were among the top attacker ASNs. The most targeted port for Australia was 445. Several CVEs were exploited, including CVE-2025-55182, CVE-2002-0013, CVE-2002-0012, and CVE-2024-14007. Common usernames attempted were "root" and "ubuntu", while common passwords included empty strings, "admin123", "admin", and "root". The majority of attacking systems were identified as "Linux 2.2.x-3.x".
+
+- Detailed Analysis:
+    - Total Attacks: 2475
+    - Top Attacking Countries:
+        - Australia: 931
+        - United States: 555
+        - Romania: 209
+        - China: 169
+        - Netherlands: 153
+        - France: 92
+        - Switzerland: 91
+        - United Kingdom: 44
+        - Germany: 35
+        - Singapore: 32
+    - Notable IP Reputations:
+        - known attacker: 959
+        - mass scanner: 159
+        - bot, crawler: 3
+    - Common Alert Categories and Signatures:
+        - Categories:
+            - Misc activity: 11011
+            - Generic Protocol Command Decode: 496
+            - Misc Attack: 363
+            - Attempted Information Leak: 69
+            - Potentially Bad Traffic: 23
+            - access to a potentially vulnerable web application: 8
+            - Web Application Attack: 7
+            - A Network Trojan was detected: 4
+            - Detection of a Network Scan: 4
+            - Not Suspicious Traffic: 4
+        - Signatures:
+            - 2100560 (GPL INFO VNC server response): 10949
+            - 2200003 (SURICATA IPv4 truncated packet): 159
+            - 2200122 (SURICATA AF-PACKET truncated packet): 159
+            - 2402000 (ET DROP Dshield Block Listed Source group 1): 121
+            - 2009582 (ET SCAN NMAP -sS window 1024): 45
+            - 2210061 (SURICATA STREAM spurious retransmission): 40
+            - 2001978 (ET INFO SSH session in progress on Expected Port): 27
+            - 2210048 (SURICATA STREAM reassembly sequence GAP -- missing packet(s)): 27
+            - 2038967 (ET INFO SSH-2.0-Go version string Observed in Network Traffic): 22
+            - 2210027 (SURICATA STREAM ESTABLISHED SYN resend with different seq): 18
+    - ASN Information of Attackers:
+        - ASN 1221 (Telstra Limited): 785
+        - ASN 14061 (DigitalOcean, LLC): 355
+        - ASN 396982 (Google LLC): 215
+        - ASN 4837 (CHINA UNICOM China169 Backbone): 147
+        - ASN 213412 (ONYPHE SAS): 118
+        - ASN 204428 (SS-Net): 105
+        - ASN 47890 (Unmanaged Ltd): 104
+        - ASN 51852 (Private Layer INC): 91
+        - ASN 215925 (Vpsvault.host Ltd): 84
+        - ASN 135377 (UCLOUD INFORMATION TECHNOLOGY HK LIMITED): 60
+    - Source IP Addresses of Attackers:
+        - 144.130.11.9: 785
+        - 134.199.175.187: 145
+        - 80.94.95.216: 105
+        - 2.57.122.96: 95
+        - 46.19.137.194: 91
+        - 101.71.37.77: 80
+        - 101.71.39.109: 58
+        - 87.120.191.13: 56
+        - 159.223.2.95: 40
+        - 167.172.32.204: 40
+    - Country to Port Mapping:
+        - Australia:
+            - 445: 785
+            - 22: 20
+            - 5945: 1
+        - United States:
+            - 8728: 70
+            - 5901: 42
+            - 27018: 35
+            - 80: 21
+            - 10023: 9
+            - 19200: 8
+            - 9035: 7
+            - 12345: 7
+            - 30000: 7
+            - 49153: 7
+        - Romania:
+            - 25: 105
+            - 22: 20
+        - China:
+            - 30003: 138
+            - 7: 50000
+            - 5: 2198
+            - 5: 4430
+            - 5: 32771
+            - 4: 2096
+            - 1: 23
+            - 1: 2375
+            - 1: 2376
+            - 1: 23023
+        - Netherlands:
+            - 22: 22
+            - 80: 9
+            - 8728: 7
+            - 3306: 6
+            - 6036: 4
+            - 17000: 4
+            - 20018: 3
+            - 81: 2
+            - 8545: 1
+            - 22002: 1
+        - France:
+            - 22: 5
+            - 9380: 4
+            - 3128: 3
+            - 2222: 2
+            - 2377: 2
+            - 3002: 2
+            - 3013: 2
+            - 3395: 2
+            - 4019: 2
+            - 4024: 2
+        - Switzerland:
+            - 15432: 89
+            - 5432: 2
+        - United Kingdom:
+            - 37215: 2
+            - 23: 1
+            - 443: 1
+            - 1339: 1
+            - 2095: 1
+            - 2762: 1
+            - 4060: 1
+            - 5125: 1
+            - 5499: 1
+            - 6591: 1
+        - Germany:
+            - 51272: 8
+            - 9029: 7
+            - 25344: 4
+            - 3000: 3
+            - 4173: 3
+            - 8875: 3
+            - 8000: 2
+            - 8090: 2
+            - 25565: 2
+            - 80: 1
+        - Singapore:
+            - 8728: 21
+            - 9600: 4
+            - 5500: 3
+            - 8083: 3
+            - 80: 1
+    - CVEs Exploited:
+        - CVE-2025-55182 CVE-2025-55182
+        - CVE-2002-0013 CVE-2002-0012
+        - CVE-2024-14007 CVE-2024-14007
+    - Common Usernames and Passwords Attempted:
+        - Usernames:
+            - root: 29
+            - ubuntu: 15
+            - admin: 8
+            - backup: 8
+            - sol: 5
+            - solana: 4
+            - postgres: 2
+            - a: 1
+            - nil: 1
+            - shred: 1
+        - Passwords:
+            - (empty string): 7
+            - admin123: 5
+            - admin: 4
+            - root: 4
+            - 1234: 3
+            - root123: 3
+            - 123: 2
+            - 4rfv$RFV: 2
+            - default: 2
+            - letmein: 2
+    - OS Distribution of Attackers Based on p0f Data:
+        - Linux 2.2.x-3.x: 35365
+        - Windows XP: 785
+        - Mac OS X: 705
+        - Linux 2.2.x-3.x (barebone): 397
+        - Windows NT kernel 5.x: 349
+        - Linux 2.2.x-3.x (no timestamps): 265
+        - Linux 3.11 and newer: 216
+        - Windows NT kernel: 34
+        - Linux 2.4.x-2.6.x: 7
+        - Windows 7 or 8: 6
+    - Hyper-aggressive IP Addresses:
+        - 144.130.11.9 (785 attacks) - This IP address from Australia (ASN 1221, Telstra Limited) stands out with a significantly higher number of attacks compared to others, indicating highly aggressive activity.
+    - Unusual or Specific Usernames/Passwords:
+        - "sol" and "solana" as usernames, and empty string passwords could indicate automated scans targeting default credentials or specific applications.
+        - "4rfv$RFV" as a password attempt is less common and might suggest a dictionary attack or specific brute-force attempt.
+    - Attacker Signatures, Comments, or Taunts:
+        - No explicit attacker signatures, comments, or taunts were found in the provided log data.
+    - Blatant Malware or Botnet Filenames:
+        - No blatant malware or botnet filenames were explicitly identified in the provided log data.
+    - Other Notable Deviations from Background Noise:
+        - The high number of "GPL INFO VNC server response" alerts (10949) suggests a significant amount of VNC-related reconnaissance or exploitation attempts.
+        - The presence of "SURICATA IPv4 truncated packet" and "SURICATA AF-PACKET truncated packet" alerts indicates potentially malformed packets or network issues that could be indicative of evasion techniques or network instability under attack.
+        - The exploitation of CVEs, specifically "CVE-2025-55182", "CVE-2002-0013", "CVE-2002-0012", and "CVE-2024-14007", points to attempts to leverage known vulnerabilities.

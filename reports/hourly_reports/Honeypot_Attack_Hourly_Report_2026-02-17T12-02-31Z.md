@@ -1,0 +1,192 @@
+# Hourly Honeypot Attack Report - 2026-02-17T12:01:13Z
+- Executive Summary:
+This hourly report provides a concise overview of honeypot activities from 2026-02-17T11:01:13Z to 2026-02-17T12:01:13Z. A total of 3185 attacks were detected. The primary attacking countries were Thailand and the United States. "Known attacker" and "mass scanner" were the most frequent IP reputations. VNC server responses and generic protocol command decodes dominated alert categories. Hyper-aggressive IP addresses were identified, and common usernames like 'root' and 'ubuntu' were targeted.
+- Detailed Analysis:
+    - Total Attacks: 3185
+    - Top Attacking Countries:
+        - Thailand: 1359
+        - United States: 629
+        - China: 161
+        - Romania: 161
+        - Germany: 156
+        - Netherlands: 136
+        - India: 130
+        - Australia: 80
+        - France: 72
+        - Switzerland: 71
+    - Notable IP Reputations:
+        - known attacker: 949
+        - mass scanner: 226
+        - bot, crawler: 5
+    - Common Alert Categories and Signatures:
+        - **Categories:**
+            - Misc activity: 6261
+            - Generic Protocol Command Decode: 460
+            - Misc Attack: 398
+            - Attempted Information Leak: 59
+            - Potentially Bad Traffic: 11
+            - Attempted Administrator Privilege Gain: 7
+            - Detection of a Network Scan: 6
+            - Not Suspicious Traffic: 5
+            - A Network Trojan was detected: 2
+            - Detection of a Denial of Service Attack: 2
+        - **Signatures:**
+            - GPL INFO VNC server response (ID: 2100560): 6166
+            - SURICATA IPv4 truncated packet (ID: 2200003): 141
+            - SURICATA AF-PACKET truncated packet (ID: 2200122): 141
+            - ET DROP Dshield Block Listed Source group 1 (ID: 2402000): 97
+            - ET INFO SSH session in progress on Expected Port (ID: 2001978): 46
+            - ET SCAN NMAP -sS window 1024 (ID: 2009582): 44
+            - SURICATA STREAM spurious retransmission (ID: 2210061): 33
+            - SURICATA STREAM Packet with broken ack (ID: 2210051): 25
+            - ET INFO SSH-2.0-Go version string Observed in Network Traffic (ID: 2038967): 24
+            - SURICATA HTTP Request excessive header repetition (ID: 2221035): 18
+    - ASN Information of Attackers:
+        - AS133481 AIS Fibre: 1346
+        - AS14061 DigitalOcean, LLC: 573
+        - AS47890 Unmanaged Ltd: 163
+        - AS213412 ONYPHE SAS: 155
+        - AS4837 CHINA UNICOM China169 Backbone: 135
+        - AS396982 Google LLC: 122
+        - AS16509 Amazon.com, Inc.: 79
+        - AS215925 Vpsvault.host Ltd: 77
+        - AS51852 Private Layer INC: 71
+        - AS135377 UCLOUD INFORMATION TECHNOLOGY HK LIMITED: 47
+    - Source IP Addresses of Attackers:
+        - 110.49.3.20: 1346
+        - 188.166.162.150: 132
+        - 143.110.189.197: 106
+        - 152.42.134.69: 105
+        - 170.64.199.236: 80
+        - 2.57.122.208: 80
+        - 2.57.122.96: 80
+        - 67.205.160.240: 80
+        - 101.71.39.109: 71
+        - 46.19.137.194: 71
+    - Country to Port Mapping:
+        - Thailand:
+            - 445: 1346
+            - 60018: 8
+            - 23: 2
+        - United States:
+            - 8728: 77
+            - 6962: 23
+            - 22: 18
+            - 1025: 15
+            - 4433: 14
+            - 8200: 12
+            - 22225: 12
+            - 80: 11
+            - 445: 11
+            - 5601: 10
+        - China:
+            - 30003: 133
+            - 1201: 6
+            - 2078: 4
+            - 3268: 4
+            - 6379: 3
+            - 2375: 2
+            - 55555: 2
+            - 58603: 2
+            - 23: 1
+            - 2222: 1
+        - Romania:
+            - 22: 32
+            - 40471: 1
+        - Germany:
+            - 22: 23
+            - 25060: 4
+            - 47269: 4
+            - 4000: 3
+            - 8236: 3
+            - 1177: 2
+            - 3000: 2
+            - 18080: 2
+            - 25577: 2
+            - 80: 1
+        - Netherlands:
+            - 22: 21
+            - 80: 8
+            - 17001: 8
+            - 81: 3
+            - 5432: 3
+            - 8111: 2
+            - 8332: 2
+            - 11000: 2
+            - 25565: 1
+            - 60000: 1
+        - India:
+            - 22: 21
+            - 8728: 14
+            - 60018: 8
+            - 23: 1
+        - Australia:
+            - 22: 16
+        - France:
+            - 80: 2
+            - 135: 2
+            - 1201: 2
+            - 1241: 2
+            - 2082: 2
+            - 2086: 2
+            - 3128: 2
+            - 4076: 2
+            - 4085: 2
+            - 4164: 2
+        - Switzerland:
+            - 5433: 70
+            - 5432: 1
+    - CVEs Exploited:
+        - CVE-2019-11500: 2
+        - CVE-2021-3449: 2
+        - CVE-2023-46604: 2
+        - CVE-2024-14007: 1
+        - CVE-2025-55182: 1
+    - Common Usernames and Passwords Attempted:
+        - **Usernames:**
+            - root: 40
+            - ubuntu: 26
+            - backup: 9
+            - mysql: 5
+            - postgres: 4
+            - solana: 4
+            - trader: 3
+            - trading: 3
+            - admin: 2
+            - eth: 2
+        - **Passwords:**
+            - 123456: 21
+            - 123: 3
+            - 1q2w3e4r: 3
+            - admin: 3
+            - password1: 3
+            - 1234: 2
+            - 1234567890: 2
+            - 123abc: 2
+            - 654321: 2
+            - P@ssw0rd: 2
+    - OS Distribution of Attackers Based on p0f Data:
+        - Linux 2.2.x-3.x: 29216
+        - Windows 7 or 8: 1394
+        - Mac OS X: 354
+        - Linux 2.2.x-3.x (barebone): 295
+        - Windows NT kernel 5.x: 229
+        - Linux 2.2.x-3.x (no timestamps): 196
+        - Linux 3.11 and newer: 175
+        - Windows NT kernel: 38
+        - FreeBSD: 4
+        - Linux 2.4.x-2.6.x: 1
+    - Hyper-aggressive IP Addresses:
+        - 110.49.3.20 (1346 attacks)
+    - Unusual or Specific Usernames/Passwords:
+        - Usernames: solana, trader, trading, eth (suggesting potential targeting of cryptocurrency-related systems or specific services)
+        - Passwords: 1q2w3e4r, password1, P@ssw0rd (potentially indicative of specific dictionary attacks or commonly used insecure passwords)
+    - Attacker Signatures, Comments, or Taunts:
+        - No explicit attacker signatures, comments, or taunts were detected in the analyzed logs.
+    - Blatant Malware or Botnet Filenames:
+        - No blatant malware or botnet filenames were explicitly identified in the analyzed logs.
+    - Other Notable Deviations from Background Noise:
+        - A high volume of "GPL INFO VNC server response" (6166 occurrences) suggests widespread scanning and reconnaissance activity targeting VNC services.
+        - "Misc activity" (6261 occurrences) and "Generic Protocol Command Decode" (460 occurrences) indicate a significant amount of general network scanning and unusual protocol interactions.
+        - Consistent attempts to access common ports like 22 (SSH), 80 (HTTP), 445 (SMB), and various high-numbered ports across different attacking countries suggest broad opportunistic scanning and potential brute-force attempts.
+        - The presence of CVEs like CVE-2019-11500, CVE-2021-3449, CVE-2023-46604, CVE-2024-14007, and CVE-2025-55182, even with low counts, indicates attempts to exploit known vulnerabilities.

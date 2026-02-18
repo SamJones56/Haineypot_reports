@@ -1,0 +1,97 @@
+# Hourly Honeypot Attack Report - 2026-02-16T19:56:43Z
+
+- Executive Summary:
+  This report summarizes honeypot activity from 2026-02-16T18:56:43Z to 2026-02-16T19:56:43Z. A total of 2833 attacks were detected. Australia, the United States, and Romania were the top attacking countries. A high volume of VNC server response alerts and attacks targeting SMB (port 445) from Australia were observed. Common attack categories include miscellaneous activity and generic protocol command decodes.
+
+- Detailed Analysis:
+    - Total Attacks: 2833
+    - Top Attacking Countries:
+        - Australia: 1218
+        - United States: 563
+        - Romania: 214
+        - Netherlands: 211
+        - China: 169
+    - Notable IP Reputations:
+        - known attacker: 987
+        - mass scanner: 161
+        - bot, crawler: 3
+    - Common Alert Categories and Signatures:
+        - **Categories:**
+            - Misc activity: 11151
+            - Generic Protocol Command Decode: 454
+            - Misc Attack: 377
+            - Attempted Information Leak: 69
+            - Potentially Bad Traffic: 23
+        - **Signatures:**
+            - 2100560: GPL INFO VNC server response (11086)
+            - 2200003: SURICATA IPv4 truncated packet (141)
+            - 2200122: SURICATA AF-PACKET truncated packet (141)
+            - 2402000: ET DROP Dshield Block Listed Source group 1 (129)
+            - 2009582: ET SCAN NMAP -sS window 1024 (45)
+    - ASN Information of Attackers:
+        - ASN 1221: Telstra Limited (1072)
+        - ASN 14061: DigitalOcean, LLC (395)
+        - ASN 396982: Google LLC (226)
+        - ASN 4837: CHINA UNICOM China169 Backbone (146)
+        - ASN 213412: ONYPHE SAS (122)
+    - Source IP Addresses of Attackers:
+        - 144.130.11.9: 1072
+        - 134.199.175.187: 145
+        - 80.94.95.216: 110
+        - 2.57.122.96: 95
+        - 46.19.137.194: 91
+    - Country to Port Mapping:
+        - Australia:
+            - 445: 1072
+            - 22: 20
+            - 5945: 1
+        - United States:
+            - 8728: 70
+            - 5901: 42
+            - 27018: 35
+            - 80: 21
+            - 10023: 9
+        - Romania:
+            - 25: 110
+            - 22: 20
+        - Netherlands:
+            - 22: 33
+            - 80: 10
+            - 17000: 8
+            - 8728: 7
+            - 3306: 6
+        - China:
+            - 30003: 137
+            - 50000: 7
+            - 2198: 5
+            - 4430: 5
+            - 32771: 5
+    - CVEs Exploited:
+        - CVE-2025-55182 CVE-2025-55182
+        - CVE-2024-14007 CVE-2024-14007
+        - CVE-2002-0013 CVE-2002-0012
+        - CVE-2019-11500 CVE-2019-11500
+    - Common Usernames and Passwords Attempted:
+        - **Usernames:** root, ubuntu, admin, backup, sol
+        - **Passwords:** (empty string), admin123, 1234, admin, root
+    - OS Distribution of Attackers Based on p0f Data:
+        - Linux 2.2.x-3.x: 35624
+        - Windows XP: 1073
+        - Mac OS X: 727
+        - Linux 2.2.x-3.x (barebone): 429
+        - Windows NT kernel 5.x: 334
+    - Hyper-aggressive IP Addresses:
+        - 144.130.11.9 (1072 attacks)
+        - 134.199.175.187 (145 attacks)
+        - 80.94.95.216 (110 attacks)
+        - 2.57.122.96 (95 attacks)
+        - 46.19.137.194 (91 attacks)
+    - Unusual or Specific Usernames/Passwords:
+        - Usernames: ubuntu, backup, sol
+        - Passwords: admin123, 1234
+    - Attacker Signatures, Comments, or Taunts: No explicit signatures, comments, or taunts were identified in the logs.
+    - Blatant Malware or Botnet Filenames: No blatant malware or botnet filenames were identified in the logs.
+    - Other Notable Deviations from Background Noise:
+        - A significant number of "GPL INFO VNC server response" alerts were recorded.
+        - High attack volumes originated from Telstra Limited (Australia) and DigitalOcean, LLC (United States).
+        - A large proportion of attacks from Australia targeted port 445 (SMB).

@@ -1,0 +1,22 @@
+# Hourly Honeypot Attack Report - 2026-02-15T22:00:33Z
+- Executive Summary - This can be long.
+- Detailed Analysis:
+    - Total Attacks: 3831
+    - Top Attacking Countries: United States (1481), Netherlands (1279), Australia (557), China (165), France (48), United Kingdom (43), Russia (38), Germany (35), Romania (30), Singapore (27)
+    - Notable IP Reputations: known attacker (1076), mass scanner (72), bot, crawler (1)
+    - Common Alert Categories and Signatures: The most common alert categories were "Generic Protocol Command Decode," "Misc Attack," and "Misc activity." The most frequent alert signatures were "SURICATA IPv4 truncated packet" and "SURICATA AF-PACKET truncated packet," each with 169 occurrences, followed by "ET DROP Dshield Block Listed Source group 1" with 65 occurrences.
+    - ASN Information of Attackers: DigitalOcean, LLC (1255), Verizon Business (898), Telstra Limited (557), Amazon.com, Inc. (163), Google LLC (159), CHINA UNICOM China169 Backbone (138), Vpsvault.host Ltd (69), Microsoft Corporation (66), UCLOUD INFORMATION TECHNOLOGY HK LIMITED (62), ONYPHE SAS (36)
+    - Source IP Addresses of Attackers: 173.73.62.72 (898), 144.130.11.9 (557), 188.166.13.237 (288), 159.223.226.109 (258), 164.90.192.102 (206), 209.38.35.215 (193), 146.190.226.136 (111), 34.158.168.101 (96), 101.71.39.109 (69), 101.71.37.77 (62)
+    - Country to Port Mapping:
+        - United States: Port 445 (901), Port 8728 (63), Port 9093 (57)
+        - Netherlands: Port 22 (209), Port 443 (94), Port 9100 (16)
+        - Australia: Port 445 (557)
+        - China: Port 30003 (131)
+    - CVEs Exploited: CVE-2019-11500, CVE-2025-55182, CVE-2024-14007
+    - Common Usernames and Passwords Attempted: The most common attempted passwords were "qwerty," "654321," "123456," "123qwe," and "password."
+    - OS Distribution of Attackers Based on p0f Data: The majority of attacking systems were identified as "Linux 2.2.x-3.x" (18295), followed by "Windows 7 or 8" (901) and "Mac OS X" (683).
+    - Hyper-aggressive IP Addresses: The most aggressive IP addresses were 173.73.62.72 (898 attacks), 144.130.11.9 (557 attacks), 188.166.13.237 (288 attacks), 159.223.226.109 (258 attacks), and 164.90.192.102 (206 attacks).
+    - Unusual or Specific Usernames/Passwords: No unusual or specific usernames/passwords were observed. The attempted credentials are all very common and indicative of brute-force attacks.
+    - Attacker Signatures, Comments, or Taunts: None were observed in the logs.
+    - Blatant Malware or Botnet Filenames: None were observed in the logs.
+    - Other Notable Deviations from Background Noise: A high concentration of attacks originated from the United States, the Netherlands, and Australia, with a significant number targeting port 445 (SMB). This may suggest a widespread worm or botnet campaign targeting this service. The attacker ASN data indicates a mix of hosting providers (DigitalOcean, Amazon), telecommunication companies (Verizon, Telstra), and major tech companies (Google, Microsoft).

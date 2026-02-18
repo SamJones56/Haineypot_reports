@@ -1,0 +1,80 @@
+# Quarterly Honeypot Attack Report - 2026-02-18T08:51:40Z
+- Executive Summary:
+This report summarizes the honeypot network activity over the last 6 hours. A total of 18,541 attacks were detected, with the majority originating from France. The most common attack vector was exploitation of various services, with a high volume of VNC and SSH probes. A number of CVEs were targeted, with a focus on web application vulnerabilities. The majority of attacking systems were identified as running Linux-based operating systems.
+
+- Detailed Analysis:
+    - Total Attacks: 18541
+    - Top Attacking Countries: 
+        - France: 8279
+        - United States: 4550
+        - United Arab Emirates: 1189
+        - Netherlands: 892
+        - China: 816
+        - Switzerland: 404
+        - United Kingdom: 362
+        - Romania: 343
+        - Hong Kong: 228
+        - Germany: 162
+    - Notable IP Reputations: 
+        - known attacker: 11866
+        - mass scanner: 1215
+        - bot, crawler: 28
+        - tor exit node: 1
+    - Common Alert Categories and Signatures:
+        - Alert Categories:
+            - Generic Protocol Command Decode: 24608
+            - Misc activity: 11965
+            - Misc Attack: 1990
+            - Attempted Information Leak: 438
+            - Potentially Bad Traffic: 122
+        - Alert Signatures:
+            - SURICATA IPv4 truncated packet: 11823
+            - SURICATA AF-PACKET truncated packet: 11823
+            - GPL INFO VNC server response: 11674
+            - ET DROP Dshield Block Listed Source group 1: 588
+            - ET SCAN NMAP -sS window 1024: 210
+    - ASN Information of Attackers:
+        - Societe Francaise Du Radiotelephone - SFR SA: 7900
+        - Emirates Integrated Telecommunications Company PJSC: 1181
+        - DigitalOcean, LLC: 1120
+        - Verizon Business: 794
+        - Google LLC: 724
+    - Source IP Addresses of Attackers:
+        - 77.192.112.115: 7900
+        - 5.31.128.119: 1181
+        - 173.73.62.72: 794
+        - 152.42.135.55: 509
+        - 46.19.137.194: 398
+    - Country to Port Mapping:
+        - France: 22 (1590), 3128 (17), 23 (4)
+        - United States: 445 (797), 8728 (279), 22 (86)
+        - United Arab Emirates: 445 (1180), 32765 (8), 1433 (1)
+    - CVEs Exploited:
+        - CVE-2025-55182
+        - CVE-2024-14007
+        - CVE-2019-11500
+        - CVE-2021-3449
+        - CVE-2006-2369
+    - Common Usernames and Passwords Attempted:
+        - Passwords:
+            - : 25
+            - 123456: 21
+            - admin: 20
+            - 1234: 15
+            - 123: 13
+    - OS Distribution of Attackers Based on p0f Data:
+        - Linux 2.2.x-3.x: 74926
+        - Windows 7 or 8: 2027
+        - Windows NT kernel 5.x: 1424
+        - Linux 2.2.x-3.x (barebone): 1395
+        - Linux 3.11 and newer: 911
+    - Hyper-aggressive IP Addresses:
+        - 77.192.112.115, with 7900 attacks, stands out as a hyper-aggressive IP address.
+    - Unusual or Specific Usernames/Passwords:
+        - The `get_input_usernames` tool failed to execute, so this information is unavailable.
+    - Attacker Signatures, Comments, or Taunts:
+        - No explicit attacker "signatures," comments, or taunts in payloads or commands were found in the logs.
+    - Blatant Malware or Botnet Filenames:
+        - No blatant malware or botnet filenames were found in the logs.
+    - Other Notable Deviations from Background Noise:
+        - The high number of attacks from a single IP address (77.192.112.115) suggests a targeted attack or a compromised system being used for malicious activities. The variety of CVEs being exploited indicates that attackers are attempting to leverage a wide range of vulnerabilities.

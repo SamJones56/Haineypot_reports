@@ -1,0 +1,59 @@
+# Hourly Honeypot Attack Report - 2026-02-18T09:01:54Z
+- Executive Summary:
+This report summarizes the honeypot attack data from the last hour (2026-02-18T08:01:54Z to 2026-02-18T09:01:54Z). A total of 11,585 attacks were detected, with the vast majority originating from a single IP address in France. The most common attack vectors were related to VNC and SSH scanning, with two CVEs being actively exploited.
+
+- Detailed Analysis:
+    - Total Attacks: 11,585
+    - Top Attacking Countries: 
+        - France: 9,756
+        - United States: 729
+        - Netherlands: 449
+        - China: 154
+        - United Kingdom: 88
+        - Romania: 75
+        - Russia: 59
+        - Vietnam: 45
+        - Switzerland: 35
+        - Singapore: 29
+    - Notable IP Reputations: 
+        - known attacker: 10,430
+        - mass scanner: 205
+        - bot, crawler: 1
+    - Common Alert Categories and Signatures:
+        - Generic Protocol Command Decode: 4,625
+        - Misc activity: 2,403
+        - Misc Attack: 354
+        - Top Signature: GPL INFO VNC server response (2,305 attacks)
+    - ASN Information of Attackers:
+        - AS15557 (Societe Francaise Du Radiotelephone - SFR SA): 9,670 attacks
+        - AS14061 (DigitalOcean, LLC): 622 attacks
+        - AS4837 (CHINA UNICOM China169 Backbone): 141 attacks
+    - Source IP Addresses of Attackers:
+        - 77.192.112.115: 9,670 attacks
+        - 152.42.135.55: 348 attacks
+        - 104.236.76.23: 220 attacks
+    - Country to Port Mapping:
+        - France -> 22 (1,939 attacks)
+        - United States -> 22 (45 attacks)
+        - Netherlands -> 22 (76 attacks)
+        - China -> 30003 (132 attacks)
+    - CVEs Exploited:
+        - CVE-2025-55182
+        - CVE-2024-14007
+    - Common Usernames and Passwords Attempted:
+        - Usernames: root (1983), admin (72), ubnt (6)
+        - Passwords: 123456 (7), ubnt (6), admin (5)
+    - OS Distribution of Attackers Based on p0f Data:
+        - Linux 2.2.x-3.x: 18,810
+        - Windows NT kernel 5.x: 306
+        - Linux 2.2.x-3.x (barebone): 231
+    - Hyper-aggressive IP Addresses:
+        - 77.192.112.115 (France) launched 9,670 attacks.
+    - Unusual or Specific Usernames/Passwords:
+        - Usernames such as "solv", "trader", and "trading" were observed in low volumes.
+    - Attacker Signatures, Comments, or Taunts:
+        - None observed.
+    - Blatant Malware or Botnet Filenames:
+        - None observed.
+    - Other Notable Deviations from Background Noise:
+        - The activity is dominated by a single source IP from France, suggesting a targeted campaign or a single compromised machine. The high number of VNC-related alerts indicates a focus on insecure remote access services.

@@ -1,0 +1,109 @@
+# Hourly Honeypot Attack Report - 2026-02-17T14:01:00Z
+- Executive Summary:
+  During the last hour (2026-02-17T13:01:08Z - 2026-02-17T14:01:00Z), a total of 16446 attacks were detected on the honeypot network. The majority of attacks originated from China and Singapore, primarily targeting port 1433. Notable IP reputations include known attackers, mass scanners, and bot/crawlers. Common alert categories involve miscellaneous activities and generic protocol command decodes. Several common CVEs were exploited, and common usernames and passwords were attempted.
+
+- Detailed Analysis:
+    - Total Attacks: 16446
+    - Top Attacking Countries:
+        - China: 6502 attacks
+        - Singapore: 6409 attacks
+        - United States: 1894 attacks
+        - United Arab Emirates: 678 attacks
+        - Netherlands: 271 attacks
+    - Notable IP Reputations:
+        - known attacker: 1179
+        - mass scanner: 197
+        - bot, crawler: 3
+    - Common Alert Categories and Signatures:
+        - Misc activity: 5578
+        - Generic Protocol Command Decode: 2206
+        - Misc Attack: 360
+        - Attempted Information Leak: 189
+        - Potentially Bad Traffic: 11
+        - Signatures:
+            - GPL INFO VNC server response: 5474
+            - SURICATA STREAM spurious retransmission: 754
+            - SURICATA IPv4 truncated packet: 617
+            - SURICATA AF-PACKET truncated packet: 617
+            - ET SCAN MS Terminal Server Traffic on Non-standard Port: 130
+    - ASN Information of Attackers:
+        - AS132203 Tencent Building, Kejizhongyi Avenue: 6394
+        - AS56044 China Mobile communications corporation: 6340
+        - AS701 Verizon Business: 798
+        - AS15802 Emirates Integrated Telecommunications Company PJSC: 678
+        - AS14061 DigitalOcean, LLC: 659
+    - Source IP Addresses of Attackers:
+        - 43.163.123.189: 6388
+        - 36.129.24.144: 6340
+        - 173.73.62.72: 798
+        - 5.31.128.119: 678
+        - 104.236.53.117: 393
+        - 185.6.2.126: 134
+        - 85.203.15.98: 120
+        - 152.42.134.69: 110
+        - 34.158.168.101: 99
+        - 2.57.122.96: 88
+    - Country to Port Mapping:
+        - China:
+            - Port 1433: 6336
+            - Port 30003: 121
+            - Port 6379: 9
+            - Port 445: 8
+            - Port 8182: 5
+        - Singapore:
+            - Port 1433: 6381
+            - Port 8728: 14
+            - Port 445: 7
+            - Port 8025: 3
+            - Port 8620: 3
+        - United States:
+            - Port 445: 799
+            - Port 22: 80
+            - Port 8728: 77
+            - Port 6379: 22
+            - Port 1962: 15
+        - United Arab Emirates:
+            - Port 445: 677
+            - Port 1433: 1
+        - Netherlands:
+            - Port 443: 97
+            - Port 22: 24
+            - Port 6036: 8
+            - Port 80: 7
+            - Port 8728: 7
+    - CVEs Exploited:
+        - CVE-2025-55182
+        - CVE-2024-14007
+        - CVE-2021-3449
+        - CVE-2002-0013
+        - CVE-2019-11500
+    - Common Usernames and Passwords Attempted:
+        - Usernames:
+            - ubuntu: 30
+            - root: 29
+            - admin: 15
+            - postgres: 15
+            - oracle: 13
+        - Passwords:
+            - 123456: 24
+            - (empty string): 6
+            - 1: 6
+            - 123: 6
+            - 12345678: 6
+    - OS Distribution of Attackers Based on p0f Data:
+        - Linux 2.2.x-3.x: 25235
+        - Windows NT kernel 5.x: 6785
+        - Windows NT kernel: 6687
+        - Windows 7 or 8: 1498
+        - Mac OS X: 284
+    - Hyper-aggressive IP Addresses:
+        - 43.163.123.189 (6388 attacks)
+        - 36.129.24.144 (6340 attacks)
+    - Unusual or Specific Usernames/Passwords:
+        - No unusual or specific usernames/passwords were detected beyond common brute-force attempts.
+    - Attacker Signatures, Comments, or Taunts:
+        - No explicit attacker signatures, comments, or taunts were detected in payloads or commands.
+    - Blatant Malware or Botnet Filenames:
+        - No blatant malware or botnet filenames were detected.
+    - Other Notable Deviations from Background Noise:
+        - The high volume of attacks originating from China and Singapore, specifically targeting port 1433 (Microsoft SQL Server), suggests a focused scanning or brute-force campaign targeting database services.

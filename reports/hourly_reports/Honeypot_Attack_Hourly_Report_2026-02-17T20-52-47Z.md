@@ -1,0 +1,164 @@
+# Hourly Honeypot Attack Report - 2026-02-17T20-52-02Z
+- Executive Summary:
+  This hourly report provides an overview of attack activities detected on the honeypot network between 2026-02-17T19:52:04.000Z and 2026-02-17T20:52:02.000Z. A total of 1078 attacks were observed. India and Netherlands were the top attacking countries, primarily targeting port 445 (SMB) and 22 (SSH). Common alert categories include "Misc activity" and "Generic Protocol Command Decode". Noteworthy IP reputations include "known attacker" and "mass scanner". A specific CVE-2025-55182 was detected. Attempts were made with common usernames like "centos", "guest", and "test", and predictable passwords such as "111111", "123456", and "password". The majority of attackers appear to be running Linux-based operating systems.
+
+- Detailed Analysis:
+  - Total Attacks:
+    - 1078
+  - Top Attacking Countries:
+    - India: 588 attacks
+    - Netherlands: 337 attacks
+    - United States: 71 attacks
+    - China: 30 attacks
+    - Romania: 15 attacks
+    - France: 10 attacks
+    - United Kingdom: 10 attacks
+    - Hong Kong: 4 attacks
+    - South Korea: 4 attacks
+    - Malaysia: 3 attacks
+  - Notable IP Reputations:
+    - known attacker: 91
+    - mass scanner: 32
+    - bot, crawler: 1
+  - Common Alert Categories and Signatures:
+    - Alert Categories:
+      - Misc activity: 331
+      - Generic Protocol Command Decode: 126
+      - Misc Attack: 58
+      - Attempted Information Leak: 6
+      - A Network Trojan was detected: 2
+      - Detection of a Network Scan: 1
+      - Not Suspicious Traffic: 1
+      - Potentially Bad Traffic: 1
+      - Web Application Attack: 1
+      - access to a potentially vulnerable web application: 1
+    - Alert Signatures:
+      - 2100560: GPL INFO VNC server response (325)
+      - 2200003: SURICATA IPv4 truncated packet (42)
+      - 2200122: SURICATA AF-PACKET truncated packet (42)
+      - 2210048: SURICATA STREAM reassembly sequence GAP -- missing packet(s) (20)
+      - 2402000: ET DROP Dshield Block Listed Source group 1 (16)
+      - 2210037: SURICATA STREAM FIN recv but no session (9)
+      - 2009582: ET SCAN NMAP -sS window 1024 (6)
+      - 2400011: ET DROP Spamhaus DROP Listed Traffic Inbound group 12 (5)
+      - 2403414: ET CINS Active Threat Intelligence Poor Reputation IP group 115 (5)
+      - 2001978: ET INFO SSH session in progress on Expected Port (3)
+  - ASN Information of Attackers:
+    - 139564: Broadway Communication Pvt Ltd (588)
+    - 14061: DigitalOcean, LLC (328)
+    - 396982: Google LLC (31)
+    - 4837: CHINA UNICOM China169 Backbone (25)
+    - 213412: ONYPHE SAS (20)
+    - 215925: Vpsvault.host Ltd (16)
+    - 47890: Unmanaged Ltd (15)
+    - 398324: Censys, Inc. (8)
+    - 8075: Microsoft Corporation (6)
+    - 48090: Techoff Srv Limited (5)
+  - Source IP Addresses of Attackers:
+    - 103.148.38.69: 588
+    - 178.62.253.171: 324
+    - 101.71.37.77: 15
+    - 2.57.122.96: 15
+    - 87.120.191.13: 14
+    - 101.71.39.109: 7
+    - 45.148.10.121: 5
+    - 89.42.231.186: 4
+    - 167.94.138.172: 3
+    - 167.94.146.54: 3
+  - Country to Port Mapping:
+    - India:
+      - 445: 588
+    - Netherlands:
+      - 22: 65
+      - 6037: 4
+      - 80: 2
+      - 8087: 2
+    - United States:
+      - 8728: 14
+      - 2000: 3
+      - 8088: 3
+      - 13501: 3
+      - 25972: 3
+      - 44300: 3
+      - 135: 2
+      - 1160: 2
+      - 1883: 2
+      - 2083: 2
+    - China:
+      - 30003: 22
+      - 10002: 5
+      - 2222: 1
+      - 6443: 1
+      - 9080: 1
+    - Romania:
+      - 22: 3
+    - France:
+      - 4420: 2
+      - 5568: 2
+      - 6011: 2
+      - 6075: 2
+      - 7099: 2
+    - United Kingdom:
+      - 5173: 2
+      - 7990: 2
+      - 1495: 1
+      - 35139: 1
+      - 38987: 1
+      - 47463: 1
+      - 54067: 1
+      - 60463: 1
+    - Hong Kong:
+      - 2338: 1
+      - 2573: 1
+      - 2677: 1
+      - 17022: 1
+    - South Korea:
+      - 6379: 2
+      - 23: 1
+    - Malaysia:
+      - 3390: 3
+  - CVEs Exploited:
+    - CVE-2025-55182 CVE-2025-55182 (1)
+  - Common Usernames and Passwords Attempted:
+    - Usernames:
+      - centos: 18
+      - guest: 18
+      - test: 18
+      - user: 10
+      - solana: 3
+      - sa: 1
+      - ubnt: 1
+    - Passwords:
+      - 111111: 4
+      - 123123: 4
+      - 12345: 4
+      - 123456: 4
+      - 12345678: 4
+      - 123456789: 4
+      - password: 4
+      - password1: 4
+      - qwerty: 4
+      - 000000: 3
+  - OS Distribution of Attackers Based on p0f Data:
+    - Linux 2.2.x-3.x: 2286
+    - Windows NT kernel: 545
+    - Windows NT kernel 5.x: 60
+    - Linux 2.2.x-3.x (barebone): 55
+    - Linux 3.11 and newer: 28
+    - Linux 2.2.x-3.x (no timestamps): 15
+    - Mac OS X: 14
+    - Windows 7 or 8: 4
+    - Linux 3.1-3.10: 1
+  - Hyper-aggressive IP Addresses:
+    - 103.148.38.69 (588 attacks)
+    - 178.62.253.171 (324 attacks)
+  - Unusual or Specific Usernames/Passwords:
+    - Usernames: solana, sa, ubnt
+    - Passwords: No highly unusual passwords beyond common dictionary attacks.
+  - Attacker Signatures, Comments, or Taunts:
+    - None explicitly identified in the provided alert signatures or payloads.
+  - Blatant Malware or Botnet Filenames:
+    - Not explicitly identified in the provided data.
+  - Other Notable Deviations from Background Noise:
+    - The high volume of VNC server responses (GPL INFO VNC server response) might indicate VNC-related scanning or exploitation attempts.
+    - Detection of a specific CVE-2025-55182, even with a single count, warrants further investigation.

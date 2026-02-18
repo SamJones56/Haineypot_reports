@@ -1,0 +1,86 @@
+# Hourly Honeypot Attack Report - 2026-02-16T05:00:28Z
+- Executive Summary - This can be long.
+- Detailed Analysis:
+    - Total Attacks: 1987
+    - Top Attacking Countries: 
+        - United States: 854
+        - Netherlands: 533
+        - China: 163
+        - India: 74
+        - France: 71
+        - Ukraine: 37
+        - United Kingdom: 36
+        - Germany: 33
+        - Portugal: 27
+        - Singapore: 23
+    - Notable IP Reputations: 
+        - known attacker: 1207
+        - mass scanner: 237
+        - bot, crawler: 2
+    - Common Alert Categories and Signatures: 
+        - Generic Protocol Command Decode: 1249
+        - Misc Attack: 390
+        - Misc activity: 101
+        - Attempted Information Leak: 73
+        - Potentially Bad Traffic: 18
+        - Detection of a Network Scan: 10
+        - Attempted Administrator Privilege Gain: 8
+        - Web Application Attack: 7
+        - Not Suspicious Traffic: 5
+        - Detection of a Denial of Service Attack: 3
+    - ASN Information of Attackers: 
+        - DigitalOcean, LLC: 563
+        - Google LLC: 229
+        - Amazon.com, Inc.: 175
+        - ONYPHE SAS: 150
+        - CHINA UNICOM China169 Backbone: 144
+        - Vpsvault.host Ltd: 80
+        - UCLOUD INFORMATION TECHNOLOGY HK LIMITED: 66
+        - National Internet Backbone: 45
+        - Unmanaged Ltd: 45
+        - Censys, Inc.: 34
+    - Source IP Addresses of Attackers: 
+        - 146.190.229.68: 318
+        - 206.189.6.150: 156
+        - 101.71.39.109: 70
+        - 101.71.37.77: 69
+        - 87.120.191.13: 56
+        - 3.130.168.2: 48
+        - 218.248.8.81: 45
+        - 92.118.39.72: 45
+        - 18.218.118.203: 41
+        - 159.224.132.77: 33
+    - Country to Port Mapping: 
+        - United States: 8728 (81), 6002 (40), 27019 (35), 6969 (26), 30303 (21)
+        - Netherlands: 22 (93), 9100 (16), 80 (6), 3306 (4), 7007 (4)
+        - China: 30003 (139), 6379 (6), 7171 (5), 49151 (5), 1212 (4)
+        - India: 445 (45), 8728 (28), 80 (1)
+        - France: 8291 (4), 3128 (3), 1200 (2), 1836 (2), 2049 (2)
+    - CVEs Exploited: 
+        - CVE-2019-11500
+        - CVE-2021-3449
+        - CVE-2024-14007
+        - CVE-2025-55182
+    - Common Usernames and Passwords Attempted: 
+        - Passwords: ``, `1`, `12`, `123`, `1234`, `12345`, `123456`, `1234567`, `12345678`, `123456789`
+    - OS Distribution of Attackers Based on p0f Data: 
+        - Linux 2.2.x-3.x: 16954
+        - Mac OS X: 868
+        - Linux 2.2.x-3.x (no timestamps): 303
+        - Linux 2.2.x-3.x (barebone): 273
+        - Windows NT kernel 5.x: 266
+        - Linux 3.11 and newer: 183
+        - Windows 7 or 8: 59
+        - Windows NT kernel: 20
+        - Linux 3.1-3.10: 10
+        - Linux 2.4.x-2.6.x: 6
+    - Hyper-aggressive IP Addresses: 
+        - 146.190.229.68: 318 attacks
+        - 206.189.6.150: 156 attacks
+        - 101.71.39.109: 70 attacks
+        - 101.71.37.77: 69 attacks
+        - 87.120.191.13: 56 attacks
+    - Unusual or Specific Usernames/Passwords: No unusual activity detected
+    - Attacker Signatures, Comments, or Taunts: No unusual activity detected
+    - Blatant Malware or Botnet Filenames: No unusual activity detected
+    - Other Notable Deviations from Background Noise: No unusual activity detected

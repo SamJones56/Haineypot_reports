@@ -1,0 +1,199 @@
+# Hourly Honeypot Attack Report - 2026-02-16T10:05:14Z
+- Executive Summary:
+  This report summarizes honeypot activity from 2026-02-16T09:05:15Z to 2026-02-16T10:05:14Z. A total of 4786 attacks were detected. India remains the top attacking country, primarily targeting port 445. Notable activities include extensive "Generic Protocol Command Decode" and "ET SCAN MS Terminal Server Traffic on Non-standard Port" alerts. A significant portion of attacks originate from "known attacker" IPs. The IP address 103.218.135.57 from India is identified as hyper-aggressive. Attempted exploitation of CVE-2024-14007 and CVE-2025-55182 was observed. Common brute-force attempts target default usernames and simple passwords, with "eigen" and "eigenlayer" also being attempted. The majority of attacking systems are identified as Linux-based.
+
+- Detailed Analysis:
+    - Total Attacks: 4786
+    - Top Attacking Countries:
+        - India: 2552
+        - Romania: 731
+        - United States: 416
+        - Netherlands: 336
+        - Malaysia: 222
+        - China: 142
+        - United Kingdom: 103
+        - France: 50
+        - Russia: 42
+        - Portugal: 33
+    - Notable IP Reputations:
+        - known attacker: 736
+        - mass scanner: 194
+        - bot, crawler: 2
+    - Common Alert Categories and Signatures:
+        - Categories:
+            - Generic Protocol Command Decode: 1610
+            - Attempted Information Leak: 1065
+            - Attempted Administrator Privilege Gain: 501
+            - Misc Attack: 350
+            - Misc activity: 98
+            - Potentially Bad Traffic: 24
+            - Successful Administrator Privilege Gain: 7
+            - Not Suspicious Traffic: 6
+            - Web Application Attack: 6
+            - Detection of a Network Scan: 4
+        - Signatures:
+            - ET SCAN MS Terminal Server Traffic on Non-standard Port (ID: 2023753): 1018
+            - SURICATA IPv4 truncated packet (ID: 2200003): 581
+            - SURICATA AF-PACKET truncated packet (ID: 2200122): 581
+            - ET HUNTING RDP Authentication Bypass Attempt (ID: 2034857): 499
+            - SURICATA STREAM Packet with broken ack (ID: 2210051): 252
+            - ET DROP Dshield Block Listed Source group 1 (ID: 2402000): 125
+            - SURICATA STREAM reassembly sequence GAP -- missing packet(s) (ID: 2210048): 91
+            - ET INFO SSH-2.0-Go version string Observed in Network Traffic (ID: 2038967): 43
+            - ET SCAN NMAP -sS window 1024 (ID: 2009582): 38
+            - ET INFO SSH session in progress on Expected Port (ID: 2001978): 35
+    - ASN Information of Attackers:
+        - AS59191: PEERCAST TELECOM INDIA PVT LTD: 2538
+        - AS47890: Unmanaged Ltd: 727
+        - AS14061: DigitalOcean, LLC: 289
+        - AS38466: U Mobile Sdn Bhd: 219
+        - AS4837: CHINA UNICOM China169 Backbone: 130
+        - AS213412: ONYPHE SAS: 92
+        - AS215925: Vpsvault.host Ltd: 86
+        - AS201579: Hostgnome Ltd: 67
+        - AS16509: Amazon.com, Inc.: 66
+        - AS135377: UCLOUD INFORMATION TECHNOLOGY HK LIMITED: 61
+    - Source IP Addresses of Attackers:
+        - 103.218.135.57: 2538
+        - 2.57.121.22: 497
+        - 188.166.109.175: 270
+        - 27.125.242.212: 219
+        - 180.166.109.175: 180
+        - 67.185.91.69.164: 67
+        - 59.101.71.39.109: 59
+        - 49.87.120.191.13: 49
+        - 45.18.218.118.203: 45
+        - 43.101.71.37.77: 43
+    - Country to Port Mapping:
+        - India:
+            - 445: 2538
+            - 8728: 7
+            - 41681: 7
+            - 20222: 1
+        - Romania:
+            - 22: 46
+            - 3390: 2
+            - 33892: 2
+            - 81: 1
+            - 1090: 1
+            - 1106: 1
+            - 1139: 1
+            - 1443: 1
+            - 1508: 1
+            - 1537: 1
+        - United States:
+            - 8728: 56
+            - 22225: 12
+            - 30080: 12
+            - 33389: 12
+            - 58000: 12
+            - 80: 10
+            - 3002: 10
+            - 52869: 10
+            - 9600: 9
+            - 3000: 8
+        - Netherlands:
+            - 22: 59
+            - 6036: 8
+            - 6037: 8
+            - 80: 5
+            - 3306: 4
+            - 81: 2
+            - 443: 2
+            - 8085: 2
+            - 8545: 2
+            - 8322: 1
+        - Malaysia:
+            - 445: 219
+            - 10034: 3
+        - China:
+            - 30003: 102
+            - 8000: 7
+            - 22: 5
+            - 4505: 3
+            - 6379: 2
+            - 23: 1
+            - 22222: 1
+        - United Kingdom:
+            - 445: 69
+            - 13013: 8
+            - 22: 2
+            - 80: 1
+            - 2554: 1
+            - 5022: 1
+            - 5703: 1
+            - 5707: 1
+            - 7979: 1
+            - 8081: 1
+        - France:
+            - 3128: 3
+            - 2182: 2
+            - 3020: 2
+            - 3138: 2
+            - 4395: 2
+            - 4404: 2
+            - 4485: 2
+            - 8113: 2
+            - 8230: 2
+            - 8500: 2
+        - Russia:
+            - 445: 11
+            - 1883: 8
+            - 1443: 7
+            - 22: 4
+            - 1500: 4
+            - 27017: 4
+        - Portugal:
+            - 3388: 19
+            - 5007: 10
+            - 8001: 3
+            - 8000: 1
+    - CVEs Exploited:
+        - CVE-2024-14007
+        - CVE-2025-55182
+    - Common Usernames and Passwords Attempted:
+        - Usernames:
+            - root: 16
+            - ubuntu: 15
+            - daemon: 13
+            - debian: 13
+            - dev: 13
+            - backup: 11
+            - postgres: 8
+            - developer: 4
+            - eth: 4
+            - admin: 3
+        - Passwords:
+            - (empty string): 9
+            - 123456: 7
+            - password: 7
+            - eigen: 6
+            - eigenlayer: 6
+            - 1234567: 5
+            - 12345678: 5
+            - 12345: 4
+            - 123456789: 4
+            - P@ssw0rd123: 4
+    - OS Distribution of Attackers Based on p0f Data:
+        - Linux 2.2.x-3.x: 24130
+        - Windows 7 or 8: 2767
+        - Mac OS X: 1396
+        - Windows NT kernel: 531
+        - Windows NT kernel 5.x: 443
+        - Linux 2.2.x-3.x (no timestamps): 347
+        - Linux 3.11 and newer: 159
+        - Linux 2.2.x-3.x (barebone): 123
+        - FreeBSD: 3
+        - Windows XP: 3
+    - Hyper-aggressive IP Addresses:
+        - 103.218.135.57 (2538 attacks)
+    - Unusual or Specific Usernames/Passwords:
+        - Passwords: "eigen", "eigenlayer"
+        - Usernames: "eth"
+    - Attacker Signatures, Comments, or Taunts:
+        - None identified.
+    - Blatant Malware or Botnet Filenames:
+        - None identified.
+    - Other Notable Deviations from Background Noise:
+        - High volume of "Generic Protocol Command Decode" alerts (1610).
+        - Frequent "ET SCAN MS Terminal Server Traffic on Non-standard Port" signatures (1018).

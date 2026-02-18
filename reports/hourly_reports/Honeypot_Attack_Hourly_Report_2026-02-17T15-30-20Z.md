@@ -1,0 +1,180 @@
+
+Hourly Honeypot Attack Report - 2026-02-17T15:29:45Z
+- Executive Summary:
+  The honeypot network observed a total of 2038 attacks in the last hour. The primary attacking countries were the United States and Thailand. A significant portion of the attacking IPs were identified as "known attacker" or "mass scanner." "Misc activity" and "Generic Protocol Command Decode" were the most common alert categories. VNC server response information leakage was the most frequently detected alert signature.
+- Detailed Analysis:
+    - Total Attacks: 2038
+    - Top Attacking Countries:
+        - United States: 567
+        - Thailand: 488
+        - Netherlands: 148
+        - Vietnam: 138
+        - China: 137
+        - Poland: 117
+        - Romania: 84
+        - France: 67
+        - Slovakia: 35
+        - Russia: 28
+    - Notable IP Reputations:
+        - known attacker: 882
+        - mass scanner: 156
+        - bot, crawler: 3
+    - Common Alert Categories and Signatures:
+        - Alert Categories:
+            - Misc activity: 2271
+            - Generic Protocol Command Decode: 962
+            - Misc Attack: 273
+            - Attempted Information Leak: 61
+            - Potentially Bad Traffic: 10
+            - Attempted Administrator Privilege Gain: 5
+            - Detection of a Network Scan: 4
+            - Successful Administrator Privilege Gain: 4
+            - A Network Trojan was detected: 2
+            - Unknown Traffic: 2
+        - Alert Signatures:
+            - GPL INFO VNC server response (ID: 2100560): 2182
+            - SURICATA IPv4 truncated packet (ID: 2200003): 293
+            - SURICATA AF-PACKET truncated packet (ID: 2200122): 293
+            - SURICATA STREAM RST recv but no session (ID: 2210041): 144
+            - SURICATA STREAM reassembly sequence GAP -- missing packet(s) (ID: 2210048): 89
+            - ET INFO SSH session in progress on Expected Port (ID: 2001978): 54
+            - SURICATA STREAM FIN recv but no session (ID: 2210037): 53
+            - ET DROP Dshield Block Listed Source group 1 (ID: 2402000): 44
+            - ET SCAN NMAP -sS window 1024 (ID: 2009582): 41
+            - SURICATA STREAM Packet with broken ack (ID: 2210051): 21
+    - ASN Information of Attackers:
+        - ASN: 133481, Organization: AIS Fibre (486 attacks)
+        - ASN: 47890, Organization: Unmanaged Ltd (190 attacks)
+        - ASN: 396982, Organization: Google LLC (170 attacks)
+        - ASN: 4837, Organization: CHINA UNICOM China169 Backbone (124 attacks)
+        - ASN: 14061, Organization: DigitalOcean, LLC (119 attacks)
+        - ASN: 33868, Organization: INEA sp. z o.o. (114 attacks)
+        - ASN: 213412, Organization: ONYPHE SAS (103 attacks)
+        - ASN: 215925, Organization: Vpsvault.host Ltd (85 attacks)
+        - ASN: 7552, Organization: Viettel Group (74 attacks)
+        - ASN: 135377, Organization: UCLOUD INFORMATION TECHNOLOGY HK LIMITED (60 attacks)
+    - Source IP Addresses of Attackers:
+        - 110.49.3.20: 486
+        - 185.6.2.126: 114
+        - 27.79.45.149: 74
+        - 92.118.39.95: 69
+        - 64.225.0.224: 64
+        - 101.71.37.77: 62
+        - 101.71.39.109: 60
+        - 2.57.122.208: 60
+        - 87.120.191.13: 56
+        - 116.99.171.201: 51
+    - Country to Port Mapping:
+        - United States:
+            - 8728: 70
+            - 80: 65
+            - 22: 24
+            - 5269: 18
+            - 8087: 12
+            - 1443: 11
+            - 29092: 11
+            - 81: 10
+            - 17000: 8
+            - 3001: 6
+        - Thailand:
+            - 445: 486
+            - 23: 1
+        - Netherlands:
+            - 22: 19
+            - 80: 19
+            - 9100: 8
+            - 17001: 8
+            - 3306: 4
+            - 21: 3
+            - 81: 2
+            - 8113: 2
+            - 28017: 2
+            - 55555: 2
+        - Vietnam:
+            - 22: 24
+            - 80: 10
+            - 1433: 4
+            - 23: 1
+        - China:
+            - 30003: 122
+            - 6379: 5
+            - 6565: 4
+            - 18245: 4
+            - 80: 1
+            - 81: 1
+        - Poland:
+            - 22: 25
+            - 10800: 2
+            - 10801: 1
+        - Romania:
+            - 22: 14
+            - 25: 5
+            - 587: 2
+            - 40277: 1
+        - France:
+            - 61616: 4
+            - 3128: 3
+            - 1199: 2
+            - 4193: 2
+            - 4244: 2
+            - 4322: 2
+            - 4403: 2
+            - 4415: 2
+            - 5029: 2
+            - 5115: 2
+        - Slovakia:
+            - 22: 1
+        - Russia:
+            - 9042: 10
+            - 445: 4
+            - 1443: 4
+            - 1883: 4
+            - 1500: 2
+            - 56000: 2
+            - 14567: 1
+            - 60000: 1
+    - CVEs Exploited:
+        - CVE-2024-14007 CVE-2024-14007: 3
+        - CVE-2025-55182 CVE-2025-55182: 2
+        - CVE-2002-1149: 1
+        - CVE-2019-11500 CVE-2019-11500: 1
+        - CVE-2021-3449 CVE-2021-3449: 1
+    - Common Usernames and Passwords Attempted:
+        - Usernames:
+            - root: 36
+            - ubuntu: 15
+            - admin: 14
+            - user: 8
+            - sol: 6
+            - sa: 4
+            - solana: 3
+            - config: 2
+            - installer: 2
+            - oracle: 2
+        - Passwords:
+            - admin: 13
+            - (empty string): 8
+            - 123456: 6
+            - solana: 4
+            - root: 3
+            - user: 3
+            - validator: 3
+            - 123: 2
+            - 1234: 2
+            - 1234qwer: 2
+    - OS Distribution of Attackers Based on p0f Data:
+        - Linux 2.2.x-3.x: 22375
+        - Windows 7 or 8: 471
+        - Linux 2.2.x-3.x (barebone): 262
+        - Mac OS X: 235
+        - Linux 2.2.x-3.x (no timestamps): 177
+        - Windows NT kernel 5.x: 171
+        - Linux 3.11 and newer: 157
+        - Windows NT kernel: 27
+        - FreeBSD: 2
+        - Linux 3.1-3.10: 2
+    - Hyper-aggressive IP Addresses: Not directly available from current log data.
+    - Unusual or Specific Usernames/Passwords: Aside from common attempts, "solana", "validator" are notable in the attempted passwords.
+    - Attacker Signatures, Comments, or Taunts: Not directly available from current log data.
+    - Blatant Malware or Botnet Filenames: Not directly available from current log data.
+    - Other Notable Deviations from Background Noise: Not directly available from current log data.

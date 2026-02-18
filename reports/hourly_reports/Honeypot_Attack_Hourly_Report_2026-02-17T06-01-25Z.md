@@ -1,0 +1,131 @@
+# Hourly Honeypot Attack Report - 2026-02-17T06:00:36Z
+- Executive Summary:
+The honeypot network observed a total of 6961 attacks in the last hour. France, India, and the United States were the top attacking countries. "Misc activity" and "Generic Protocol Command Decode" were the most common alert categories, with "GPL INFO VNC server response" being the most frequent signature. "Contabo GmbH" was the leading ASN associated with attackers. Common attack targets include port 1433 in France, and various ports like 445, 22, and 8728 in India and the United States. Several CVEs were exploited, and common usernames like 'root' and 'admin' with simple passwords were frequently attempted. Linux systems, particularly versions 2.2.x-3.x, constitute the majority of detected attacking operating systems.
+- Detailed Analysis:
+    - Total Attacks: 6961
+    - Top Attacking Countries:
+        - France: 4546
+        - India: 1080
+        - United States: 580
+        - Romania: 198
+        - Netherlands: 138
+        - China: 93
+        - Australia: 68
+        - Portugal: 54
+        - Switzerland: 53
+        - Singapore: 34
+    - Notable IP Reputations:
+        - Known attacker: 977
+        - Mass scanner: 210
+        - Bot, crawler: 2
+    - Common Alert Categories and Signatures:
+        - **Categories:**
+            - Misc activity: 8037
+            - Generic Protocol Command Decode: 4165
+            - Misc Attack: 375
+            - Attempted Information Leak: 52
+            - Potentially Bad Traffic: 20
+            - Attempted Administrator Privilege Gain: 9
+            - Detection of a Network Scan: 7
+            - Detection of a Denial of Service Attack: 2
+            - Not Suspicious Traffic: 1
+            - Successful Administrator Privilege Gain: 1
+        - **Signatures:**
+            - GPL INFO VNC server response (ID: 2100560): 7963
+            - SURICATA IPv4 truncated packet (ID: 2200003): 1963
+            - SURICATA AF-PACKET truncated packet (ID: 2200122): 1963
+            - ET DROP Dshield Block Listed Source group 1 (ID: 2402000): 107
+            - SURICATA HTTP Response excessive header repetition (ID: 2221036): 66
+            - SURICATA STREAM spurious retransmission (ID: 2210061): 46
+            - ET INFO SSH session in progress on Expected Port (ID: 2001978): 35
+            - ET SCAN NMAP -sS window 1024 (ID: 2009582): 35
+            - SURICATA Applayer Detect protocol only one direction (ID: 2260002): 22
+            - ET INFO SSH-2.0-Go version string Observed in Network Traffic (ID: 2038967): 21
+    - ASN Information of Attackers:
+        - AS51167 Contabo GmbH: 4480
+        - AS14061 DigitalOcean, LLC: 756
+        - AS134873 ABS BROADBAND SERVICES PVT LTD: 515
+        - AS204428 SS-Net: 135
+        - AS396982 Google LLC: 131
+        - AS213412 ONYPHE SAS: 101
+        - AS4837 CHINA UNICOM China169 Backbone: 72
+        - AS16509 Amazon.com, Inc.: 66
+        - AS215925 Vpsvault.host Ltd: 64
+        - AS6939 Hurricane Electric LLC: 63
+    - Source IP Addresses of Attackers:
+        - 173.249.6.152: 4477
+        - 139.59.69.34: 544
+        - 103.204.164.37: 515
+        - 80.94.95.216: 135
+        - 152.42.134.69: 85
+        - 170.64.199.236: 68
+        - 2.57.122.96: 60
+        - 209.74.86.176: 55
+        - 46.19.137.194: 53
+        - 101.71.39.109: 41
+    - Country to Port Mapping:
+        - **France:**
+            - 1433: 4477
+            - 22: 5
+            - 3128: 3
+        - **India:**
+            - 445: 515
+            - 22: 109
+            - 8728: 21
+        - **United States:**
+            - 8728: 44
+            - 25: 35
+            - 6379: 23
+    - CVEs Exploited:
+        - CVE-2021-3449
+        - CVE-2024-14007
+        - CVE-2019-11500
+        - CVE-2025-55182
+    - Common Usernames and Passwords Attempted:
+        - **Usernames:**
+            - root: 33
+            - admin: 10
+            - ali: 4
+            - bot: 4
+            - a: 3
+            - aaa: 3
+            - bob: 3
+            - botuser: 3
+            - abc: 2
+            - adam: 2
+        - **Passwords:**
+            - (empty string): 14
+            - 123: 11
+            - 123456: 11
+            - root: 4
+            - admin: 3
+            - 1234: 2
+            - 12345: 2
+            - 12345678: 2
+            - a: 2
+            - alex: 2
+    - OS Distribution of Attackers Based on p0f Data:
+        - Linux 2.2.x-3.x: 20561
+        - Windows NT kernel: 5030
+        - Mac OS X: 426
+        - Windows NT kernel 5.x: 317
+        - Linux 2.2.x-3.x (barebone): 222
+        - Linux 2.2.x-3.x (no timestamps): 167
+        - Linux 3.11 and newer: 109
+        - Linux 2.4.x-2.6.x: 6
+        - Linux 3.x: 5
+        - FreeBSD: 3
+    - Hyper-aggressive IP Addresses:
+        - 173.249.6.152 (France) with 4477 attacks stands out as exceptionally aggressive, accounting for a significant portion of the total attacks.
+        - Other notable aggressive IPs include 139.59.69.34 (India) with 544 attacks and 103.204.164.37 (India) with 515 attacks.
+    - Unusual or Specific Usernames/Passwords:
+        - No overtly unusual or specific usernames/passwords that suggest a targeted campaign outside of common defaults like "root" and "admin" and simple numerical sequences. The presence of an empty string as a password attempt is notable. "ali", "bot", "botuser", "bob", "aaa", "abc", "adam" as usernames are also typical of automated attacks. "alex" as password can be noted.
+    - Attacker Signatures, Comments, or Taunts:
+        - No explicit attacker "signatures," comments, or taunts were found in the provided alert signatures or other data.
+    - Blatant Malware or Botnet Filenames:
+        - No blatant malware or botnet filenames were found in the provided data.
+    - Other Notable Deviations from Background Noise:
+        - The high volume of "GPL INFO VNC server response" (7963) and "SURICATA IPv4 truncated packet" / "SURICATA AF-PACKET truncated packet" (both 1963) alerts suggest widespread scanning or attempts to exploit vulnerabilities related to VNC or general network probing.
+        - The significant number of attacks targeting port 1433 (MS SQL) from France, particularly from the hyper-aggressive IP 173.249.6.152, indicates a focused effort against database services.
+        - The presence of "ET DROP Dshield Block Listed Source group 1" indicates that some attacking IPs are recognized as malicious by Dshield.
+        - The exploitation of recent CVEs like CVE-2024-14007 and CVE-2025-55182, even if in small numbers, is noteworthy and indicates active exploitation attempts for newer vulnerabilities.

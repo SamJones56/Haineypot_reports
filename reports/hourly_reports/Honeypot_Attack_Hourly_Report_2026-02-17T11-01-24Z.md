@@ -1,0 +1,112 @@
+# Hourly Honeypot Attack Report - 2026-02-17T11:00:41Z
+- Executive Summary:
+  The honeypot network detected a total of 4650 attacks in the last hour. The United States and Thailand were the top attacking countries. A significant portion of the attacks originated from "known attacker" IPs. The most frequent alert signatures were related to VNC server responses and truncated packets. Common brute-force attempts targeted "ubuntu" and "root" usernames with passwords like "123456" and "admin123".
+- Detailed Analysis:
+    - Total Attacks: 4650
+    - Top Attacking Countries:
+        - United States: 1912
+        - Thailand: 1354
+        - United Arab Emirates: 562
+        - China: 154
+        - Netherlands: 137
+        - Romania: 118
+        - Australia: 80
+        - Singapore: 66
+        - France: 46
+        - Russia: 41
+    - Notable IP Reputations:
+        - known attacker: 796
+        - mass scanner: 180
+        - bot, crawler: 3
+    - Common Alert Categories and Signatures:
+        - Misc activity: 6096
+        - Generic Protocol Command Decode: 867
+        - Misc Attack: 297
+        - Attempted Information Leak: 57
+        - Potentially Bad Traffic: 9
+        - Detection of a Network Scan: 5
+        - A Network Trojan was detected: 4
+        - Attempted Administrator Privilege Gain: 3
+        - Not Suspicious Traffic: 3
+        - Detection of a Denial of Service Attack: 1
+        - GPL INFO VNC server response: 5972
+        - SURICATA IPv4 truncated packet: 275
+        - SURICATA AF-PACKET truncated packet: 275
+        - SURICATA STREAM reassembly sequence GAP -- missing packet(s): 129
+        - SURICATA STREAM spurious retransmission: 93
+        - ET DROP Dshield Block Listed Source group 1: 77
+        - ET INFO SSH session in progress on Expected Port: 57
+        - ET INFO SSH-2.0-Go version string Observed in Network Traffic: 49
+        - ET SCAN NMAP -sS window 1024: 38
+        - SURICATA STREAM Packet with broken ack: 18
+    - ASN Information of Attackers:
+        - ASN: 133481, Organization: AIS Fibre, Count: 1348
+        - ASN: 14061, Organization: DigitalOcean, LLC, Count: 813
+        - ASN: 701, Organization: Verizon Business, Count: 793
+        - ASN: 15802, Organization: Emirates Integrated Telecommunications Company PJSC, Count: 562
+        - ASN: 4837, Organization: CHINA UNICOM China169 Backbone, Count: 137
+        - ASN: 47890, Organization: Unmanaged Ltd, Count: 118
+        - ASN: 16509, Organization: Amazon.com, Inc., Count: 103
+        - ASN: 213412, Organization: ONYPHE SAS, Count: 101
+        - ASN: 8075, Organization: Microsoft Corporation, Count: 94
+        - ASN: 396982, Organization: Google LLC, Count: 93
+    - Source IP Addresses of Attackers:
+        - 110.49.3.20: 1348
+        - 173.73.62.72: 793
+        - 5.31.128.119: 562
+        - 67.205.160.240: 514
+        - 152.42.134.69: 104
+        - 2.57.122.96: 88
+        - 170.64.199.236: 80
+        - 3.132.26.232: 69
+        - 101.71.39.109: 64
+        - 101.71.37.77: 63
+    - Country to Port Mapping:
+        - United States:
+            - 445: 793, 22: 108, 8728: 63, 11211: 37, 15672: 34, 9100: 17, 49152: 14, 2049: 12, 5678: 12, 8888: 12
+        - Thailand:
+            - 445: 1348, 23: 3
+        - United Arab Emirates:
+            - 445: 562
+        - China:
+            - 30003: 127, 9000: 11, 4003: 5, 1433: 4, 6379: 2, 3128: 1, 3306: 1, 5258: 1, 9305: 1, 57224: 1
+        - Netherlands:
+            - 22: 21, 80: 9, 6037: 8, 55553: 5, 81: 2, 8081: 1, 8888: 1, 9800: 1, 16992: 1, 18245: 1
+        - Romania:
+            - 22: 23
+        - Australia:
+            - 22: 16
+        - Singapore:
+            - 8728: 14, 22: 11, 3107: 3
+        - France:
+            - 3128: 5, 1111: 2, 4075: 2, 4163: 2, 4447: 2, 5004: 2, 5106: 2, 5201: 2, 5722: 2, 6102: 2
+        - Russia:
+            - 9300: 20, 445: 4, 1443: 4, 1883: 4, 2375: 3, 1500: 2, 56000: 2, 3307: 1, 4444: 1
+    - CVEs Exploited:
+        - CVE-2024-14007 CVE-2024-14007
+        - CVE-2002-0013 CVE-2002-0012
+        - CVE-2019-11500 CVE-2019-11500
+        - CVE-2021-3449 CVE-2021-3449
+        - CVE-2025-55182 CVE-2025-55182
+    - Common Usernames and Passwords Attempted:
+        - Usernames: ubuntu (39), root (25), postgres (16), admin (9), administrator (9), ftpuser (9), guest (9), oracle (9), pi (9), test (9)
+        - Passwords: 123456 (16), admin123 (14), 123 (12), 1234 (12), 1234567890 (12), password1 (12), 123abc (11), 1q2w3e4r (11), pass123 (11), qwerty123 (11)
+    - OS Distribution of Attackers Based on p0f Data:
+        - Linux 2.2.x-3.x: 27907
+        - Windows 7 or 8: 2695
+        - Mac OS X: 337
+        - Windows NT kernel 5.x: 240
+        - Linux 2.2.x-3.x (barebone): 185
+        - Linux 2.2.x-3.x (no timestamps): 185
+        - Linux 3.11 and newer: 174
+        - Windows NT kernel: 29
+        - Linux 3.1-3.10: 4
+        - Linux 3.x: 3
+    - Hyper-aggressive IP Addresses:
+        - 110.49.3.20 (1348 attacks)
+        - 173.73.62.72 (793 attacks)
+        - 5.31.128.119 (562 attacks)
+    - Unusual or Specific Usernames/Passwords: No unusual or specific usernames/passwords were detected beyond common brute-force attempts.
+    - Attacker Signatures, Comments, or Taunts: No explicit attacker "signatures," comments, or taunts were detected in payloads or commands.
+    - Blatant Malware or Botnet Filenames: No blatant malware or botnet filenames were explicitly detected in the available log data.
+    - Other Notable Deviations from Background Noise: A high number of "GPL INFO VNC server response" alerts (5972) and "SURICATA IPv4 truncated packet" alerts (275) could indicate unusual network reconnaissance or communication attempts. 
