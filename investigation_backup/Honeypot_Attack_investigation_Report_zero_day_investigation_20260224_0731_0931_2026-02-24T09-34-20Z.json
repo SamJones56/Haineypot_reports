@@ -1,0 +1,9 @@
+# Zero-Day Investigation Report: Last 2 Hours
+**Investigation Window:** 2026-02-24T07:31:30Z to 2026-02-24T09:31:30Z
+**Total Attacks:** 7060
+**Key Highlights:**
+- **CVE-2025-55182 (React2Shell):** 2 hits detected. Critical CVSS 10.0 unauthenticated RCE targeting React Server Components.
+- **CVE-2024-14007 (NVMS-9000):** 7 hits detected. High-severity authentication bypass in IoT/DVR firmware.
+- **Malware Activity:** J-magic (nfsiod) Backdoor activity (6 hits) detected targeting port 355.
+- **Top Attacker:** 196.203.166.97 (Tunisia) with 884 hits.
+- **Infrastructure:** Significant traffic from DigitalOcean (ASN 14061) and Trust Innovation Limited (ASN 141474).
