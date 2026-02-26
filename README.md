@@ -13,7 +13,7 @@ Manually called reports to deeper investigate the summaries
 ![Figure 2](images/investigation_pipeline.svg)
 
 ## Manual Deeper Investigation Framework
-![Figure 3](images/deep_investigation_pipeline.draw.io.png)
+![Figure 3](images/deep_investigation_pipeline.drawio.png)
 ![Figure 4](images/deep_pipeline.svg)
 ## OLD Reports:
 ### Daily Reports
