@@ -1,0 +1,23 @@
+# Hourly Honeypot Attack Report - 2026-02-16T02:00:38Z
+        - Executive Summary - This can be long.
+        - Detailed Analysis:
+            - Total Attacks: 2356
+            - Top Attacking Countries: United States (742), India (529), Netherlands (411), Romania (238), China (151), France (61), Germany (42), Singapore (36), Portugal (32), United Kingdom (18)
+            - Notable IP Reputations: known attacker (841), mass scanner (221)
+            - Common Alert Categories and Signatures: The most common alert category was "Generic Protocol Command Decode" with 1816 instances. The most common alert signature was "ET EXPLOIT [PTsecurity] DoublePulsar Backdoor installation communication" with 897 hits.
+            - ASN Information of Attackers: Wireline Solution India Pvt Ltd. (527), DigitalOcean, LLC (386), Unmanaged Ltd (238), Google LLC (187), CHINA UNICOM China169 Backbone (137), ONYPHE SAS (116), Amazon.com, Inc. (112), Vpsvault.host Ltd (87), Hurricane Electric LLC (82), UCLOUD INFORMATION TECHNOLOGY HK LIMITED (65)
+            - Source IP Addresses of Attackers: 121.200.48.26 (527), 206.189.109.237 (328), 2.57.122.96 (100), 2.57.122.210 (75), 101.71.39.109 (66), 101.71.37.77 (65), 193.32.162.146 (63), 87.120.191.13 (63), 34.60.107.64 (46), 204.76.203.18 (40)
+            - Country to Port Mapping: 
+                - United States: 8728 (77), 80 (73), 8784 (21), 9200 (20), 443 (16)
+                - India: 445 (527), 6000 (2)
+                - Netherlands: 22 (64), 1337 (40), 3306 (8), 9100 (8), 80 (6)
+            - CVEs Exploited: CVE-2024-4577, CVE-2002-0953, CVE-2025-55182, CVE-2019-9621, CVE-2021-2109, CVE-2019-9670, CVE-2021-41773, CVE-2021-42013, CVE-2025-34036
+            - Common Usernames and Passwords Attempted:
+                - Usernames: postgres (44), root (20), sol (15), solana (12), ubuntu (10)
+                - Passwords: "" (8), "123" (5), "solana" (5), "123456" (4), "321" (4)
+            - OS Distribution of Attackers Based on p0f Data: Linux 2.2.x-3.x (7812), Windows XP (538), Mac OS X (409), Windows NT kernel 5.x (330), Linux 2.2.x-3.x (barebone) (222)
+            - Hyper-aggressive IP Addresses: `121.200.48.26` from India was the most aggressive, with 527 attacks primarily targeting port 445.
+            - Unusual or Specific Usernames/Passwords: The use of "solana" as both a username and password suggests potential targeting of cryptocurrency-related systems.
+            - Attacker Signatures, Comments, or Taunts: None observed.
+            - Blatant Malware or Botnet Filenames: The "DoublePulsar Backdoor" alert indicates likely malware activity.
+            - Other Notable Deviations from Background Noise: A "Nintendo 3DS" was identified in the OS distribution, which is highly unusual and likely spoofed.
