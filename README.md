@@ -1,4 +1,12 @@
 ## Report Types:
+
+### Investigation Reports
+Reports on investigation conducted every 30 minutes
+
+## Investigation Summary Reports
+Manually called reports to deeper investigate the summaries
+
+## OLD Reports:
 ### Daily Reports
 Summary report of the past 24 hours
 ### Hourly Reports
