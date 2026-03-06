@@ -1,10 +1,13 @@
 ## Report Types:
 
-### Investigation Reports
-Reports on investigation conducted every 30 minutes
+### deep_agent_reports
+Deep think agent
 
-## Investigation Summary Reports
-Manually called reports to deeper investigate the summaries
+### default_agent_Reports
+Default agent with no deep loop
+
+### one_shot_agent_reports
+Non-agential agent
 
 ### Current Frameworks
 
@@ -28,3 +31,7 @@ Summary report of the past 6 hours
 Output of live usuer query
 ### Summary Reports
 Daily report of daily reports - No live quering
+### Investigation Reports
+Reports on investigation conducted every 30 minutes
+### Investigation Summary Reports
+Manually called reports to deeper investigate the summaries
