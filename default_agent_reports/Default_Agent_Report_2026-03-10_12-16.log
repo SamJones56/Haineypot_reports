@@ -1,0 +1,3336 @@
+START Tue Mar 10 17:05:01 UTC 2026
+Session created: App='default_agent', User='user_1', Session='session_7239'
+Runner created for agent 'InvestigationPipelineAgent'.
+###################################### NEW EVENT ######################################
+Current Time: 2026-03-10 17:05:15.993103
+[Event] Author: BaselineAgent, Type: Event, Final: False, Partial: None, Content: parts=[Part(
+  function_call=FunctionCall(
+    args={
+      'gte_time_stamp': '2026-03-10T12:00:08Z',
+      'lte_time_stamp': '2026-03-10T16:00:08Z'
+    },
+    id='adk-01cd3491-85a1-46fe-9e4c-111c7a7325cf',
+    name='get_total_attacks'
+  ),
+  thought_signature=b'\n\xec\x08\x01\x8f=k_\x96\xb2,6\x0f\x9e\x9c\xd9\x08\xdc\x96K\x9fM\xc2<\x84\xcc\x91S\xf7\xed(\x95Z\xeboYW7\x90Rm\xe4\x86Z\x15\x02\xcc\xe9\x18N\xcd\x19iw\xa8(4O\x90(<\xc2XJ\xfe\x04 \x0e$\xe5re\xf4\xa5\x08\xd7m\xc7Z\xcc\x94F\xdd\xbdk\x0b\xaf]\xb3\xf1oX\x99\xfa\x94|H...'
+), Part(
+  function_call=FunctionCall(
+    args={
+      'gte_time_stamp': '2026-03-10T12:00:08Z',
+      'lte_time_stamp': '2026-03-10T16:00:08Z'
+    },
+    id='adk-aed6873b-513a-4e69-86fa-176b9440d92e',
+    name='get_top_countries'
+  )
+)] role='model'
+METADATA:
+{'cache_tokens_details': None, 'cached_content_token_count': None, 'candidates_token_count': 110, 'candidates_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 110}], 'prompt_token_count': 1314, 'prompt_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 1314}], 'thoughts_token_count': 284, 'tool_use_prompt_token_count': None, 'tool_use_prompt_tokens_details': None, 'total_token_count': 1708, 'traffic_type': <TrafficType.ON_DEMAND: 'ON_DEMAND'>}
+<<< Agent Response: None
+###################################### NEW EVENT ######################################
+Current Time: 2026-03-10 17:05:16.068559
+[Event] Author: BaselineAgent, Type: Event, Final: False, Partial: None, Content: parts=[Part(
+  function_response=FunctionResponse(
+    id='adk-01cd3491-85a1-46fe-9e4c-111c7a7325cf',
+    name='get_total_attacks',
+    response={
+      'total_attacks': 28590
+    }
+  )
+), Part(
+  function_response=FunctionResponse(
+    id='adk-aed6873b-513a-4e69-86fa-176b9440d92e',
+    name='get_top_countries',
+    response={
+      'top_countries': [
+        {
+          'count': 8655,
+          'country': 'United States'
+        },
+        {
+          'count': 3481,
+          'country': 'France'
+        },
+        {
+          'count': 2875,
+          'country': 'Tunisia'
+        },
+        {
+          'count': 1429,
+          'country': 'Vietnam'
+        },
+        {
+          'count': 1296,
+          'country': 'Hong Kong'
+        },
+      ]
+    }
+  )
+)] role='user'
+<<< Agent Response: None
+###################################### NEW EVENT ######################################
+Current Time: 2026-03-10 17:05:20.516027
+[Event] Author: BaselineAgent, Type: Event, Final: False, Partial: None, Content: parts=[Part(
+  function_call=FunctionCall(
+    args={},
+    id='adk-466421ce-f4bd-4b0a-8ae2-affc03a6e8b3',
+    name='waiting'
+  ),
+  thought_signature=b'\n\xd1\x02\x01\x8f=k_&\x8c\x04+\x1e\x80\x16\xd9\xed(\tC\xbcpS\xcb\xbc\xc5lrK\xbaX[\x15Ds\xb20o\x15\x83\\\xd5{\x9d)Z(\xdf\xc4K\x84B_3o<\xbaa\x18K\x8d\xd1(\xaa\xca\t\x93\x99\t*\xd7\xfc\xf8hB\x0er\xe0!\xad\x83\xb7 \x89\\\xe2\x9b\xca\x19\xc6z\xc17D8\xe2\xa7...'
+)] role='model'
+METADATA:
+{'cache_tokens_details': None, 'cached_content_token_count': None, 'candidates_token_count': 1, 'candidates_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 1}], 'prompt_token_count': 1748, 'prompt_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 1748}], 'thoughts_token_count': 88, 'tool_use_prompt_token_count': None, 'tool_use_prompt_tokens_details': None, 'total_token_count': 1837, 'traffic_type': <TrafficType.ON_DEMAND: 'ON_DEMAND'>}
+<<< Agent Response: None
+###################################### NEW EVENT ######################################
+Current Time: 2026-03-10 17:06:05.568286
+[Event] Author: BaselineAgent, Type: Event, Final: False, Partial: None, Content: parts=[Part(
+  function_response=FunctionResponse(
+    id='adk-466421ce-f4bd-4b0a-8ae2-affc03a6e8b3',
+    name='waiting',
+    response={
+      'result': 'Successfully waited 45 seconds. You may continue querying.'
+    }
+  )
+)] role='user'
+<<< Agent Response: None
+###################################### NEW EVENT ######################################
+Current Time: 2026-03-10 17:06:08.660120
+[Event] Author: BaselineAgent, Type: Event, Final: False, Partial: None, Content: parts=[Part(
+  function_call=FunctionCall(
+    args={
+      'gte_time_stamp': '2026-03-10T12:00:08Z',
+      'lte_time_stamp': '2026-03-10T16:00:08Z',
+      'size': 5
+    },
+    id='adk-f3993246-1ee3-427b-b707-6f616273f971',
+    name='get_attacker_src_ip'
+  ),
+  thought_signature=b'\n\xce\x02\x01\x8f=k_\\\x84\xb0)\xd4Q\x8bv>\xd76\x98\xda\x03\x19\xca\xce"|ON)\xfc\xd3i\xe1\xbcx3S\x0c\x9a!\xc8\xb4\x82\x8a\x1dff\\\xb2\x9c[r\xa1!\xdbq\xcav&z\xd7\x0b\x94\xa2V\x82\xee\xd8\x95\xdf\x80\xac\xee"\xc4\x90{\xfa\xbb\x8e\x98M\x9db`\xc72\xacv\xb2(\x826\x065\x13...'
+), Part(
+  function_call=FunctionCall(
+    args={
+      'gte_time_stamp': '2026-03-10T12:00:08Z',
+      'inner_size': 3,
+      'lte_time_stamp': '2026-03-10T16:00:08Z',
+      'outer_size': 5
+    },
+    id='adk-3952b39b-0c70-4a02-b9c0-f2fb707b04f8',
+    name='get_country_to_port'
+  )
+)] role='model'
+METADATA:
+{'cache_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 1426}], 'cached_content_token_count': 1426, 'candidates_token_count': 124, 'candidates_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 124}], 'prompt_token_count': 1851, 'prompt_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 1851}], 'thoughts_token_count': 101, 'tool_use_prompt_token_count': None, 'tool_use_prompt_tokens_details': None, 'total_token_count': 2076, 'traffic_type': <TrafficType.ON_DEMAND: 'ON_DEMAND'>}
+<<< Agent Response: None
+###################################### NEW EVENT ######################################
+Current Time: 2026-03-10 17:06:08.815139
+[Event] Author: BaselineAgent, Type: Event, Final: False, Partial: None, Content: parts=[Part(
+  function_response=FunctionResponse(
+    id='adk-f3993246-1ee3-427b-b707-6f616273f971',
+    name='get_attacker_src_ip',
+    response={
+      'source_ips': [
+        {
+          'count': 2875,
+          'ip': '41.225.17.210'
+        },
+        {
+          'count': 2572,
+          'ip': '79.98.102.166'
+        },
+        {
+          'count': 1346,
+          'ip': '136.114.97.84'
+        },
+        {
+          'count': 1116,
+          'ip': '149.28.210.73'
+        },
+        {
+          'count': 1083,
+          'ip': '103.199.41.21'
+        },
+      ]
+    }
+  )
+), Part(
+  function_response=FunctionResponse(
+    id='adk-3952b39b-0c70-4a02-b9c0-f2fb707b04f8',
+    name='get_country_to_port',
+    response={
+      'country_to_port': {
+        'France': [
+          {
+            'count': 2572,
+            'port': 445
+          },
+          {
+            'count': 490,
+            'port': 80
+          },
+          {
+            'count': 25,
+            'port': 22
+          },
+        ],
+        'Hong Kong': [
+          {
+            'count': 85,
+            'port': 22
+          },
+          {
+            'count': 14,
+            'port': 8085
+          },
+          {
+            'count': 10,
+            'port': 2087
+          },
+        ],
+        'Tunisia': [
+          {
+            'count': 2875,
+            'port': 445
+          },
+        ],
+        'United States': [
+          {
+            'count': 594,
+            'port': 5902
+          },
+          {
+            'count': 377,
+            'port': 9090
+          },
+          {
+            'count': 375,
+            'port': 5903
+          },
+        ],
+        'Vietnam': [
+          {
+            'count': 1132,
+            'port': 445
+          },
+          {
+            'count': 22,
+            'port': 22
+          },
+          {
+            'count': 2,
+            'port': 80
+          },
+        ]
+      }
+    }
+  )
+)] role='user'
+<<< Agent Response: None
+###################################### NEW EVENT ######################################
+Current Time: 2026-03-10 17:06:10.831960
+[Event] Author: BaselineAgent, Type: Event, Final: False, Partial: None, Content: parts=[Part(
+  function_call=FunctionCall(
+    args={},
+    id='adk-c3437f38-244d-4007-8dc9-9b99ad5bc541',
+    name='waiting'
+  ),
+  thought_signature=b'\n\xc7\x03\x01\x8f=k_\xd0\xb50I\x8bG\xea\x8bP\x9a\xaeb\xe2\xf0Ug8\xd9\x9b\xff\xce\xedmw~l:\xa4\xbd\r\xf8s\x9c\x1d\xd7\xabC\xa6V+{]\xa2\x13\xbf_\x07cL,7YQ-\x7f__\x9e\xc7\xa9\x01vx\x8d\x80nvYOj\x86\x85m\xa2\xfdV\xd2\x86)\x92\x1f\xea\xc9\t\nH\xd8V\xf9...'
+)] role='model'
+METADATA:
+{'cache_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 1374}], 'cached_content_token_count': 1374, 'candidates_token_count': 1, 'candidates_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 1}], 'prompt_token_count': 2238, 'prompt_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 2238}], 'thoughts_token_count': 124, 'tool_use_prompt_token_count': None, 'tool_use_prompt_tokens_details': None, 'total_token_count': 2363, 'traffic_type': <TrafficType.ON_DEMAND: 'ON_DEMAND'>}
+<<< Agent Response: None
+###################################### NEW EVENT ######################################
+Current Time: 2026-03-10 17:06:55.889890
+[Event] Author: BaselineAgent, Type: Event, Final: False, Partial: None, Content: parts=[Part(
+  function_response=FunctionResponse(
+    id='adk-c3437f38-244d-4007-8dc9-9b99ad5bc541',
+    name='waiting',
+    response={
+      'result': 'Successfully waited 45 seconds. You may continue querying.'
+    }
+  )
+)] role='user'
+<<< Agent Response: None
+###################################### NEW EVENT ######################################
+Current Time: 2026-03-10 17:06:58.147522
+[Event] Author: BaselineAgent, Type: Event, Final: False, Partial: None, Content: parts=[Part(
+  function_call=FunctionCall(
+    args={
+      'gte_time_stamp': '2026-03-10T12:00:08Z',
+      'lte_time_stamp': '2026-03-10T16:00:08Z',
+      'size': 5
+    },
+    id='adk-696fd346-59f9-4cea-867a-ba400d351c89',
+    name='get_attacker_asn'
+  ),
+  thought_signature=b'\n\x93\x03\x01\x8f=k_Q\xb4\xd5\xeaO\xfe\xed?$\x83\xc6\xb3\x05\xf8\xd3\xba\x1e\xf4\x8e\xc6\xa7-\xc3\x965\xb1eo*M\xefZs+\xdb\xd9\xac,\x1f\xef\xe0\x8d\x18\xdax\xdbz^\x98pP\r\xfbT\xe2\xb3\x99\xc2E\xc0\xbe\x0e\xbf\x9a\x12\x00H\x8c\'\xab"\xcd\xb6\xd0o\x87_a\x84\x1f\xc2\x84C\x07;\xb3\x99\x08\xb6...'
+)] role='model'
+METADATA:
+{'cache_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 2082}], 'cached_content_token_count': 2082, 'candidates_token_count': 57, 'candidates_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 57}], 'prompt_token_count': 2377, 'prompt_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 2377}], 'thoughts_token_count': 106, 'tool_use_prompt_token_count': None, 'tool_use_prompt_tokens_details': None, 'total_token_count': 2540, 'traffic_type': <TrafficType.ON_DEMAND: 'ON_DEMAND'>}
+<<< Agent Response: None
+###################################### NEW EVENT ######################################
+Current Time: 2026-03-10 17:06:58.222448
+[Event] Author: BaselineAgent, Type: Event, Final: False, Partial: None, Content: parts=[Part(
+  function_response=FunctionResponse(
+    id='adk-696fd346-59f9-4cea-867a-ba400d351c89',
+    name='get_attacker_asn',
+    response={
+      'asn_info': [
+        {
+          'asn': 14061,
+          'count': 4931,
+          'organization': 'DigitalOcean, LLC'
+        },
+        {
+          'asn': 37671,
+          'count': 2875,
+          'organization': 'GLOBALNET-AS'
+        },
+        {
+          'asn': 16347,
+          'count': 2572,
+          'organization': 'ADISTA SAS'
+        },
+        {
+          'asn': 20473,
+          'count': 1830,
+          'organization': 'The Constant Company, LLC'
+        },
+        {
+          'asn': 396982,
+          'count': 1798,
+          'organization': 'Google LLC'
+        },
+      ]
+    }
+  )
+)] role='user'
+<<< Agent Response: None
+###################################### NEW EVENT ######################################
+Current Time: 2026-03-10 17:07:05.356551
+[Event] Author: BaselineAgent, Type: Event, Final: True, Partial: None, Content: parts=[Part(
+  text="""```json
+{
+  "time_window": {
+    "start": "2026-03-10T12:00:08Z",
+    "end": "2026-03-10T16:00:08Z"
+  },
+  "results": [
+    {
+      "tool": "get_total_attacks",
+      "data": {
+        "total_attacks": 28590
+      }
+    },
+    {
+      "tool": "get_top_countries",
+      "data": {
+        "top_countries": [
+          {
+            "count": 8655,
+            "country": "United States"
+          },
+          {
+            "count": 3481,
+            "country": "France"
+          },
+          {
+            "count": 2875,
+            "country": "Tunisia"
+          },
+          {
+            "count": 1429,
+            "country": "Vietnam"
+          },
+          {
+            "count": 1296,
+            "country": "Hong Kong"
+          }
+        ]
+      }
+    },
+    {
+      "tool": "get_attacker_src_ip",
+      "data": {
+        "source_ips": [
+          {
+            "count": 2875,
+            "ip": "41.225.17.210"
+          },
+          {
+            "count": 2572,
+            "ip": "79.98.102.166"
+          },
+          {
+            "count": 1346,
+            "ip": "136.114.97.84"
+          },
+          {
+            "count": 1116,
+            "ip": "149.28.210.73"
+          },
+          {
+            "count": 1083,
+            "ip": "103.199.41.21"
+          }
+        ]
+      }
+    },
+    {
+      "tool": "get_country_to_port",
+      "data": {
+        "country_to_port": {
+          "France": [
+            {
+              "count": 2572,
+              "port": 445
+            },
+            {
+              "count": 490,
+              "port": 80
+            },
+            {
+              "count": 25,
+              "port": 22
+            }
+          ],
+          "Hong Kong": [
+            {
+              "count": 85,
+              "port": 22
+            },
+            {
+              "count": 14,
+              "port": 8085
+            },
+            {
+              "count": 10,
+              "port": 2087
+            }
+          ],
+          "Tunisia": [
+            {
+              "count": 2875,
+              "port": 445
+            }
+          ],
+          "United States": [
+            {
+              "count": 594,
+              "port": 5902
+            },
+            {
+              "count": 377,
+              "port": 9090
+            },
+            {
+              "count": 375,
+              "port": 5903
+            }
+          ],
+          "Vietnam": [
+            {
+              "count": 1132,
+              "port": 445
+            },
+            {
+              "count": 22,
+              "port": 22
+            },
+            {
+              "count": 2,
+              "port": 80
+            }
+          ]
+        }
+      }
+    },
+    {
+      "tool": "get_attacker_asn",
+      "data": {
+        "asn_info": [
+          {
+            "asn": 14061,
+            "count": 4931,
+            "organization": "DigitalOcean, LLC"
+          },
+          {
+            "asn": 37671,
+            "count": 2875,
+            "organization": "GLOBALNET-AS"
+          },
+          {
+            "asn": 16347,
+            "count": 2572,
+            "organization": "ADISTA SAS"
+          },
+          {
+            "asn": 20473,
+            "count": 1830,
+            "organization": "The Constant Company, LLC"
+          },
+          {
+            "asn": 396982,
+            "count": 1798,
+            "organization": "Google LLC"
+          }
+        ]
+      }
+    }
+  ]
+}
+```""",
+  thought_signature=b'\n\xc0\x02\x01\x8f=k_\xdc\x94\x0f\x13\x9f8\xa8\x17\xa5\x15\xb0\xd1\xd8\xecdYtH\x10\x1cA$a\xc4\xdf\x9b`).\xe0\xb4\x8bB%\t\\\xc5\x91}\x1b\xaf\xa7X\xfd\x1f\xb8^\x87c\xc5\xd4\x05-\x01t!\x1b4\xb3\xd5r\x90\x1c\xcd\xe9\xd9"\n\x87\xe4\xcd\x9ai\xbf\x02\x19e6\xc9\t9}\xa5\xa34\x8c\xfcf\x03...'
+)] role='model'
+METADATA:
+{'cache_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 2062}], 'cached_content_token_count': 2062, 'candidates_token_count': 1161, 'candidates_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 1161}], 'prompt_token_count': 2591, 'prompt_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 2591}], 'thoughts_token_count': 91, 'tool_use_prompt_token_count': None, 'tool_use_prompt_tokens_details': None, 'total_token_count': 3843, 'traffic_type': <TrafficType.ON_DEMAND: 'ON_DEMAND'>}
+BaselineAgent finished. Pausing 20s to clear Vertex TPM bucket...
+<<< Agent Response: None
+###################################### NEW EVENT ######################################
+Current Time: 2026-03-10 17:07:30.930553
+[Event] Author: KnownSignalAgent, Type: Event, Final: False, Partial: None, Content: parts=[Part(
+  function_call=FunctionCall(
+    args={
+      'gte_time_stamp': '2026-03-10T12:00:08Z',
+      'lte_time_stamp': '2026-03-10T16:00:08Z',
+      'size': 5
+    },
+    id='adk-e0f8e971-c219-4209-b1a4-7de7ac7fb4dd',
+    name='get_alert_signature'
+  ),
+  thought_signature=b'\n\xb7\x0e\x01\x8f=k_\xca\xdbB\xaa%\xd3\xd5WN\x95P\xd2(\xf2D\xe0\x04\x14\xcfj\xe9\x12\x95\x95W"\xea\xefOH0\x1a\x1e\xb9`\xd8K\xeaA\x91\xc6l\x81 Cj\xc7\x8f\xa7U\xbf\x91q\xe5B"[\x11\xdf\x89v\x0c\x84\x8e\xd0W\xc9\x00,p\xb1+Y\x12\xebv\xc1\xce=\x04\xb6\xb0\x8c\x7f\n\xbc\xfb\x08K...'
+)] role='model'
+METADATA:
+{'cache_tokens_details': None, 'cached_content_token_count': None, 'candidates_token_count': 57, 'candidates_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 57}], 'prompt_token_count': 3561, 'prompt_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 3561}], 'thoughts_token_count': 566, 'tool_use_prompt_token_count': None, 'tool_use_prompt_tokens_details': None, 'total_token_count': 4184, 'traffic_type': <TrafficType.ON_DEMAND: 'ON_DEMAND'>}
+<<< Agent Response: None
+###################################### NEW EVENT ######################################
+Current Time: 2026-03-10 17:07:30.977111
+[Event] Author: KnownSignalAgent, Type: Event, Final: False, Partial: None, Content: parts=[Part(
+  function_response=FunctionResponse(
+    id='adk-e0f8e971-c219-4209-b1a4-7de7ac7fb4dd',
+    name='get_alert_signature',
+    response={
+      'alert_signatures': [
+        {
+          'count': 24692,
+          'signature': 'GPL INFO VNC server response',
+          'signature_id': 2100560
+        },
+        {
+          'count': 2444,
+          'signature': 'SURICATA IPv4 truncated packet',
+          'signature_id': 2200003
+        },
+        {
+          'count': 2444,
+          'signature': 'SURICATA AF-PACKET truncated packet',
+          'signature_id': 2200122
+        },
+        {
+          'count': 1288,
+          'signature': 'ET SCAN MS Terminal Server Traffic on Non-standard Port',
+          'signature_id': 2023753
+        },
+        {
+          'count': 1154,
+          'signature': 'SURICATA STREAM 3way handshake SYN resend different seq on SYN recv',
+          'signature_id': 2210008
+        },
+      ]
+    }
+  )
+)] role='user'
+<<< Agent Response: None
+###################################### NEW EVENT ######################################
+Current Time: 2026-03-10 17:07:40.988399
+[Event] Author: KnownSignalAgent, Type: Event, Final: False, Partial: None, Content: parts=[Part(
+  function_call=FunctionCall(
+    args={
+      'gte_time_stamp': '2026-03-10T12:00:08Z',
+      'lte_time_stamp': '2026-03-10T16:00:08Z',
+      'size': 5
+    },
+    id='adk-5fed4818-900b-4422-aada-cb6d107ac44a',
+    name='get_cve'
+  ),
+  thought_signature=b'\n\x91\x02\x01\x8f=k_\xaf]U\xeeb\xdf\xd6\xacT\x0b\xae\xb1\xe4\xdce\xed\x87\xd2ms]\x1c\xe3\xa6\xba\xa9\xa0\xb8\xd1\xa7\xf7r\xb1\x17e\xe0\x11\x91\xe5\x95\r\x11i\xb3\x02Q (\xf9G\xba\x8b\t\xc3\xff*\xf6\xefR\xb5\x9f\x8bF\xc0`\xa6\xff\tZ\xec\x13\xd4r\x17\xc8\xb3O\xa7S\xdb+w\xe7@g\xe9KK3...'
+)] role='model'
+METADATA:
+{'cache_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 3471}], 'cached_content_token_count': 3471, 'candidates_token_count': 56, 'candidates_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 56}], 'prompt_token_count': 4277, 'prompt_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 4277}], 'thoughts_token_count': 64, 'tool_use_prompt_token_count': None, 'tool_use_prompt_tokens_details': None, 'total_token_count': 4397, 'traffic_type': <TrafficType.ON_DEMAND: 'ON_DEMAND'>}
+<<< Agent Response: None
+###################################### NEW EVENT ######################################
+Current Time: 2026-03-10 17:07:41.022710
+[Event] Author: KnownSignalAgent, Type: Event, Final: False, Partial: None, Content: parts=[Part(
+  function_response=FunctionResponse(
+    id='adk-5fed4818-900b-4422-aada-cb6d107ac44a',
+    name='get_cve',
+    response={
+      'cves': [
+        {
+          'count': 523,
+          'cve': 'CVE-2006-2369'
+        },
+        {
+          'count': 94,
+          'cve': 'CVE-2025-55182 CVE-2025-55182'
+        },
+        {
+          'count': 27,
+          'cve': 'CVE-2024-14007 CVE-2024-14007'
+        },
+        {
+          'count': 25,
+          'cve': 'CVE-2025-30208 CVE-2025-30208'
+        },
+        {
+          'count': 12,
+          'cve': 'CVE-2024-38816 CVE-2024-38816'
+        },
+      ]
+    }
+  )
+)] role='user'
+<<< Agent Response: None
+###################################### NEW EVENT ######################################
+Current Time: 2026-03-10 17:07:44.216190
+[Event] Author: KnownSignalAgent, Type: Event, Final: False, Partial: None, Content: parts=[Part(
+  function_call=FunctionCall(
+    args={
+      'gte_time_stamp': '2026-03-10T12:00:08Z',
+      'lte_time_stamp': '2026-03-10T16:00:08Z',
+      'size': 5
+    },
+    id='adk-726e2392-6aca-4be5-8949-b96f3905249c',
+    name='get_alert_category'
+  ),
+  thought_signature=b"\n\xd7\x01\x01\x8f=k_\x1c\x14)\xae\x11\xad\x9e\xc8\xdd'z\\\xa0\xd2]\xbd\xda\x14\x8c\xd3a8\xe9\x89\n\x81\xef\x83\xc3\x9e-\\\x1c\xe6\xe1B\xfa87\x07\xc5\x18\xf1\x9b\xca\x06\xa3nX\x80y\xc5s\x16\xf2\xf8\x10K\x07\x08\xc4y?\x91\xfa\r\xb7Rv\x8e\xad\xb5Y\x1d\x1dx,\x9a\xdc\xa8\xd5\xb9\xd1\x80W\x91.\x15=...'
+)] role='model'
+METADATA:
+{'cache_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 3443}], 'cached_content_token_count': 3443, 'candidates_token_count': 57, 'candidates_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 57}], 'prompt_token_count': 4530, 'prompt_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 4530}], 'thoughts_token_count': 53, 'tool_use_prompt_token_count': None, 'tool_use_prompt_tokens_details': None, 'total_token_count': 4640, 'traffic_type': <TrafficType.ON_DEMAND: 'ON_DEMAND'>}
+<<< Agent Response: None
+###################################### NEW EVENT ######################################
+Current Time: 2026-03-10 17:07:44.283637
+[Event] Author: KnownSignalAgent, Type: Event, Final: False, Partial: None, Content: parts=[Part(
+  function_response=FunctionResponse(
+    id='adk-726e2392-6aca-4be5-8949-b96f3905249c',
+    name='get_alert_category',
+    response={
+      'alert_categories': [
+        {
+          'category': 'Misc activity',
+          'count': 25936
+        },
+        {
+          'category': 'Generic Protocol Command Decode',
+          'count': 8641
+        },
+        {
+          'category': 'Attempted Information Leak',
+          'count': 2000
+        },
+        {
+          'category': 'Misc Attack',
+          'count': 1465
+        },
+        {
+          'category': 'Attempted Administrator Privilege Gain',
+          'count': 1158
+        },
+      ]
+    }
+  )
+)] role='user'
+<<< Agent Response: None
+###################################### NEW EVENT ######################################
+Current Time: 2026-03-10 17:08:39.576315
+[Event] Author: KnownSignalAgent, Type: Event, Final: False, Partial: None, Content: parts=[Part(
+  function_call=FunctionCall(
+    args={},
+    id='adk-24717f5d-abea-4c04-b7ef-2d5e936de399',
+    name='waiting'
+  ),
+  thought_signature=b'\n\xd4\x01\x01\x8f=k_D~?\x98y\x0c\x8aDG\xad\xe3u\xfc!\x10\xb1\x12>{\xe2\x80\xae\x8f\\\n\xc2\xec\xff\xa8\xc1r\xc6#\x0c(d\x8b\xa4A\xa0\x86\xc4\x150\xafD\x9e\xe1\x0foo\x8e\xed-\x9bAr\x87`4\x81-z\x93\x845Q\xad\xe4]\x14\xd0\xb0\xbf\x8f\xb0>V\x9c\x89\x1e\x8avCRzBv\x8d...'
+)] role='model'
+METADATA:
+{'cache_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 4250}], 'cached_content_token_count': 4250, 'candidates_token_count': 1, 'candidates_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 1}], 'prompt_token_count': 4680, 'prompt_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 4680}], 'thoughts_token_count': 51, 'tool_use_prompt_token_count': None, 'tool_use_prompt_tokens_details': None, 'total_token_count': 4732, 'traffic_type': <TrafficType.ON_DEMAND: 'ON_DEMAND'>}
+<<< Agent Response: None
+###################################### NEW EVENT ######################################
+Current Time: 2026-03-10 17:09:24.645085
+[Event] Author: KnownSignalAgent, Type: Event, Final: False, Partial: None, Content: parts=[Part(
+  function_response=FunctionResponse(
+    id='adk-24717f5d-abea-4c04-b7ef-2d5e936de399',
+    name='waiting',
+    response={
+      'result': 'Successfully waited 45 seconds. You may continue querying.'
+    }
+  )
+)] role='user'
+<<< Agent Response: None
+###################################### NEW EVENT ######################################
+Current Time: 2026-03-10 17:09:30.751779
+[Event] Author: KnownSignalAgent, Type: Event, Final: True, Partial: None, Content: parts=[Part(
+  text="""```json
+{
+  "time_window": {
+    "start": "2026-03-10T12:00:08Z",
+    "end": "2026-03-10T16:00:08Z"
+  },
+  "results": [
+    {
+      "tool": "get_alert_signature",
+      "data": {
+        "alert_signatures": [
+          {
+            "count": 24692,
+            "signature": "GPL INFO VNC server response",
+            "signature_id": 2100560
+          },
+          {
+            "count": 2444,
+            "signature": "SURICATA IPv4 truncated packet",
+            "signature_id": 2200003
+          },
+          {
+            "count": 2444,
+            "signature": "SURICATA AF-PACKET truncated packet",
+            "signature_id": 2200122
+          },
+          {
+            "count": 1288,
+            "signature": "ET SCAN MS Terminal Server Traffic on Non-standard Port",
+            "signature_id": 2023753
+          },
+          {
+            "count": 1154,
+            "signature": "SURICATA STREAM 3way handshake SYN resend different seq on SYN recv",
+            "signature_id": 2210008
+          }
+        ]
+      }
+    },
+    {
+      "tool": "get_cve",
+      "data": {
+        "cves": [
+          {
+            "count": 523,
+            "cve": "CVE-2006-2369"
+          },
+          {
+            "count": 94,
+            "cve": "CVE-2025-55182 CVE-2025-55182"
+          },
+          {
+            "count": 27,
+            "cve": "CVE-2024-14007 CVE-2024-14007"
+          },
+          {
+            "count": 25,
+            "cve": "CVE-2025-30208 CVE-2025-30208"
+          },
+          {
+            "count": 12,
+            "cve": "CVE-2024-38816 CVE-2024-38816"
+          }
+        ]
+      }
+    },
+    {
+      "tool": "get_alert_category",
+      "data": {
+        "alert_categories": [
+          {
+            "category": "Misc activity",
+            "count": 25936
+          },
+          {
+            "category": "Generic Protocol Command Decode",
+            "count": 8641
+          },
+          {
+            "category": "Attempted Information Leak",
+            "count": 2000
+          },
+          {
+            "category": "Misc Attack",
+            "count": 1465
+          },
+          {
+            "category": "Attempted Administrator Privilege Gain",
+            "count": 1158
+          }
+        ]
+      }
+    }
+  ]
+}
+```""",
+  thought_signature=b'\n\xbe\x02\x01\x8f=k_\x01\xe6txH\x0c\xd3\xe72*v\xfa\xcc\x9a\xe5Z\x06\x89x\x9c*\xb9Q\x96\xd8\x026\xeb\x9a \x9e\x12%\x85L\x1d\x115\xe0\xcao:z\x9f\x96L\x1c\xab\x9fw\xf9\xad\x03\xacm\x9d\xfa\xb7T*\x18\xd9S\xdc\x13P\x07\x1b\n\x8e\xe8\xd3\xf8b\x1aL\xd8\xe1:\x1e\xde\xb1:i\xf0\x90\xe9\x8c\xb1...'
+)] role='model'
+METADATA:
+{'cache_tokens_details': None, 'cached_content_token_count': None, 'candidates_token_count': 796, 'candidates_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 796}], 'prompt_token_count': 4746, 'prompt_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 4746}], 'thoughts_token_count': 69, 'tool_use_prompt_token_count': None, 'tool_use_prompt_tokens_details': None, 'total_token_count': 5611, 'traffic_type': <TrafficType.ON_DEMAND: 'ON_DEMAND'>}
+KnownSignalAgent finished. Pausing 20s to clear Vertex TPM bucket...
+<<< Agent Response: None
+###################################### NEW EVENT ######################################
+Current Time: 2026-03-10 17:09:56.441979
+[Event] Author: CredentialNoiseAgent, Type: Event, Final: False, Partial: None, Content: parts=[Part(
+  function_call=FunctionCall(
+    args={
+      'gte_time_stamp': '2026-03-10T12:00:08Z',
+      'lte_time_stamp': '2026-03-10T16:00:08Z'
+    },
+    id='adk-4448ce60-0c41-4570-8318-d33d82c38db6',
+    name='get_input_usernames'
+  ),
+  thought_signature=b'\n\x90\x06\x01\x8f=k_TqD\xbcyz\xbb(\xa4\xbe\xea0"~\xad7\xdb_\x1d\x92Ti\x88\xbc\x8dH\xdes\x81\x946U\xd9\xc2\xbf\x03:!\x0b;\x8f\x98R\x13`8h\xb8g/e{\xcc\x0e6\xfc\x14\x19\xf4z\xe7\x93\xfb\xc2\xa8\xee\x04\x83Z=\xfc9r/|\x92$\xf1\xf1\xe5\x90p\xa2\x15\xb7\x0f\xd8\xd27...'
+)] role='model'
+METADATA:
+{'cache_tokens_details': None, 'cached_content_token_count': None, 'candidates_token_count': 56, 'candidates_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 56}], 'prompt_token_count': 4955, 'prompt_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 4955}], 'thoughts_token_count': 239, 'tool_use_prompt_token_count': None, 'tool_use_prompt_tokens_details': None, 'total_token_count': 5250, 'traffic_type': <TrafficType.ON_DEMAND: 'ON_DEMAND'>}
+<<< Agent Response: None
+###################################### NEW EVENT ######################################
+Current Time: 2026-03-10 17:09:56.490779
+[Event] Author: CredentialNoiseAgent, Type: Event, Final: False, Partial: None, Content: parts=[Part(
+  function_response=FunctionResponse(
+    id='adk-4448ce60-0c41-4570-8318-d33d82c38db6',
+    name='get_input_usernames',
+    response={
+      'usernames': [
+        {
+          'count': 218,
+          'username': 'root'
+        },
+        {
+          'count': 87,
+          'username': 'admin'
+        },
+        {
+          'count': 58,
+          'username': '345gs5662d34'
+        },
+        {
+          'count': 44,
+          'username': 'user'
+        },
+        {
+          'count': 38,
+          'username': 'clawd'
+        },
+        <... 5 more items ...>,
+      ]
+    }
+  )
+)] role='user'
+<<< Agent Response: None
+###################################### NEW EVENT ######################################
+Current Time: 2026-03-10 17:10:00.382689
+[Event] Author: CredentialNoiseAgent, Type: Event, Final: False, Partial: None, Content: parts=[Part(
+  function_call=FunctionCall(
+    args={
+      'gte_time_stamp': '2026-03-10T12:00:08Z',
+      'lte_time_stamp': '2026-03-10T16:00:08Z',
+      'size': 5
+    },
+    id='adk-05f10b66-7127-4252-8066-2b7f89a59068',
+    name='get_input_passwords'
+  ),
+  thought_signature=b'\n\xc5\x01\x01\x8f=k_\xecT@bf\xb4,7\xebHU\r\x05\x8dI{a\xac1\xea\x08\x14\xcc\xcfj\xe4\x1aH\xc6\xf8\xf2\x88^\xf1\xffK(g\xd6X\x1f\x97\xaeD\r\xc3\xc8\x19\xf8lK\x8by\xbc\x15B\xe6\xe7\xe2$K\xc3\xab=\x0eM\xff![\xc6\xdc\x97\xc3y\xf2\xd8Ba\x92|\x8d\x9c\xa1T\x1c$\xfe\x07\xce...'
+)] role='model'
+METADATA:
+{'cache_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 4539}], 'cached_content_token_count': 4539, 'candidates_token_count': 58, 'candidates_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 58}], 'prompt_token_count': 5313, 'prompt_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 5313}], 'thoughts_token_count': 46, 'tool_use_prompt_token_count': None, 'tool_use_prompt_tokens_details': None, 'total_token_count': 5417, 'traffic_type': <TrafficType.ON_DEMAND: 'ON_DEMAND'>}
+<<< Agent Response: None
+###################################### NEW EVENT ######################################
+Current Time: 2026-03-10 17:10:00.412790
+[Event] Author: CredentialNoiseAgent, Type: Event, Final: False, Partial: None, Content: parts=[Part(
+  function_response=FunctionResponse(
+    id='adk-05f10b66-7127-4252-8066-2b7f89a59068',
+    name='get_input_passwords',
+    response={
+      'passwords': [
+        {
+          'count': 62,
+          'password': '123456'
+        },
+        {
+          'count': 58,
+          'password': '3245gs5662d34'
+        },
+        {
+          'count': 58,
+          'password': '345gs5662d34'
+        },
+        {
+          'count': 53,
+          'password': 'password'
+        },
+        {
+          'count': 44,
+          'password': '12345678'
+        },
+      ]
+    }
+  )
+)] role='user'
+<<< Agent Response: None
+###################################### NEW EVENT ######################################
+Current Time: 2026-03-10 17:10:02.058802
+[Event] Author: CredentialNoiseAgent, Type: Event, Final: False, Partial: None, Content: parts=[Part(
+  function_call=FunctionCall(
+    args={},
+    id='adk-b4e8bea2-9373-4b88-9685-a85290591d84',
+    name='waiting'
+  ),
+  thought_signature=b'\n\xd8\x01\x01\x8f=k_hXG\x10\xba\x98\xd6\xb4;\xa2\xa2\x01\xff\\\x81\xbeg-a\xfc\x06\xef\x11\xc3\r\xccH\x89\x8a\xbeZa\xe5/\xb4;\xed\xd5\xf7_\xd9\x00XCQ;\xfeW\x9f>\x97\xcc;\xe2]\x85o\x8d%\x0e\x13\x1bb\x13%7\x88\x9b\x07\xe2\x01N\xbb\x8eU\xf4\x99y\x98\xfe\xdb\x15\xd9v\xfd\xbe\xb0P\x82...'
+)] role='model'
+METADATA:
+{'cache_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 4491}], 'cached_content_token_count': 4491, 'candidates_token_count': 1, 'candidates_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 1}], 'prompt_token_count': 5478, 'prompt_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 5478}], 'thoughts_token_count': 46, 'tool_use_prompt_token_count': None, 'tool_use_prompt_tokens_details': None, 'total_token_count': 5525, 'traffic_type': <TrafficType.ON_DEMAND: 'ON_DEMAND'>}
+<<< Agent Response: None
+###################################### NEW EVENT ######################################
+Current Time: 2026-03-10 17:10:47.122962
+[Event] Author: CredentialNoiseAgent, Type: Event, Final: False, Partial: None, Content: parts=[Part(
+  function_response=FunctionResponse(
+    id='adk-b4e8bea2-9373-4b88-9685-a85290591d84',
+    name='waiting',
+    response={
+      'result': 'Successfully waited 45 seconds. You may continue querying.'
+    }
+  )
+)] role='user'
+<<< Agent Response: None
+###################################### NEW EVENT ######################################
+Current Time: 2026-03-10 17:10:50.590808
+[Event] Author: CredentialNoiseAgent, Type: Event, Final: False, Partial: None, Content: parts=[Part(
+  function_call=FunctionCall(
+    args={
+      'gte_time_stamp': '2026-03-10T12:00:08Z',
+      'lte_time_stamp': '2026-03-10T16:00:08Z',
+      'size': 5
+    },
+    id='adk-0f6dfc02-a53d-4e3f-8d47-1622a0028ffe',
+    name='get_p0f_os_distribution'
+  ),
+  thought_signature=b'\n\xc1\x02\x01\x8f=k_\x18Bwp\xa6S\xeet\xfeV\xd8\xe7\x9b#\xe7n\x88\xef\xaa\xf1\x83\xf7l\x12Ls\xb0T\x8f2\xee{\xa2gW\xec\x92\xee\xfdg\xb3\xe6|20"A\x85|\xfe2\xd3M\x88\x85\xa9p\x19*\xe5\x0bVq\x81\xfd\xe5Q\x8c \xa4%\x90\x13a\xa3\x12\xab\xf8\x02\xde\x01\xeb\xd5\xd9\x97\x10\xf7i\x9f...'
+)] role='model'
+METADATA:
+{'cache_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 5368}], 'cached_content_token_count': 5368, 'candidates_token_count': 61, 'candidates_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 61}], 'prompt_token_count': 5539, 'prompt_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 5539}], 'thoughts_token_count': 81, 'tool_use_prompt_token_count': None, 'tool_use_prompt_tokens_details': None, 'total_token_count': 5681, 'traffic_type': <TrafficType.ON_DEMAND: 'ON_DEMAND'>}
+<<< Agent Response: None
+###################################### NEW EVENT ######################################
+Current Time: 2026-03-10 17:10:51.010230
+[Event] Author: CredentialNoiseAgent, Type: Event, Final: False, Partial: None, Content: parts=[Part(
+  function_response=FunctionResponse(
+    id='adk-0f6dfc02-a53d-4e3f-8d47-1622a0028ffe',
+    name='get_p0f_os_distribution',
+    response={
+      'os_distribution': [
+        {
+          'count': 63893,
+          'os': 'Linux 2.2.x-3.x'
+        },
+        {
+          'count': 7447,
+          'os': 'Linux 3.1-3.10'
+        },
+        {
+          'count': 8570,
+          'os': 'Linux 3.11 and newer'
+        },
+        {
+          'count': 2541,
+          'os': 'Linux 3.x'
+        },
+        {
+          'count': 78650,
+          'os': 'Windows NT kernel'
+        },
+      ]
+    }
+  )
+)] role='user'
+<<< Agent Response: None
+###################################### NEW EVENT ######################################
+Current Time: 2026-03-10 17:10:58.864046
+[Event] Author: CredentialNoiseAgent, Type: Event, Final: True, Partial: None, Content: parts=[Part(
+  text="""```json
+{
+  "time_window": {
+    "start": "2026-03-10T12:00:08Z",
+    "end": "2026-03-10T16:00:08Z"
+  },
+  "results": [
+    {
+      "tool": "get_input_usernames",
+      "data": {
+        "usernames": [
+          {
+            "count": 218,
+            "username": "root"
+          },
+          {
+            "count": 87,
+            "username": "admin"
+          },
+          {
+            "count": 58,
+            "username": "345gs5662d34"
+          },
+          {
+            "count": 44,
+            "username": "user"
+          },
+          {
+            "count": 38,
+            "username": "clawd"
+          },
+          {
+            "count": 31,
+            "username": "ubuntu"
+          },
+          {
+            "count": 25,
+            "username": "test"
+          },
+          {
+            "count": 20,
+            "username": "solana"
+          },
+          {
+            "count": 15,
+            "username": "sol"
+          },
+          {
+            "count": 11,
+            "username": "db2inst1"
+          }
+        ]
+      }
+    },
+    {
+      "tool": "get_input_passwords",
+      "data": {
+        "passwords": [
+          {
+            "count": 62,
+            "password": "123456"
+          },
+          {
+            "count": 58,
+            "password": "3245gs5662d34"
+          },
+          {
+            "count": 58,
+            "password": "345gs5662d34"
+          },
+          {
+            "count": 53,
+            "password": "password"
+          },
+          {
+            "count": 44,
+            "password": "12345678"
+          }
+        ]
+      }
+    },
+    {
+      "tool": "get_p0f_os_distribution",
+      "data": {
+        "os_distribution": [
+          {
+            "count": 63893,
+            "os": "Linux 2.2.x-3.x"
+          },
+          {
+            "count": 7447,
+            "os": "Linux 3.1-3.10"
+          },
+          {
+            "count": 8570,
+            "os": "Linux 3.11 and newer"
+          },
+          {
+            "count": 2541,
+            "os": "Linux 3.x"
+          },
+          {
+            "count": 78650,
+            "os": "Windows NT kernel"
+          }
+        ]
+      }
+    }
+  ]
+}
+```""",
+  thought_signature=b'\n\xda\x04\x01\x8f=k_\xe5L\xc6a\xc3\x06)(\x8e\xa3\xfb\xc1O;\xd0\xae>\xfa\xf1b\xbb\xa8\xbc3ap\xf2%v\x08c\xb3F\xca\x1d\x17\xa7\xfb\x8d\x8f\xd9j\xf6\x94,@W\x03\xa8\x837\x84\xa1/P\xec_P3T\x16{\xf8\x97\xa4\xeb?=K1V1\x9b\x8d\xa9V\xb2t\x9c\x15Y\x0e\x10\x80I\x8b\x1b\xd6\xe6...'
+)] role='model'
+METADATA:
+{'cache_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 5311}], 'cached_content_token_count': 5311, 'candidates_token_count': 753, 'candidates_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 753}], 'prompt_token_count': 5745, 'prompt_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 5745}], 'thoughts_token_count': 159, 'tool_use_prompt_token_count': None, 'tool_use_prompt_tokens_details': None, 'total_token_count': 6657, 'traffic_type': <TrafficType.ON_DEMAND: 'ON_DEMAND'>}
+CredentialNoiseAgent finished. Pausing 20s to clear Vertex TPM bucket...
+<<< Agent Response: None
+###################################### NEW EVENT ######################################
+Current Time: 2026-03-10 17:11:23.027719
+[Event] Author: HoneypotSpecificAgent, Type: Event, Final: False, Partial: None, Content: parts=[Part(
+  function_call=FunctionCall(
+    args={
+      'gte_time_stamp': '2026-03-10T12:00:08Z',
+      'lte_time_stamp': '2026-03-10T16:00:08Z',
+      'size': 10
+    },
+    id='adk-93dff5e4-8714-42b6-988b-49ca53556dfe',
+    name='redis_duration_and_bytes'
+  ),
+  thought_signature=b'\n\xa8\x07\x01\x8f=k_P\xc1m\xa7\xf6\x14n\x82\x0c\xa6\x9d&\xda\xb2\x9a\xc0D`\xb7\xf7\xd5\x1cD\xdc\xeb\xc5\xb4\x80\xaf=8.)\x87\xec\xf2\x02F{e\xa9\x97\xdc\xdb\xd6\x8d\xe6\xd2\xe4\x83@\x93\x8f0\x8eg\xbe\n\xd1\x9c\xe0=\xf7\xb9\x10ye\x97x\x8em}@8\x99\xe0L\xc5\xd4\xc5\x82\x16;\x85\x07\xfa\x02\xc4\xc8...'
+), Part(
+  function_call=FunctionCall(
+    args={
+      'gte_time_stamp': '2026-03-10T12:00:08Z',
+      'lte_time_stamp': '2026-03-10T16:00:08Z',
+      'size': 10
+    },
+    id='adk-7c786834-2282-45e1-b2ec-96a00d1b690b',
+    name='adbhoney_input'
+  )
+)] role='model'
+METADATA:
+{'cache_tokens_details': None, 'cached_content_token_count': None, 'candidates_token_count': 116, 'candidates_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 116}], 'prompt_token_count': 7148, 'prompt_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 7148}], 'thoughts_token_count': 301, 'tool_use_prompt_token_count': None, 'tool_use_prompt_tokens_details': None, 'total_token_count': 7565, 'traffic_type': <TrafficType.ON_DEMAND: 'ON_DEMAND'>}
+<<< Agent Response: None
+###################################### NEW EVENT ######################################
+Current Time: 2026-03-10 17:11:23.066980
+[Event] Author: HoneypotSpecificAgent, Type: Event, Final: False, Partial: None, Content: parts=[Part(
+  function_response=FunctionResponse(
+    id='adk-93dff5e4-8714-42b6-988b-49ca53556dfe',
+    name='redis_duration_and_bytes',
+    response={
+      'aggregations': {
+        'actions': {
+          'buckets': [
+            {<... 2 items at Max depth ...>},
+            {<... 2 items at Max depth ...>},
+            {<... 2 items at Max depth ...>},
+            {<... 2 items at Max depth ...>},
+            {<... 2 items at Max depth ...>},
+            <... 5 more items ...>,
+          ],
+          'doc_count_error_upper_bound': 0,
+          'sum_other_doc_count': 4
+        }
+      },
+      'hits': [],
+      'total': 66
+    }
+  )
+), Part(
+  function_response=FunctionResponse(
+    id='adk-7c786834-2282-45e1-b2ec-96a00d1b690b',
+    name='adbhoney_input',
+    response={
+      'aggregations': {
+        'inputs': {
+          'buckets': [
+            {<... 2 items at Max depth ...>},
+            {<... 2 items at Max depth ...>},
+            {<... 2 items at Max depth ...>},
+            {<... 2 items at Max depth ...>},
+            {<... 2 items at Max depth ...>},
+            <... 5 more items ...>,
+          ],
+          'doc_count_error_upper_bound': 0,
+          'sum_other_doc_count': 1
+        }
+      },
+      'hits': [],
+      'total': 51
+    }
+  )
+)] role='user'
+<<< Agent Response: None
+###################################### NEW EVENT ######################################
+Current Time: 2026-03-10 17:11:34.035045
+[Event] Author: HoneypotSpecificAgent, Type: Event, Final: False, Partial: None, Content: parts=[Part(
+  function_call=FunctionCall(
+    args={},
+    id='adk-c65c7db6-7449-45f7-86e4-f5ba2863f2a5',
+    name='waiting'
+  ),
+  thought_signature=b"\n\xf9\x01\x01\x8f=k_\x17'\x14w\xd0h\xdc\xb3?utw\x9d\xf3\x1fsq\xc8%\xd4\x81\x05#1{\xea\t\x0b\xc1\r\x99\xce\xfc\xa2\xbbcOv\xd2\xe7-\x99\xdb\x8f|\xe7o\x13+\xebnf\x00T\xcf\xba\x817ji\xf4\xf1\xcb\xc4\xf8oO\xab\xfd\xc3\xa3U]K\x1a\x00\xbd\x94\xf1J\x01t\xd9\xdd\xe7\xb5+S\xd9...'
+)] role='model'
+METADATA:
+{'cache_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 7190}], 'cached_content_token_count': 7190, 'candidates_token_count': 1, 'candidates_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 1}], 'prompt_token_count': 8047, 'prompt_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 8047}], 'thoughts_token_count': 64, 'tool_use_prompt_token_count': None, 'tool_use_prompt_tokens_details': None, 'total_token_count': 8112, 'traffic_type': <TrafficType.ON_DEMAND: 'ON_DEMAND'>}
+<<< Agent Response: None
+###################################### NEW EVENT ######################################
+Current Time: 2026-03-10 17:12:19.100485
+[Event] Author: HoneypotSpecificAgent, Type: Event, Final: False, Partial: None, Content: parts=[Part(
+  function_response=FunctionResponse(
+    id='adk-c65c7db6-7449-45f7-86e4-f5ba2863f2a5',
+    name='waiting',
+    response={
+      'result': 'Successfully waited 45 seconds. You may continue querying.'
+    }
+  )
+)] role='user'
+<<< Agent Response: None
+###################################### NEW EVENT ######################################
+Current Time: 2026-03-10 17:12:21.556898
+[Event] Author: HoneypotSpecificAgent, Type: Event, Final: False, Partial: None, Content: parts=[Part(
+  function_call=FunctionCall(
+    args={
+      'gte_time_stamp': '2026-03-10T12:00:08Z',
+      'lte_time_stamp': '2026-03-10T16:00:08Z',
+      'size': 10
+    },
+    id='adk-74fc3a54-d46e-4cb2-9524-e21ef37b1a00',
+    name='adbhoney_malware_samples'
+  ),
+  thought_signature=b"\nn\x01\x8f=k_\xcc\\\xb1\x0fa\x93{\xc5\xf1v\xf2R\xe5\xf7\x16\xa2\x87\xfb\xb0\xd9\xa7\xe3g\xf8\xa8\xe9\xb7\xd5\x07$5\xa4xN.0=q\xcf\x0b'\xa3fu\x06\xe2\xee\x95AK\xff\xfc7\xa2\xb3\xc0\xa3\xcc;xf\x94\xf3TNL\x13\xff\xb2 \xf64\xb5\xf3\x82\xf2\xc1J#\xd9\xcb\xbcxw|\x87\xe2'\xd5\x92...'
+), Part(
+  function_call=FunctionCall(
+    args={
+      'gte_time_stamp': '2026-03-10T12:00:08Z',
+      'lte_time_stamp': '2026-03-10T16:00:08Z',
+      'size': 10
+    },
+    id='adk-aaaac651-a059-4aeb-b7bb-72bf537b7170',
+    name='conpot_input'
+  )
+)] role='model'
+METADATA:
+{'cache_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 7173}], 'cached_content_token_count': 7173, 'candidates_token_count': 116, 'candidates_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 116}], 'prompt_token_count': 8126, 'prompt_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 8126}], 'thoughts_token_count': 25, 'tool_use_prompt_token_count': None, 'tool_use_prompt_tokens_details': None, 'total_token_count': 8267, 'traffic_type': <TrafficType.ON_DEMAND: 'ON_DEMAND'>}
+<<< Agent Response: None
+###################################### NEW EVENT ######################################
+Current Time: 2026-03-10 17:12:21.633550
+[Event] Author: HoneypotSpecificAgent, Type: Event, Final: False, Partial: None, Content: parts=[Part(
+  function_response=FunctionResponse(
+    id='adk-74fc3a54-d46e-4cb2-9524-e21ef37b1a00',
+    name='adbhoney_malware_samples',
+    response={
+      'aggregations': {
+        'malware_files': {
+          'buckets': [
+            {<... 2 items at Max depth ...>},
+            {<... 2 items at Max depth ...>},
+            {<... 2 items at Max depth ...>},
+            {<... 2 items at Max depth ...>},
+          ],
+          'doc_count_error_upper_bound': 0,
+          'sum_other_doc_count': 0
+        }
+      },
+      'hits': [],
+      'total': 51
+    }
+  )
+), Part(
+  function_response=FunctionResponse(
+    id='adk-aaaac651-a059-4aeb-b7bb-72bf537b7170',
+    name='conpot_input',
+    response={
+      'aggregations': {
+        'requests': {
+          'buckets': [
+            {<... 2 items at Max depth ...>},
+          ],
+          'doc_count_error_upper_bound': 0,
+          'sum_other_doc_count': 0
+        }
+      },
+      'hits': [],
+      'total': 37
+    }
+  )
+)] role='user'
+<<< Agent Response: None
+###################################### NEW EVENT ######################################
+Current Time: 2026-03-10 17:12:24.981675
+[Event] Author: HoneypotSpecificAgent, Type: Event, Final: False, Partial: None, Content: parts=[Part(
+  function_call=FunctionCall(
+    args={},
+    id='adk-51d9e41c-f2ae-4972-abb7-f71e14c9a6a0',
+    name='waiting'
+  ),
+  thought_signature=b"\n\x80\x02\x01\x8f=k_I\xc3,\x9f.\xdbA\x11`x\xe6\xcd\x1c\xb9`\x9d\xb9.\xd0\xd8H'\xdd3\xa2\x0fg\x83e\xf4\xf6T\xe9\x03\x1b\xe4\xdfM\x19\x9c\r\x0b\xd5\x18k\x8a\x13\x93\xb7A\xfa\xc5\x17\x94\x95\xa4s\xe0\xa5\xbb\xde~\xe2\x08\xd6 \xa5^\xb4\x89-\x93,\x89\xdamS+\xd4\x02\xe3\x0fs\x9f\x90\xfa\xda\x8e\xca...'
+)] role='model'
+METADATA:
+{'cache_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 8003}], 'cached_content_token_count': 8003, 'candidates_token_count': 1, 'candidates_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 1}], 'prompt_token_count': 8614, 'prompt_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 8614}], 'thoughts_token_count': 66, 'tool_use_prompt_token_count': None, 'tool_use_prompt_tokens_details': None, 'total_token_count': 8681, 'traffic_type': <TrafficType.ON_DEMAND: 'ON_DEMAND'>}
+<<< Agent Response: None
+###################################### NEW EVENT ######################################
+Current Time: 2026-03-10 17:13:10.037077
+[Event] Author: HoneypotSpecificAgent, Type: Event, Final: False, Partial: None, Content: parts=[Part(
+  function_response=FunctionResponse(
+    id='adk-51d9e41c-f2ae-4972-abb7-f71e14c9a6a0',
+    name='waiting',
+    response={
+      'result': 'Successfully waited 45 seconds. You may continue querying.'
+    }
+  )
+)] role='user'
+<<< Agent Response: None
+###################################### NEW EVENT ######################################
+Current Time: 2026-03-10 17:13:12.309226
+[Event] Author: HoneypotSpecificAgent, Type: Event, Final: False, Partial: None, Content: parts=[Part(
+  function_call=FunctionCall(
+    args={
+      'gte_time_stamp': '2026-03-10T12:00:08Z',
+      'lte_time_stamp': '2026-03-10T16:00:08Z',
+      'size': 10
+    },
+    id='adk-2d44f2db-538f-4376-80de-f61593b460af',
+    name='tanner_unifrom_resource_search'
+  ),
+  thought_signature=b'\nw\x01\x8f=k_\x90IH\xe0\xb8\x19\x16\xc8\xf5k\xf7\xde\x121\\\xb5\xd6\x8b\xcb\x18G\rNG|W\xb5\xb3Q\xfc\xe0v\xa7\xb0|\xf1W\xc1\xd7p\xea=\xe3\x9eV,{\xa7.\t\x1a\x15Z\xd1\x1d\xfeuA\xfcd\xb0\xb8\xf1\x83<&y\x9a\x92\xe0\xcb\xaa\xac\x1fO\x0c\xaf\xc36\xf5\xda\xb4\x865\x8a\x7f(\xe9\x1cJ...'
+), Part(
+  function_call=FunctionCall(
+    args={
+      'gte_time_stamp': '2026-03-10T12:00:08Z',
+      'lte_time_stamp': '2026-03-10T16:00:08Z',
+      'size': 10
+    },
+    id='adk-21b8a3bd-fcf4-4aff-9dc7-c4d51bd8f807',
+    name='conpot_protocol'
+  )
+)] role='model'
+METADATA:
+{'cache_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 7986}], 'cached_content_token_count': 7986, 'candidates_token_count': 118, 'candidates_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 118}], 'prompt_token_count': 8695, 'prompt_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 8695}], 'thoughts_token_count': 27, 'tool_use_prompt_token_count': None, 'tool_use_prompt_tokens_details': None, 'total_token_count': 8840, 'traffic_type': <TrafficType.ON_DEMAND: 'ON_DEMAND'>}
+<<< Agent Response: None
+###################################### NEW EVENT ######################################
+Current Time: 2026-03-10 17:13:12.345832
+[Event] Author: HoneypotSpecificAgent, Type: Event, Final: False, Partial: None, Content: parts=[Part(
+  function_response=FunctionResponse(
+    id='adk-2d44f2db-538f-4376-80de-f61593b460af',
+    name='tanner_unifrom_resource_search',
+    response={
+      'aggregations': {
+        'paths': {
+          'buckets': [
+            {<... 2 items at Max depth ...>},
+            {<... 2 items at Max depth ...>},
+            {<... 2 items at Max depth ...>},
+            {<... 2 items at Max depth ...>},
+            {<... 2 items at Max depth ...>},
+            <... 5 more items ...>,
+          ],
+          'doc_count_error_upper_bound': 2,
+          'sum_other_doc_count': 559
+        }
+      },
+      'hits': [],
+      'total': 627
+    }
+  )
+), Part(
+  function_response=FunctionResponse(
+    id='adk-21b8a3bd-fcf4-4aff-9dc7-c4d51bd8f807',
+    name='conpot_protocol',
+    response={
+      'aggregations': {
+        'protocols': {
+          'buckets': [
+            {<... 2 items at Max depth ...>},
+            {<... 2 items at Max depth ...>},
+            {<... 2 items at Max depth ...>},
+          ],
+          'doc_count_error_upper_bound': 0,
+          'sum_other_doc_count': 0
+        }
+      },
+      'hits': [],
+      'total': 37
+    }
+  )
+)] role='user'
+<<< Agent Response: None
+###################################### NEW EVENT ######################################
+Current Time: 2026-03-10 17:13:29.125180
+[Event] Author: HoneypotSpecificAgent, Type: Event, Final: True, Partial: None, Content: parts=[Part(
+  text="""```json
+{
+  "time_window": {
+    "start": "2026-03-10T12:00:08Z",
+    "end": "2026-03-10T16:00:08Z"
+  },
+  "results": [
+    {
+      "tool": "redis_duration_and_bytes",
+      "data": {
+        "top_actions": [
+          {
+            "action": "Closed",
+            "count": 18
+          },
+          {
+            "action": "NewConnect",
+            "count": 18
+          },
+          {
+            "action": "INFO",
+            "count": 6
+          },
+          {
+            "action": "PING",
+            "count": 6
+          },
+          {
+            "action": "NONEXISTENT",
+            "count": 4
+          },
+          {
+            "action": "QUIT",
+            "count": 4
+          }
+        ],
+        "total_actions": 66
+      }
+    },
+    {
+      "tool": "adbhoney_input",
+      "data": {
+        "top_inputs": [
+          {
+            "input": "/data/local/tmp/nohup /data/local/tmp/trinity",
+            "count": 2
+          },
+          {
+            "input": "/data/local/tmp/nohup su -c /data/local/tmp/trinity",
+            "count": 2
+          },
+          {
+            "input": "am start -n com.ufo.miner/com.example.test.MainActivity",
+            "count": 2
+          },
+          {
+            "input": "chmod 0755 /data/local/tmp/nohup",
+            "count": 2
+          },
+          {
+            "input": "chmod 0755 /data/local/tmp/trinity",
+            "count": 2
+          },
+          {
+            "input": "pm install /data/local/tmp/ufo.apk",
+            "count": 2
+          },
+          {
+            "input": "pm path com.ufo.miner",
+            "count": 2
+          },
+          {
+            "input": "ps | grep trinity",
+            "count": 2
+          },
+          {
+            "input": "rm -rf /data/local/tmp/*",
+            "count": 2
+          },
+          {
+            "input": "rm /data/local/tmp/ufo.apk",
+            "count": 2
+          }
+        ],
+        "total_inputs": 51
+      }
+    },
+    {
+      "tool": "adbhoney_malware_samples",
+      "data": {
+        "top_malware_samples": [
+          {
+            "sample": "dl/0d3c687ffc30e185b836b99bd07fa2b0d460a090626f6bbbd40a95b98ea70257.raw",
+            "count": 2
+          },
+          {
+            "sample": "dl/76ae6d577ba96b1c3a1de8b21c32a9faf6040f7e78d98269e0469d896c29dc64.raw",
+            "count": 2
+          },
+          {
+            "sample": "dl/a1b6223a3ecb37b9f7e4a52909a08d9fd8f8f80aee46466127ea0f078c7f5437.raw",
+            "count": 2
+          },
+          {
+            "sample": "dl/d7188b8c575367e10ea8b36ec7cca067ef6ce6d26ffa8c74b3faa0b14ebb8ff0.raw",
+            "count": 2
+          }
+        ],
+        "total_malware_samples": 51
+      }
+    },
+    {
+      "tool": "conpot_input",
+      "data": {
+        "top_inputs": [
+          {
+            "input": "b'\\x01I20100\\n'",
+            "count": 1
+          }
+        ],
+        "total_inputs": 37
+      }
+    },
+    {
+      "tool": "tanner_unifrom_resource_search",
+      "data": {
+        "top_uris": [
+          {
+            "uri": "/",
+            "count": 41
+          },
+          {
+            "uri": "/.env",
+            "count": 9
+          },
+          {
+            "uri": "/.aws/credentials",
+            "count": 3
+          },
+          {
+            "uri": "/.git/config",
+            "count": 3
+          },
+          {
+            "uri": "/%2eenv",
+            "count": 2
+          },
+          {
+            "uri": "/%2egit/%63onfig",
+            "count": 2
+          },
+          {
+            "uri": "/%2f%2eenv",
+            "count": 2
+          },
+          {
+            "uri": "/%2fbackend%2f%2eenv",
+            "count": 2
+          },
+          {
+            "uri": "/..%5c..%5c..%5c..%5c..%5c..%5cvar/log/apache2/access.log",
+            "count": 2
+          },
+          {
+            "uri": "/.EnV",
+            "count": 2
+          }
+        ],
+        "total_uris": 627
+      }
+    },
+    {
+      "tool": "conpot_protocol",
+      "data": {
+        "top_protocols": [
+          {
+            "protocol": "kamstrup_protocol",
+            "count": 19
+          },
+          {
+            "protocol": "guardian_ast",
+            "count": 11
+          },
+          {
+            "protocol": "kamstrup_management_protocol",
+            "count": 7
+          }
+        ],
+        "total_protocols": 37
+      }
+    }
+  ]
+}
+```""",
+  thought_signature=b'\n\x9e!\x01\x8f=k_\xc3\xb4\xc3\xae/\xacQ\rX\x9c\xa3s\x1by\xec\x91\x8a\xd9N\xbe\xdf\xc8m\xa8)\x999\xf3\xc9*\x80\xb8\x13\x8c\xf5\x82\x91\x1e\xee\x17\xd9f\xf0\xb5P\xd0\x81\xbf}\x91\x02\x96V\r\xee\xd9\x18\xcd\xf4\xb76\x8d\xc2\x1c\xa4\'\xaf\xc6\x87\xd6K\x1bT)\x85\xae\xdc"\xb4\xaf\xbe\xfd\x93\xb2%{\xa5\xd96...'
+)] role='model'
+METADATA:
+{'cache_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 7865}], 'cached_content_token_count': 7865, 'candidates_token_count': 1558, 'candidates_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 1558}], 'prompt_token_count': 9062, 'prompt_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 9062}], 'thoughts_token_count': 1985, 'tool_use_prompt_token_count': None, 'tool_use_prompt_tokens_details': None, 'total_token_count': 12605, 'traffic_type': <TrafficType.ON_DEMAND: 'ON_DEMAND'>}
+HoneypotSpecificAgent finished. Pausing 20s to clear Vertex TPM bucket...
+<<< Agent Response: None
+###################################### NEW EVENT ######################################
+Current Time: 2026-03-10 17:14:09.523912
+[Event] Author: CandidateDiscoveryAgent, Type: Event, Final: False, Partial: None, Content: parts=[Part(
+  function_call=FunctionCall(
+    args=<dict len=7>,
+    id='adk-b7a4848c-fbb6-4831-b982-4d2ea57235b2',
+    name='two_level_terms_aggregated'
+  ),
+  thought_signature=b'\n\xc8,\x01\x8f=k_}0\x07\x1bd\xec\xaa\x052\xbeQ\xf2(O6EL\x06z[\xec\xf3\x85Q\xa4+!\xa5\xc9D\xbc\xe1\xdd\xac\xb5\xbd\xe8x\xf2\xad\xbcp$\xb5\xc4\xd3\x05px\xbf\x95\xb7^\x9c-\xc9\x0c\xfcUV\xc91\x87#\xdez\x95\x1c\xe5\xa3\x05\x841\xce\xa7\xb1\x83\x00\x0e<\xd7\xe6Y\xc1\x84\x9c"R\xea...'
+)] role='model'
+METADATA:
+{'cache_tokens_details': None, 'cached_content_token_count': None, 'candidates_token_count': 85, 'candidates_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 85}], 'prompt_token_count': 17823, 'prompt_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 17823}], 'thoughts_token_count': 1622, 'tool_use_prompt_token_count': None, 'tool_use_prompt_tokens_details': None, 'total_token_count': 19530, 'traffic_type': <TrafficType.ON_DEMAND: 'ON_DEMAND'>}
+<<< Agent Response: None
+###################################### NEW EVENT ######################################
+Current Time: 2026-03-10 17:14:09.617134
+[Event] Author: CandidateDiscoveryAgent, Type: Event, Final: False, Partial: None, Content: parts=[Part(
+  function_response=FunctionResponse(
+    id='adk-b7a4848c-fbb6-4831-b982-4d2ea57235b2',
+    name='two_level_terms_aggregated',
+    response={
+      'aggregations': {
+        'primary': {
+          'buckets': [
+            {<... 3 items at Max depth ...>},
+            {<... 3 items at Max depth ...>},
+            {<... 3 items at Max depth ...>},
+            {<... 3 items at Max depth ...>},
+            {<... 3 items at Max depth ...>},
+            <... 5 more items ...>,
+          ],
+          'doc_count_error_upper_bound': 0,
+          'sum_other_doc_count': 1
+        }
+      },
+      'hits': [],
+      'total': 51
+    }
+  )
+)] role='user'
+<<< Agent Response: None
+###################################### NEW EVENT ######################################
+Current Time: 2026-03-10 17:14:14.875163
+[Event] Author: CandidateDiscoveryAgent, Type: Event, Final: False, Partial: None, Content: parts=[Part(
+  function_call=FunctionCall(
+    args={
+      'gte_time_stamp': '2026-03-10T12:00:08Z',
+      'lte_time_stamp': '2026-03-10T16:00:08Z',
+      'primary_field': 'type.keyword',
+      'secondary_field': 'src_ip.keyword',
+      'type_filter': 'Conpot'
+    },
+    id='adk-c796d591-0dbc-4f30-9ed1-9cf90b47af6f',
+    name='two_level_terms_aggregated'
+  ),
+  thought_signature=b'\n\x9b\x05\x01\x8f=k_\xe6\x9c\xc53]\xeb\x82\xbb\xc00q\xe0\xd5#c*\x07\xc5P\xf9\xbcM)\x19\xbaO\xb1\xb4j\x99YZ\xc4*\xac?\xe08L8\x06>\x0f\xe9>\x07<H\x07\x18\x93VZ\x92\xc9o6\x00\xa4\x03\xbc<\xe0\xf8z\x84\xdf\xf2\xe2@\x99\xbd\t\xf0\xfb\xec\x8c\xc3\xde(J\x1cL\x91\xcc\xe5\xec\xe0\x19...'
+)] role='model'
+METADATA:
+{'cache_tokens_details': None, 'cached_content_token_count': None, 'candidates_token_count': 76, 'candidates_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 76}], 'prompt_token_count': 20146, 'prompt_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 20146}], 'thoughts_token_count': 183, 'tool_use_prompt_token_count': None, 'tool_use_prompt_tokens_details': None, 'total_token_count': 20405, 'traffic_type': <TrafficType.ON_DEMAND: 'ON_DEMAND'>}
+<<< Agent Response: None
+###################################### NEW EVENT ######################################
+Current Time: 2026-03-10 17:14:14.910306
+[Event] Author: CandidateDiscoveryAgent, Type: Event, Final: False, Partial: None, Content: parts=[Part(
+  function_response=FunctionResponse(
+    id='adk-c796d591-0dbc-4f30-9ed1-9cf90b47af6f',
+    name='two_level_terms_aggregated',
+    response={
+      'aggregations': {
+        'primary': {
+          'buckets': [],
+          'doc_count_error_upper_bound': 0,
+          'sum_other_doc_count': 0
+        }
+      },
+      'hits': [],
+      'total': 0
+    }
+  )
+)] role='user'
+<<< Agent Response: None
+###################################### NEW EVENT ######################################
+Current Time: 2026-03-10 17:14:19.560429
+[Event] Author: CandidateDiscoveryAgent, Type: Event, Final: False, Partial: None, Content: parts=[Part(
+  function_call=FunctionCall(
+    args={
+      'gte_time_stamp': '2026-03-10T12:00:08Z',
+      'lte_time_stamp': '2026-03-10T16:00:08Z',
+      'primary_field': 'type.keyword',
+      'secondary_field': 'src_ip.keyword'
+    },
+    id='adk-12a247b8-7870-48ea-8054-05f5fbe22089',
+    name='two_level_terms_aggregated'
+  ),
+  thought_signature=b'\n\x94\x05\x01\x8f=k_\x19\xe6)\xc3\xae\xc1\x97\x96\xect=\x95\xa2]4\xaf\x94T\xcc\xc1\xdd\xa4D\xb2\xce\xae\xd6m\xa1^\xdf4\xad\xa9\x83\xdd\xb1\xb2\xc3r\x00\xea3\x0e\xb1\x9f\x1d<\xd2\xe8"\xde\xd2\x8d\x02\xc4\x1e\x05\xf2\x1a\x0f\xdb\xc5\xbd\xc6\x8a`M\x9b\x9b\xe0\xd5\xce\xa9\x97\xde\x8c]\xa3\xe6\xd9\x1e\x8e\xc4\xc2\xb2\xfc\x8d\x9c...'
+)] role='model'
+METADATA:
+{'cache_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 18448}], 'cached_content_token_count': 18448, 'candidates_token_count': 71, 'candidates_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 71}], 'prompt_token_count': 20437, 'prompt_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 20437}], 'thoughts_token_count': 154, 'tool_use_prompt_token_count': None, 'tool_use_prompt_tokens_details': None, 'total_token_count': 20662, 'traffic_type': <TrafficType.ON_DEMAND: 'ON_DEMAND'>}
+<<< Agent Response: None
+###################################### NEW EVENT ######################################
+Current Time: 2026-03-10 17:14:19.643522
+[Event] Author: CandidateDiscoveryAgent, Type: Event, Final: False, Partial: None, Content: parts=[Part(
+  function_response=FunctionResponse(
+    id='adk-12a247b8-7870-48ea-8054-05f5fbe22089',
+    name='two_level_terms_aggregated',
+    response={
+      'aggregations': {
+        'primary': {
+          'buckets': [
+            {<... 3 items at Max depth ...>},
+            {<... 3 items at Max depth ...>},
+            {<... 3 items at Max depth ...>},
+            {<... 3 items at Max depth ...>},
+            {<... 3 items at Max depth ...>},
+            <... 5 more items ...>,
+          ],
+          'doc_count_error_upper_bound': 0,
+          'sum_other_doc_count': 179
+        }
+      },
+      'hits': [],
+      'total': 10000
+    }
+  )
+)] role='user'
+<<< Agent Response: None
+###################################### NEW EVENT ######################################
+Current Time: 2026-03-10 17:14:28.203828
+[Event] Author: CandidateDiscoveryAgent, Type: Event, Final: False, Partial: None, Content: parts=[Part(
+  function_call=FunctionCall(
+    args={
+      'gte_time_stamp': '2026-03-10T12:00:08Z',
+      'lte_time_stamp': '2026-03-10T16:00:08Z',
+      'primary_field': 'type.keyword',
+      'secondary_field': 'src_ip.keyword',
+      'type_filter': 'Conpot'
+    },
+    id='adk-1eb6dcbc-6b67-471c-b22f-f17539b859c0',
+    name='two_level_terms_aggregated'
+  ),
+  thought_signature=b'\n\xf3\x07\x01\x8f=k_\xd7VK\xf3k\x1d\x08\xb3\xff\x8d\x14q\xd6U\x1b\x10G\xf7g\xbaZNz\x8e\xe0\xaep\xc3\xc7Z[@\x8b\xcc\xd8\x1e\x82\xa1\xb3\xab\xb4\xfa\x994\x95\x18\x85C3\xf9\xc4+\xa6|\xf2*\xba\x92\xc5\xb8\xac\xef\xa5\xf1\x8d"\xa3\x91\xaa.=\x14\x02\xe9\xddQA\x8f\xf9g\xc5\xe90\xa60\xc1\xd8\x05\xc3...'
+), Part(
+  function_call=FunctionCall(
+    args={
+      'gte_time_stamp': '2026-03-10T12:00:08Z',
+      'lte_time_stamp': '2026-03-10T16:00:08Z',
+      'primary_field': 'path.keyword',
+      'secondary_field': 'src_ip.keyword',
+      'type_filter': 'Tanner'
+    },
+    id='adk-f6cf4b47-3e01-40f4-971e-cfabe347f402',
+    name='two_level_terms_aggregated'
+  )
+)] role='model'
+METADATA:
+{'cache_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 21592}], 'cached_content_token_count': 21592, 'candidates_token_count': 152, 'candidates_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 152}], 'prompt_token_count': 21873, 'prompt_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 21873}], 'thoughts_token_count': 249, 'tool_use_prompt_token_count': None, 'tool_use_prompt_tokens_details': None, 'total_token_count': 22274, 'traffic_type': <TrafficType.ON_DEMAND: 'ON_DEMAND'>}
+<<< Agent Response: None
+###################################### NEW EVENT ######################################
+Current Time: 2026-03-10 17:14:28.258773
+[Event] Author: CandidateDiscoveryAgent, Type: Event, Final: False, Partial: None, Content: parts=[Part(
+  function_response=FunctionResponse(
+    id='adk-1eb6dcbc-6b67-471c-b22f-f17539b859c0',
+    name='two_level_terms_aggregated',
+    response={
+      'aggregations': {
+        'primary': {
+          'buckets': [],
+          'doc_count_error_upper_bound': 0,
+          'sum_other_doc_count': 0
+        }
+      },
+      'hits': [],
+      'total': 0
+    }
+  )
+), Part(
+  function_response=FunctionResponse(
+    id='adk-f6cf4b47-3e01-40f4-971e-cfabe347f402',
+    name='two_level_terms_aggregated',
+    response={
+      'aggregations': {
+        'primary': {
+          'buckets': [
+            {<... 3 items at Max depth ...>},
+            {<... 3 items at Max depth ...>},
+            {<... 3 items at Max depth ...>},
+            {<... 3 items at Max depth ...>},
+            {<... 3 items at Max depth ...>},
+            <... 5 more items ...>,
+          ],
+          'doc_count_error_upper_bound': 2,
+          'sum_other_doc_count': 559
+        }
+      },
+      'hits': [],
+      'total': 627
+    }
+  )
+)] role='user'
+<<< Agent Response: None
+###################################### NEW EVENT ######################################
+Current Time: 2026-03-10 17:14:41.191287
+[Event] Author: CandidateDiscoveryAgent, Type: Event, Final: False, Partial: None, Content: parts=[Part(
+  function_call=FunctionCall(
+    args={
+      'request': 'What is CVE-2006-2369?'
+    },
+    id='adk-97c09b20-e65f-4582-80bd-44c2d6bd2c74',
+    name='search'
+  ),
+  thought_signature=b'\n\x82\x1a\x01\x8f=k_\x01\xafe\xcaD\xd9\xba//Qh\xda"\xd7\x95\xa4+\xad\x06=fho\x10\xb2\x01\xef\xd5L\xf9\xc4\xa5\xf13"n\xc7\\\x97\x11l_\xfc\x0e\x8eI9\x7f\x1f\xe4k\xf4\x92@\xaaZ\x1d#K\xd3\xb4\xf4&\xf2[\xea\x08\xc0^\x89\xd8.\x94\x99\xcf\x01\x8e=J8-\x9f%\xea\xc6\x94\x12\xde\xce...'
+)] role='model'
+METADATA:
+{'cache_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 21289}], 'cached_content_token_count': 21289, 'candidates_token_count': 16, 'candidates_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 16}], 'prompt_token_count': 23174, 'prompt_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 23174}], 'thoughts_token_count': 1023, 'tool_use_prompt_token_count': None, 'tool_use_prompt_tokens_details': None, 'total_token_count': 24213, 'traffic_type': <TrafficType.ON_DEMAND: 'ON_DEMAND'>}
+<<< Agent Response: None
+###################################### NEW EVENT ######################################
+Current Time: 2026-03-10 17:14:48.168907
+[Event] Author: CandidateDiscoveryAgent, Type: Event, Final: False, Partial: None, Content: parts=[Part(
+  function_response=FunctionResponse(
+    id='adk-97c09b20-e65f-4582-80bd-44c2d6bd2c74',
+    name='search',
+    response={
+      'result': """CVE-2006-2369 is an authentication bypass vulnerability primarily affecting RealVNC 4.1.1 and other products that integrate RealVNC, such as AdderLink IP and Cisco CallManager.
+
+This vulnerability allows remote attackers to bypass the authentication process. It occurs because the client can specify an insecure security type, like "Type 1 - None", which the server will accept even if it was not among the security types offered by the server. This flaw was initially demonstrated using a long password.
+
+Successful exploitation of CVE-2006-2369 can lead to unauthenticated, remote access to the VNC server, granting the attacker full control over the session. The vulnerability was published on May 15, 2006 and has been assigned a CVSS 2.0 Base Score of 7.5 (High severity) and a CVSS 3.0 Base Score of 9.8 (Critical severity)."""
+    }
+  )
+)] role='user'
+<<< Agent Response: None
+###################################### NEW EVENT ######################################
+Current Time: 2026-03-10 17:15:06.213007
+[Event] Author: CandidateDiscoveryAgent, Type: Event, Final: True, Partial: None, Content: parts=[Part(
+  text="""{
+  "merge_status": "complete",
+  "degraded_mode": false,
+  "time_window_context": "2026-03-10T12:00:08Z to 2026-03-10T16:00:08Z",
+  "triage_summary": {
+    "total_attacks": 28590,
+    "top_services_of_interest": [
+      "VNC (5902, 5903)",
+      "SMB (445)",
+      "ADB (5555)",
+      "Web (80, 8085)",
+      "SSH (22)",
+      "ICS/SCADA (kamstrup, guardian_ast)",
+      "Redis (6379)"
+    ],
+    "top_known_signals": [
+      "GPL INFO VNC server response",
+      "ET SCAN MS Terminal Server Traffic on Non-standard Port",
+      "CVE-2006-2369 (RealVNC Authentication Bypass)"
+    ],
+    "credential_noise_summary": "Standard brute-force attempts observed against various services using common usernames like 'root' and 'admin'.",
+    "honeypot_specific_summary": "Significant activity on Adbhoney involving a cryptocurrency miner installation. Probing of ICS protocols on Conpot, and widespread scanning for sensitive files (.env, .git/config) on Tanner."
+  },
+  "emerging_n_day_exploitation": [],
+  "known_exploit_exclusions": [
+    {
+      "item_id": "VNC-SCAN-001",
+      "description": "High-volume VNC scanning activity.",
+      "observed_evidence": [
+        "24,692 'GPL INFO VNC server response' alerts.",
+        "Associated with traffic to ports 5902, 5903.",
+        "523 events linked to CVE-2006-2369, a known RealVNC authentication bypass."
+      ],
+      "reason_for_exclusion": "Commodity scanning noise targeting a well-known and old vulnerability."
+    },
+    {
+      "item_id": "SMB-SCAN-001",
+      "description": "High-volume SMB scanning activity.",
+      "observed_evidence": [
+        "Top attackers 41.225.17.210 (2875 events) and 79.98.102.166 (2572 events) exclusively targeted port 445."
+      ],
+      "reason_for_exclusion": "Common background noise from botnets scanning for open SMB ports."
+    }
+  ],
+  "botnet_campaign_mapping": [
+    {
+      "item_id": "BC-ADB-MINER-001",
+      "seed_reason": "Adbhoney logs showed a clear, multi-step attempt to install and run a cryptocurrency miner.",
+      "campaign_shape": "fan-out",
+      "infra_indicators": {
+        "src_ips": [
+          "106.122.101.255"
+        ],
+        "malware_artifacts": [
+          "trinity",
+          "ufo.apk",
+          "com.ufo.miner"
+        ]
+      },
+      "observed_evidence": [
+        "All 10 distinct malicious commands on Adbhoney originated from the single IP 106.122.101.255.",
+        "Execution chain observed: `chmod 0755 /data/local/tmp/trinity`, `/data/local/tmp/nohup /data/local/tmp/trinity`, `pm install /data/local/tmp/ufo.apk`, `am start -n com.ufo.miner/com.example.test.MainActivity`"
+      ],
+      "infrastructure_value_score": 3,
+      "confidence": "high",
+      "provisional": false,
+      "required_followup": "Analyze malware samples (e.g., 'dl/0d3c687ffc30e185b836b99bd07fa2b0d460a090626f6bbbd40a95b98ea70257.raw') and block source IP."
+    },
+    {
+      "item_id": "BC-WEB-SCAN-001",
+      "seed_reason": "Tanner logs showed coordinated scanning for sensitive web files.",
+      "campaign_shape": "spray",
+      "infra_indicators": {
+        "src_ips": [
+          "185.177.72.22",
+          "185.177.72.49",
+          "185.177.72.51",
+          "185.177.72.52",
+          "78.153.140.147",
+          "209.141.37.52"
+        ]
+      },
+      "observed_evidence": [
+        "Multiple IPs from a distinct cluster (185.177.72.0/24) and others repeatedly requested paths like '/.env', '/.git/config', and '/.aws/credentials'.",
+        "Used various encodings and case variations such as '/%2eenv', '/%2f%2eenv', and '/.EnV' to evade simple pattern matching."
+      ],
+      "infrastructure_value_score": 2,
+      "confidence": "high",
+      "provisional": false,
+      "required_followup": "Monitor IPs for further exploit attempts against discovered files."
+    }
+  ],
+  "novel_exploit_candidates": [],
+  "odd_service_minutia_attacks": [
+    {
+      "item_id": "ODD-ICS-PROBE-001",
+      "description": "Probing of niche Industrial Control System (ICS) protocols.",
+      "service_fingerprint": "Conpot honeypot, ports related to kamstrup and guardian_ast protocols.",
+      "observed_evidence": [
+        "19 events for 'kamstrup_protocol'",
+        "11 events for 'guardian_ast'"
+      ],
+      "infra_indicators": {
+        "src_ips": [
+          "Unknown"
+        ]
+      },
+      "confidence": "low",
+      "provisional": true,
+      "required_followup": "Attempt to identify source IPs for this activity in future runs; current data is insufficient for correlation."
+    }
+  ],
+  "suspicious_unmapped_monitor": [],
+  "evidence_gaps": {
+    "failed_queries": [
+      "Could not retrieve source IPs for Conpot activity due to low event volume falling below aggregation thresholds."
+    ],
+    "blocked_validation_steps": []
+  }
+}""",
+  thought_signature=b'\n\xe2\x03\x01\x8f=k_@\xdcC0\x1b\xfb"O\xa6Z\xd5\xd5\xbb\x10\x96r./\x8a\xc5\xdd\xbbVX4V(\x88@,]\\r\'{\\\x86\x84\x11\xac\x13\xaa\xb0\xa0\x02\xb1\xa3u\x15\x8b\\P\xea~\xde\xa9\xc5\xd1\x14\x89\x8b\x03:\xea/\x15.\xd8\x97\xeb\xba\x02\x99\xc0\x141\xe1\xea\x1fDgU&kS\x95\xd8O8...'
+)] role='model'
+METADATA:
+{'cache_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 23188}], 'cached_content_token_count': 23188, 'candidates_token_count': 1624, 'candidates_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 1624}], 'prompt_token_count': 24416, 'prompt_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 24416}], 'thoughts_token_count': 98, 'tool_use_prompt_token_count': None, 'tool_use_prompt_tokens_details': None, 'total_token_count': 26138, 'traffic_type': <TrafficType.ON_DEMAND: 'ON_DEMAND'>}
+CandidateDiscoveryAgent finished. Pausing 20s to clear Vertex TPM bucket...
+<<< Agent Response: None
+###################################### NEW EVENT ######################################
+Current Time: 2026-03-10 17:15:35.403093
+[Event] Author: CandidateLoopControllerAgent, Type: Event, Final: False, Partial: None, Content: parts=[Part(
+  function_call=FunctionCall(
+    args={
+      'candidates': [
+        {
+          'item_id': 'BC-ADB-MINER-001'
+        },
+        {
+          'item_id': 'BC-WEB-SCAN-001'
+        },
+        {
+          'item_id': 'ODD-ICS-PROBE-001'
+        },
+      ]
+    },
+    id='adk-03419ecc-a5f2-4313-a1a2-2960d6b97767',
+    name='innit_candidate_que'
+  ),
+  thought_signature=b'\n\xa3\x1a\x01\x8f=k_t\x0f\x98\xcc\x9a\xb9k\x93\x8d7\xde\xa5\x10\xedjZ\x14\xf0\x1b\x12T\x96Q\xc8\x04\x9f\xa1 \xfc\xaaq\xfb\xa9\xa2|RK\xb6\x1bn/\x87NE\xce-%y\xbb\x8b\xdaG\xf5\xe6\x0e\xf6#\x94\xed\x02\x15|\x1f\xb2f\xefC\x91\xf3\xc0\xa0U\x7f\xdd\x8e\x8a9\xd3\xd2\x93\x86\xfdF\x97\xa9s\xe8\xaf*...'
+)] role='model'
+METADATA:
+{'cache_tokens_details': None, 'cached_content_token_count': None, 'candidates_token_count': 46, 'candidates_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 46}], 'prompt_token_count': 16640, 'prompt_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 16640}], 'thoughts_token_count': 911, 'tool_use_prompt_token_count': None, 'tool_use_prompt_tokens_details': None, 'total_token_count': 17597, 'traffic_type': <TrafficType.ON_DEMAND: 'ON_DEMAND'>}
+<<< Agent Response: None
+###################################### NEW EVENT ######################################
+Current Time: 2026-03-10 17:15:35.429143
+[Event] Author: CandidateLoopControllerAgent, Type: Event, Final: False, Partial: None, Content: parts=[Part(
+  function_response=FunctionResponse(
+    id='adk-03419ecc-a5f2-4313-a1a2-2960d6b97767',
+    name='innit_candidate_que',
+    response={
+      'queued': 3,
+      'validated': 0
+    }
+  )
+)] role='user'
+<<< Agent Response: None
+###################################### NEW EVENT ######################################
+Current Time: 2026-03-10 17:15:38.009674
+[Event] Author: CandidateLoopControllerAgent, Type: Event, Final: False, Partial: None, Content: parts=[Part(
+  function_call=FunctionCall(
+    args={},
+    id='adk-ca13e791-5a1a-4321-baad-15d2c3d400f2',
+    name='load_next_candidate'
+  ),
+  thought_signature=b'\n\xa4\x05\x01\x8f=k_\x174\x91\xa7\xe6\xfffH\xa6l\x1e\xb1\x90w\xd8p\xac\xe1\xa18\xc1<\x9cW\xd82\xbeKmNY\xfeH\x03\x11,s{\xcf\x12\x16Wly\x02Y\xfd\x9cx\x13f\xe3\x04\xab6\xeb\xcd\x00\x89k\x85\xbd\x02vop\x97\xcda\xd8~%\xc1\xc2\xa0L\xd1\xb0\xbd\\e\xa5\xf4Qi=?\xa3\x8e...'
+)] role='model'
+METADATA:
+{'cache_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 15950}], 'cached_content_token_count': 15950, 'candidates_token_count': 5, 'candidates_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 5}], 'prompt_token_count': 17607, 'prompt_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 17607}], 'thoughts_token_count': 169, 'tool_use_prompt_token_count': None, 'tool_use_prompt_tokens_details': None, 'total_token_count': 17781, 'traffic_type': <TrafficType.ON_DEMAND: 'ON_DEMAND'>}
+<<< Agent Response: None
+###################################### NEW EVENT ######################################
+Current Time: 2026-03-10 17:15:38.029665
+[Event] Author: CandidateLoopControllerAgent, Type: Event, Final: False, Partial: None, Content: parts=[Part(
+  function_response=FunctionResponse(
+    id='adk-ca13e791-5a1a-4321-baad-15d2c3d400f2',
+    name='load_next_candidate',
+    response={
+      'current_candidate_id': 'BC-ADB-MINER-001',
+      'has_candidate': True,
+      'iteration': 1,
+      'remaining': 2
+    }
+  )
+)] role='user'
+<<< Agent Response: None
+###################################### NEW EVENT ######################################
+Current Time: 2026-03-10 17:15:40.764018
+[Event] Author: CandidateLoopControllerAgent, Type: Event, Final: True, Partial: None, Content: parts=[Part(
+  text='Candidate: BC-ADB-MINER-001 (1/3)',
+  thought_signature=b'\n\xb3\x05\x01\x8f=k_\xb0l\x91\x96\xab\x90\xab\xeda/VX\xbf\xc6\xf2\xf5\xdf\xe4\x1b\x17\xc3\x14\xd4\xeb\xbb\x8a\xcc-er*\xaeO\xf3\xb6\xbd\xe9\x95\xf4\xde\xb6.\xef6\x92\x83\x82\xef\x7f}\x91\\_\xc9\xe5`\x8f_\xcf\x07\xee\x871\x9cS\xf5\xc7\x95\x06\x8cP\xf2\xd4`T\xe8\x8c\x0c$\x81\x8d\x93\xc4\xb4\x89\xe9\xbc\x0f;...'
+)] role='model'
+METADATA:
+{'cache_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 16912}], 'cached_content_token_count': 16912, 'candidates_token_count': 17, 'candidates_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 17}], 'prompt_token_count': 17809, 'prompt_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 17809}], 'thoughts_token_count': 193, 'tool_use_prompt_token_count': None, 'tool_use_prompt_tokens_details': None, 'total_token_count': 18019, 'traffic_type': <TrafficType.ON_DEMAND: 'ON_DEMAND'>}
+CandidateLoopControllerAgent finished. Pausing 20s to clear Vertex TPM bucket...
+<<< Agent Response: None
+###################################### NEW EVENT ######################################
+Current Time: 2026-03-10 17:16:15.641713
+[Event] Author: CandidateValidationAgent, Type: Event, Final: False, Partial: None, Content: parts=[Part(
+  function_call=FunctionCall(
+    args={
+      'gte_time_stamp': '2026-03-10T12:00:08Z',
+      'lte_time_stamp': '2026-03-10T16:00:08Z',
+      'size': 50,
+      'term': 'src_ip.keyword',
+      'value': '106.122.101.255'
+    },
+    id='adk-a5c735a3-04b3-4ca1-a44a-51e10a95c919',
+    name='kibanna_discover_query'
+  ),
+  thought_signature=b"\n\xf2!\x01\x8f=k_\xb1\xdc\xe8\x8e4\xde\xc8\xcc`25A\xe3x?N=l)'\xc6vr?O\x9fq\xff\xcbA\xc4//\xb2\xfe\xc6?\xfb\x085\xa2\xd6\xaa\xc7_z\rE\x11\xc62f[\x92\x82\xc1\xef\x8e'\xfb\xe7\xed\x9dp\xfe1\x8e\x820\x9a\xea\xa0\xb2\xd2\xaf\x16\x1dd\xca$\xbf\x98\xfbD\xef\xcbj\\\xe0...'
+)] role='model'
+METADATA:
+{'cache_tokens_details': None, 'cached_content_token_count': None, 'candidates_token_count': 81, 'candidates_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 81}], 'prompt_token_count': 24173, 'prompt_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 24173}], 'thoughts_token_count': 1299, 'tool_use_prompt_token_count': None, 'tool_use_prompt_tokens_details': None, 'total_token_count': 25553, 'traffic_type': <TrafficType.ON_DEMAND: 'ON_DEMAND'>}
+<<< Agent Response: None
+###################################### NEW EVENT ######################################
+Current Time: 2026-03-10 17:16:15.677020
+[Event] Author: CandidateValidationAgent, Type: Event, Final: False, Partial: None, Content: parts=[Part(
+  function_response=FunctionResponse(
+    id='adk-a5c735a3-04b3-4ca1-a44a-51e10a95c919',
+    name='kibanna_discover_query',
+    response={
+      'hits': [
+        <dict len=11>,
+        <dict len=11>,
+        <dict len=7>,
+        <dict len=7>,
+        <dict len=11>,
+        <... 45 more items ...>,
+      ],
+      'total': 63
+    }
+  )
+)] role='user'
+<<< Agent Response: None
+###################################### NEW EVENT ######################################
+Current Time: 2026-03-10 17:16:28.498162
+[Event] Author: CandidateValidationAgent, Type: Event, Final: False, Partial: None, Content: parts=[Part(
+  function_call=FunctionCall(
+    args={
+      'gte_time_stamp': '2026-03-10T12:00:08Z',
+      'keyword': '0d3c687ffc30e185b836b99bd07fa2b0d460a090626f6bbbd40a95b98ea70257',
+      'lte_time_stamp': '2026-03-10T16:00:08Z'
+    },
+    id='adk-186acf19-5166-447a-bea2-4be1b7741137',
+    name='discover_by_keyword'
+  ),
+  thought_signature=b'\n\xe7\x17\x01\x8f=k_-\xe3\xb2\x91v\x11\xa8\xe7\xc0\xc5\xd6\xf4\xe3\r\xcb*R\x87e\xfdY.Xs\x13I\xb0D/\xea\xae\xbcW~\x9b\x93y\x84\xfb\x8e0^\xd3\x16\xfbv^F3\x85\xb7\xb4\xa5\xe44\xa2\xdf\x88\x98r\xc9\x87\x01Fw0.\xd3\xf9\xaeD\xbfHv\xa0\x19\xf93\x96\x98\x0e\x06\xb2C,\t\x07\xa0\xb6...'
+), Part(
+  function_call=FunctionCall(
+    args={
+      'request': 'check malware campaign "trinity" cryptocurrency miner'
+    },
+    id='adk-14c487f2-2735-4ad5-8c69-523b57634b83',
+    name='search'
+  )
+)] role='model'
+METADATA:
+{'cache_tokens_details': None, 'cached_content_token_count': None, 'candidates_token_count': 125, 'candidates_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 125}], 'prompt_token_count': 31316, 'prompt_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 31316}], 'thoughts_token_count': 969, 'tool_use_prompt_token_count': None, 'tool_use_prompt_tokens_details': None, 'total_token_count': 32410, 'traffic_type': <TrafficType.ON_DEMAND: 'ON_DEMAND'>}
+<<< Agent Response: None
+###################################### NEW EVENT ######################################
+Current Time: 2026-03-10 17:16:38.466814
+[Event] Author: CandidateValidationAgent, Type: Event, Final: False, Partial: None, Content: parts=[Part(
+  function_response=FunctionResponse(
+    id='adk-186acf19-5166-447a-bea2-4be1b7741137',
+    name='discover_by_keyword',
+    response={
+      'hits': [
+        <dict len=7>,
+      ],
+      'total': 2
+    }
+  )
+), Part(
+  function_response=FunctionResponse(
+    id='adk-14c487f2-2735-4ad5-8c69-523b57634b83',
+    name='search',
+    response={
+      'result': """There have been two distinct malware campaigns identified under the "Trinity" name: one a cryptocurrency miner and the other a ransomware.
+
+**Trinity Cryptocurrency Miner (2019)**
+The "Trinity Miner" was a cryptocurrency mining malware observed in 2019, primarily targeting Internet of Things (IoT) devices. This miner exploited open ADB (Android Debug Bridge) ports as an entry point to systems. Once a device was infected, it would execute the miner and then scan for other connected devices within the network, spreading through a peer-to-peer (P2P) mechanism. It targeted ARM-based processors and was designed to check for and potentially replace other existing miners like "UFO miner." The malware aimed to utilize the infected devices' resources for cryptocurrency mining without the owner's consent.
+
+**Trinity Ransomware (2024)**
+More recently, a "Trinity Ransomware" campaign emerged in May 2024. This is a more sophisticated threat that employs a "double extortion" strategy. It infiltrates systems through various attack vectors, including phishing emails, malicious websites, and the exploitation of software vulnerabilities. Once inside, Trinity Ransomware first exfiltrates sensitive data from the victim's system. Following data theft, it encrypts the victim's files using the ChaCha20 encryption algorithm, appending a ".trinitylock" file extension to compromised files, rendering them unusable.
+
+The attackers then demand a cryptocurrency payment in exchange for a decryption key and to prevent the leaked data from being published. The Trinity Ransomware has been noted for targeting critical infrastructure sectors, particularly healthcare providers. Researchers have observed similarities between Trinity Ransomware and other ransomware groups like 2023Lock and Venus, suggesting potential connections or collaborations among these threat actors. Currently, there are no known decryption tools available for Trinity Ransomware, leaving victims with limited options."""
+    }
+  )
+)] role='user'
+<<< Agent Response: None
+###################################### NEW EVENT ######################################
+Current Time: 2026-03-10 17:17:00.161836
+[Event] Author: CandidateValidationAgent, Type: Event, Final: True, Partial: None, Content: parts=[Part(
+  text="""```json
+{
+  "candidate_id": "BC-ADB-MINER-001",
+  "time_window_context": {
+    "start": "2026-03-10T12:00:08Z",
+    "end": "2026-03-10T16:00:08Z"
+  },
+  "classification": "known_exploit_campaign",
+  "seed_reason": "Adbhoney logs showed a clear, multi-step attempt to install and run a cryptocurrency miner.",
+  "observed_evidence": {
+    "source_ip": "106.122.101.255",
+    "source_asn": 4134,
+    "source_country": "China",
+    "target_service": "Adbhoney (port 5555)",
+    "execution_chain": [
+      "rm -rf /data/local/tmp/*",
+      "chmod 0755 /data/local/tmp/nohup",
+      "chmod 0755 /data/local/tmp/trinity",
+      "pm install /data/local/tmp/ufo.apk",
+      "am start -n com.ufo.miner/com.example.test.MainActivity",
+      "/data/local/tmp/nohup /data/local/tmp/trinity",
+      "ps | grep trinity"
+    ],
+    "malware_artifacts": [
+      "trinity",
+      "ufo.apk",
+      "com.ufo.miner",
+      "dl/0d3c687ffc30e185b836b99bd07fa2b0d460a090626f6bbbd40a95b98ea70257.raw"
+    ],
+    "related_suricata_alerts": [
+      "SURICATA STREAM spurious retransmission",
+      "SURICATA STREAM CLOSEWAIT FIN out of window"
+    ]
+  },
+  "knownness_checks_performed": [
+    {
+      "tool": "kibanna_discover_query",
+      "parameters": {
+        "term": "src_ip.keyword",
+        "value": "106.122.101.255"
+      },
+      "summary": "Confirmed the full sequence of malicious commands executed by the source IP in Adbhoney logs."
+    },
+    {
+      "tool": "google_search_agent",
+      "parameters": {
+        "request": "check malware campaign \"trinity\" cryptocurrency miner"
+      },
+      "summary": "Identified the activity as the 'Trinity Miner' campaign from 2019, which targets open ADB ports and is known to interact with 'UFO miner', matching the observed evidence."
+    }
+  ],
+  "novelty_score": 1,
+  "infrastructure_value_score": 3,
+  "campaign_shape": "fan-out",
+  "infra_indicators": {
+    "suspected_compromised_src_ips": [
+      "106.122.101.255"
+    ],
+    "suspected_staging_hosts": [],
+    "suspected_c2": [],
+    "domains": [],
+    "urls": [],
+    "malware_hashes": [
+      "0d3c687ffc30e185b836b99bd07fa2b0d460a090626f6bbbd40a95b98ea70257"
+    ]
+  },
+  "service_fingerprint": {
+    "dest_port": [
+      5555
+    ],
+    "protocol": [
+      "tcp"
+    ],
+    "application_hint": "Adbhoney"
+  },
+  "confidence": "High",
+  "provisional": false,
+  "evidence_gaps": [
+    "The malware staging/download URL was not found in the logs. The `wget` or `curl` command used to download the 'trinity' and 'ufo.apk' payloads was not observed."
+  ],
+  "failed_queries": [],
+  "blocked_validation_steps": [],
+  "required_followup": [
+    "Block source IP 106.122.101.255.",
+    "Submit malware hashes for sandbox analysis to confirm behavior."
+  ]
+}
+```""",
+  thought_signature=b'\n\x82 \x01\x8f=k_\xc4rr\xaa\xfc`\xe4\x8c\xe4\x7fB\xc5wMkDi,\x82\xfe\x0c\x03\xa38\xbfh\xd5\x9eE\xd2\x85\x89O^\x12\xdb{\xd9\x91\xccg5\xca\xa7\x96\xab#\x88Q\xf3``\xa0\xe8\xa8+\xb2~k~!0\x9b\xbdJ\xde\xc6<y\xc7\xff\x9di\xcc "\x1cDw\xae^&w\x11\x98\xf0t\xc3K...'
+)] role='model'
+METADATA:
+{'cache_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 30523}], 'cached_content_token_count': 30523, 'candidates_token_count': 1056, 'candidates_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 1056}], 'prompt_token_count': 32902, 'prompt_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 32902}], 'thoughts_token_count': 1201, 'tool_use_prompt_token_count': None, 'tool_use_prompt_tokens_details': None, 'total_token_count': 35159, 'traffic_type': <TrafficType.ON_DEMAND: 'ON_DEMAND'>}
+CandidateValidationAgent finished. Pausing 20s to clear Vertex TPM bucket...
+<<< Agent Response: None
+###################################### NEW EVENT ######################################
+Current Time: 2026-03-10 17:17:25.499330
+[Event] Author: CandidateLoopReducerAgent, Type: Event, Final: True, Partial: None, Content: None
+METADATA:
+{'cache_tokens_details': None, 'cached_content_token_count': None, 'candidates_token_count': None, 'candidates_tokens_details': None, 'prompt_token_count': 27221, 'prompt_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 27221}], 'thoughts_token_count': None, 'tool_use_prompt_token_count': None, 'tool_use_prompt_tokens_details': None, 'total_token_count': 27221, 'traffic_type': <TrafficType.ON_DEMAND: 'ON_DEMAND'>}
+CandidateLoopReducerAgent finished. Pausing 20s to clear Vertex TPM bucket...
+<<< Agent Response: None
+###################################### NEW EVENT ######################################
+Current Time: 2026-03-10 17:17:56.044865
+[Event] Author: CandidateLoopControllerAgent, Type: Event, Final: False, Partial: None, Content: parts=[Part(
+  function_call=FunctionCall(
+    args={},
+    id='adk-ea0a4ae3-5fbe-4844-b48f-7d23505912e9',
+    name='load_next_candidate'
+  ),
+  thought_signature=b'\n\xd5\x02\x01\x8f=k_>\x1e\x7f\x14\xfaH/\xa5|\xea\xd6\xd7\x89F\x96\x9c\x17\x13\x80\x87!\xc3\xc7\x0b\x83\x99\xe2oN\x9c?\x9a\xd6\xd2\xad){U\xed\xc4\xfejj\x8c]\x87g\xffp\x85\xab:X\xb0\xbc[\x93D\xfao\xf4\xd3\xff\xed\xe66\xec\x83\xd9\xe4\xd7\xe7\nF)\x85;\xecF\xea.u\x173W\x16yY\x84...'
+)] role='model'
+METADATA:
+{'cache_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 28147}], 'cached_content_token_count': 28147, 'candidates_token_count': 5, 'candidates_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 5}], 'prompt_token_count': 28505, 'prompt_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 28505}], 'thoughts_token_count': 84, 'tool_use_prompt_token_count': None, 'tool_use_prompt_tokens_details': None, 'total_token_count': 28594, 'traffic_type': <TrafficType.ON_DEMAND: 'ON_DEMAND'>}
+<<< Agent Response: None
+###################################### NEW EVENT ######################################
+Current Time: 2026-03-10 17:17:56.068824
+[Event] Author: CandidateLoopControllerAgent, Type: Event, Final: False, Partial: None, Content: parts=[Part(
+  function_response=FunctionResponse(
+    id='adk-ea0a4ae3-5fbe-4844-b48f-7d23505912e9',
+    name='load_next_candidate',
+    response={
+      'current_candidate_id': 'BC-WEB-SCAN-001',
+      'has_candidate': True,
+      'iteration': 2,
+      'remaining': 1
+    }
+  )
+)] role='user'
+<<< Agent Response: None
+###################################### NEW EVENT ######################################
+Current Time: 2026-03-10 17:17:58.879471
+[Event] Author: CandidateLoopControllerAgent, Type: Event, Final: True, Partial: None, Content: parts=[Part(
+  text='Candidate: BC-WEB-SCAN-001 (2/3)',
+  thought_signature=b'\n\xb1\x05\x01\x8f=k_\xc45\xc6o5\xabi\xf2\xdd\x82\x00\x9fv\xc2\xf8\xd4\x1a\xa1[\xa1T3\xb9\xe6\xcbX\t\xf8\xab_S\x02P%\xd8\xc4\x8c\xd69\n\x94\x14\xffg\xba\xc135l\x17\xda\xc7\xe68w\xdeLd\xc0\xff\xd7n}\x1a\xccZ\x9a\xca\xa0\x9c\x9f\xd6\xdc\x0eH~>\xa4R\x98zWX#R\x9c\xb7a)...'
+)] role='model'
+METADATA:
+{'cache_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 28107}], 'cached_content_token_count': 28107, 'candidates_token_count': 16, 'candidates_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 16}], 'prompt_token_count': 28621, 'prompt_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 28621}], 'thoughts_token_count': 191, 'tool_use_prompt_token_count': None, 'tool_use_prompt_tokens_details': None, 'total_token_count': 28828, 'traffic_type': <TrafficType.ON_DEMAND: 'ON_DEMAND'>}
+CandidateLoopControllerAgent finished. Pausing 20s to clear Vertex TPM bucket...
+<<< Agent Response: None
+###################################### NEW EVENT ######################################
+Current Time: 2026-03-10 17:18:35.618252
+[Event] Author: CandidateValidationAgent, Type: Event, Final: False, Partial: None, Content: parts=[Part(
+  function_call=FunctionCall(
+    args={
+      'gte_time_stamp': '2026-03-10T12:00:08Z',
+      'lte_time_stamp': '2026-03-10T16:00:08Z',
+      'size': 20,
+      'term': 'src_ip.keyword',
+      'value': '185.177.72.22'
+    },
+    id='adk-b04677ed-a874-45eb-857d-5eebd476c9be',
+    name='kibanna_discover_query'
+  ),
+  thought_signature=b'\n\xac#\x01\x8f=k_9M\x7f\xf4,\xb7\xfc\x86\xf6\xbfv\x99\x06\xe4\x8d\x12\x7fl\x19FwiN\x07F\x94]\xa9C\x0b\x83p{\xcf\x98\xf5\xfbcX\x11\x1c\x05F\x81\xaf\x84\x92\xc0P\xdcg"\xa7g\x05\x94\'1+\xf7u\xbf\xdd\xa6\xc4\xb6L_\x93F\xa7e;"]w\xe1\x02Hs=\xea"\x8e\xfd\xb7z\x05\xf5...'
+), Part(
+  function_call=FunctionCall(
+    args={
+      'field': 'alert.signature',
+      'gte_time_stamp': '2026-03-10T12:00:08Z',
+      'lte_time_stamp': '2026-03-10T16:00:08Z',
+      'phrase': '.env',
+      'size': 5
+    },
+    id='adk-891902c5-1e2f-4665-b762-dbd61767f7c4',
+    name='suricata_lenient_phrase_search'
+  )
+)] role='model'
+METADATA:
+{'cache_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 30769}], 'cached_content_token_count': 30769, 'candidates_token_count': 147, 'candidates_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 147}], 'prompt_token_count': 35265, 'prompt_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 35265}], 'thoughts_token_count': 1292, 'tool_use_prompt_token_count': None, 'tool_use_prompt_tokens_details': None, 'total_token_count': 36704, 'traffic_type': <TrafficType.ON_DEMAND: 'ON_DEMAND'>}
+<<< Agent Response: None
+###################################### NEW EVENT ######################################
+Current Time: 2026-03-10 17:18:35.671755
+[Event] Author: CandidateValidationAgent, Type: Event, Final: False, Partial: None, Content: parts=[Part(
+  function_response=FunctionResponse(
+    id='adk-b04677ed-a874-45eb-857d-5eebd476c9be',
+    name='kibanna_discover_query',
+    response={
+      'hits': [
+        <dict len=11>,
+        <dict len=11>,
+        <dict len=11>,
+        <dict len=11>,
+        <dict len=11>,
+        <... 15 more items ...>,
+      ],
+      'total': 759
+    }
+  )
+), Part(
+  function_response=FunctionResponse(
+    id='adk-891902c5-1e2f-4665-b762-dbd61767f7c4',
+    name='suricata_lenient_phrase_search',
+    response={
+      'aggregations': {
+        'results': {
+          'buckets': [],
+          'doc_count_error_upper_bound': 0,
+          'sum_other_doc_count': 0
+        }
+      },
+      'hits': [],
+      'total': 0
+    }
+  )
+)] role='user'
+<<< Agent Response: None
+###################################### NEW EVENT ######################################
+Current Time: 2026-03-10 17:18:45.290887
+[Event] Author: CandidateValidationAgent, Type: Event, Final: False, Partial: None, Content: parts=[Part(
+  function_call=FunctionCall(
+    args={},
+    id='adk-9990da9d-8d54-48ce-a7ae-974eb1a09014',
+    name='waiting'
+  ),
+  thought_signature=b'\n\x88\x12\x01\x8f=k_,2x\xa8\x07\x94t\x8a\xab\x00\xcb*:${\xbe*\x82| \xa6\xf7\xca5\xc6J\xb1\xe7]\x96\xafHH\xb9?\xc0G\x8b\xed\x19?Rv\x0b\x85\xb0\xef|\x1fV\xec={\xc0U\t\xfdHN\x9e\x15\x05Yw\xfai\xe7[\xf8\xf0\xa3\xb0\xdc\n\x0fD$\xf64u\x07$\x14C\\\xb4\x91%\xb1...'
+)] role='model'
+METADATA:
+{'cache_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 33683}], 'cached_content_token_count': 33683, 'candidates_token_count': 1, 'candidates_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 1}], 'prompt_token_count': 39108, 'prompt_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 39108}], 'thoughts_token_count': 616, 'tool_use_prompt_token_count': None, 'tool_use_prompt_tokens_details': None, 'total_token_count': 39725, 'traffic_type': <TrafficType.ON_DEMAND: 'ON_DEMAND'>}
+<<< Agent Response: None
+###################################### NEW EVENT ######################################
+Current Time: 2026-03-10 17:19:30.361932
+[Event] Author: CandidateValidationAgent, Type: Event, Final: False, Partial: None, Content: parts=[Part(
+  function_response=FunctionResponse(
+    id='adk-9990da9d-8d54-48ce-a7ae-974eb1a09014',
+    name='waiting',
+    response={
+      'result': 'Successfully waited 45 seconds. You may continue querying.'
+    }
+  )
+)] role='user'
+<<< Agent Response: None
+###################################### NEW EVENT ######################################
+Current Time: 2026-03-10 17:19:35.162025
+[Event] Author: CandidateValidationAgent, Type: Event, Final: False, Partial: None, Content: parts=[Part(
+  function_call=FunctionCall(
+    args={
+      'gte_time_stamp': '2026-03-10T12:00:08Z',
+      'lte_time_stamp': '2026-03-10T16:00:08Z',
+      'size': 20,
+      'term': 'src_ip.keyword',
+      'value': '185.177.72.49'
+    },
+    id='adk-38f9253b-7fcb-4856-8000-8327ad7fcb07',
+    name='kibanna_discover_query'
+  ),
+  thought_signature=b'\n\xc6\x03\x01\x8f=k__\xe4:\xbf\x9f\xa5\xdf8\xc8\x1eK\xf9\x083\xdc\xd4&\xb1U\x7f\xea\x0ehZ8\x1e8\xca\x7f\xaf\xa5\x84\xb2\x04~\xcc\x02\xf1\xea\xe5\xee\xba\x87\xf3\x1a\x0f2\xfc\x92"X\xcb\x0bj\x171\xce\x0b\xbd\xa2\x03\xad\xb5\xbbS\xab2\xce\x1e-\x8e\x11z\xa1\xd0\x96\x92b\x0e\x8f\x08\xc8\x96~\xf4\xe2\x97]\xdb...'
+), Part(
+  function_call=FunctionCall(
+    args={
+      'request': 'automated scanner for .env .git/config .aws/credentials'
+    },
+    id='adk-69fa05f7-d1a5-4b82-b35f-bb41946ccdff',
+    name='search'
+  )
+)] role='model'
+METADATA:
+{'cache_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 39056}], 'cached_content_token_count': 39056, 'candidates_token_count': 94, 'candidates_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 94}], 'prompt_token_count': 39739, 'prompt_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 39739}], 'thoughts_token_count': 114, 'tool_use_prompt_token_count': None, 'tool_use_prompt_tokens_details': None, 'total_token_count': 39947, 'traffic_type': <TrafficType.ON_DEMAND: 'ON_DEMAND'>}
+<<< Agent Response: None
+###################################### NEW EVENT ######################################
+Current Time: 2026-03-10 17:19:49.035504
+[Event] Author: CandidateValidationAgent, Type: Event, Final: False, Partial: None, Content: parts=[Part(
+  function_response=FunctionResponse(
+    id='adk-38f9253b-7fcb-4856-8000-8327ad7fcb07',
+    name='kibanna_discover_query',
+    response={
+      'hits': [
+        <dict len=11>,
+        <dict len=11>,
+        <dict len=11>,
+        <dict len=11>,
+        <dict len=11>,
+        <... 15 more items ...>,
+      ],
+      'total': 2175
+    }
+  )
+), Part(
+  function_response=FunctionResponse(
+    id='adk-69fa05f7-d1a5-4b82-b35f-bb41946ccdff',
+    name='search',
+    response={
+      'result': """Automated scanners are essential tools for identifying and mitigating the risks associated with exposed sensitive files like `.env`, `.git/config`, and `.aws/credentials`. These files often contain critical information such as API keys, database credentials, and access tokens that, if exposed, can lead to significant security breaches.
+
+Here's a breakdown of automated scanning tools and methods for each file type:
+
+### For `.env` Files
+
+`.env` files commonly store environment variables, including sensitive configuration data, database credentials, and API tokens. Exposed `.env` files pose a high-security risk.
+
+*   **S4E's .env File Disclosure Vulnerability Scanner** This tool is specifically designed to detect exposed `.env` files and helps organizations take corrective action by providing actionable recommendations.
+*   **xenv** A fast, open-source scanner available on GitHub, `xenv` is used to scan for exposed `.env` files. It can be configured to check various common paths where these files might be found.
+*   **Website Vulnerability Scanners** Many general web vulnerability scanners, such as Pentest-Tools.com's Website Vulnerability Scanner, include checks for publicly accessible `.env` files as part of their resource discovery process.
+*   **Manual and Script-based Scanning** Organizations can also implement tools like Shodan or custom scripts to regularly check for exposed `.env` files by attempting to access them directly via URL (e.g., `https://example.com/.env`).
+
+### For `.git/config` Files and Exposed Git Repositories
+
+The `.git/config` file, along with the entire `.git` directory, can expose repository configurations, remote URLs, and potentially sensitive data if publicly accessible.
+
+*   **Git-specific Extractors and Dumpers** Tools like `git-extractor` and `git-dumper` are designed to identify accessible `.git` directories and retrieve their contents, which can include the `.git/config` file.
+*   **dotGit-Expose-Scanner** This GitHub tool specifically scans domains for publicly exposed `.git` repositories.
+*   **Gitleaks** A popular open-source tool, `Gitleaks` scans Git repositories (including their history) for hardcoded secrets such as passwords, API keys, and tokens. It can be integrated into CI/CD pipelines to prevent secrets from being committed.
+*   **git-secrets** Developed by AWS Labs, `git-secrets` helps prevent users from committing sensitive information, including AWS credentials, into Git repositories. It functions by installing Git hooks that scan for prohibited patterns before a commit and can also scan the history of a repository.
+*   **Web Vulnerability Scanners** Generic web vulnerability scanners can also be used to identify exposed Git files and directories.
+
+### For `.aws/credentials` Files
+
+The `.aws/credentials` file stores AWS Command Line Interface (CLI) credentials in plaintext, making it a critical target for attackers if inadvertently exposed.
+
+*   **General Secret Scanning Tools** Many "Secret Scanning Tools" are designed to identify various types of sensitive information, including API keys and AWS access keys, across different digital assets. Datadog's Sensitive Data Scanner, for instance, can discover AWS secret keys across cloud environments.
+*   **S3crets Scanner** This open-source tool focuses on scanning AWS S3 buckets for exposed "secrets," which encompass authentication keys, access tokens, and API credentials that might lead to unauthorized AWS access.
+*   **git-secrets** As mentioned for Git repositories, `git-secrets` is highly effective in preventing AWS credentials from being committed to version control systems.
+*   **Attackers' Scanning Practices** Bad actors actively scan web servers for exposed `.aws/credentials` files, highlighting the importance of proactive scanning by organizations.
+
+Regularly employing these automated scanners and integrating them into development and deployment workflows is crucial for maintaining a strong security posture and preventing sensitive data exposure."""
+    }
+  )
+)] role='user'
+<<< Agent Response: None
+###################################### NEW EVENT ######################################
+Current Time: 2026-03-10 17:20:12.684676
+[Event] Author: CandidateValidationAgent, Type: Event, Final: True, Partial: None, Content: parts=[Part(
+  text="""```json
+{
+  "candidate_id": "BC-WEB-SCAN-001",
+  "time_window_context": {
+    "start": "2026-03-10T12:00:08Z",
+    "end": "2026-03-10T16:00:08Z"
+  },
+  "classification": "botnet_campaign_mapping",
+  "seed_reason": "Tanner logs showed coordinated scanning for sensitive web files.",
+  "observed_evidence": {
+    "source_ips": [
+      "185.177.72.22",
+      "185.177.72.49",
+      "185.177.72.51",
+      "185.177.72.52"
+    ],
+    "source_asn": 211590,
+    "source_organization": "Bucklog SARL",
+    "target_service": "Tanner (port 80)",
+    "artifacts_scanned": [
+      "/.env",
+      "/.git/config",
+      "/.aws/credentials",
+      "/%2eenv",
+      "/.EnV"
+    ],
+    "tactic": "Coordinated scanning for sensitive configuration and credential files, using multiple source IPs from the same ASN to spray requests."
+  },
+  "knownness_checks_performed": [
+    {
+      "tool": "kibanna_discover_query",
+      "parameters": {
+        "term": "src_ip.keyword",
+        "value": "185.177.72.22"
+      },
+      "summary": "Confirmed that IPs in the scanning cluster belong to AS211590 (Bucklog SARL), indicating a coordinated infrastructure."
+    },
+    {
+      "tool": "suricata_lenient_phrase_search",
+      "parameters": {
+        "phrase": ".env"
+      },
+      "summary": "Found no specific Suricata signatures that triggered on requests for '.env', indicating the activity is not being flagged by existing rules."
+    },
+    {
+      "tool": "google_search_agent",
+      "parameters": {
+        "request": "automated scanner for .env .git/config .aws/credentials"
+      },
+      "summary": "Confirmed that scanning for these file types is a common, well-documented technique with many publicly available tools. The behavior itself is not novel."
+    }
+  ],
+  "novelty_score": 2,
+  "infrastructure_value_score": 3,
+  "campaign_shape": "spray",
+  "infra_indicators": {
+    "suspected_compromised_src_ips": [
+      "185.177.72.22",
+      "185.177.72.49",
+      "185.177.72.51",
+      "185.177.72.52",
+      "78.153.140.147",
+      "209.141.37.52"
+    ],
+    "asns": [
+      {
+        "asn": 211590,
+        "organization": "Bucklog SARL"
+      }
+    ],
+    "suspected_staging_hosts": [],
+    "suspected_c2": [],
+    "domains": [],
+    "urls": []
+  },
+  "service_fingerprint": {
+    "dest_port": [
+      80
+    ],
+    "protocol": [
+      "tcp"
+    ],
+    "application_hint": "Tanner/HTTP"
+  },
+  "confidence": "High",
+  "provisional": false,
+  "evidence_gaps": [
+    "Failed to retrieve raw Tanner logs for direct payload inspection after multiple attempts due to incorrect query parameters. Relied on file paths from the initial candidate discovery."
+  ],
+  "failed_queries": [
+    {
+      "tool": "kibanna_discover_query",
+      "error": "Query returned Suricata logs instead of Tanner logs due to missing 'type.keyword' filter."
+    },
+    {
+      "tool": "kibanna_discover_query",
+      "error": "Second attempt also returned Suricata logs instead of Tanner logs due to repeated filter omission."
+    }
+  ],
+  "blocked_validation_steps": [],
+  "required_followup": [
+    "Monitor IPs from ASN 211590 for further scanning or exploit attempts.",
+    "Consider developing a signature to detect coordinated scanning for multiple sensitive file types (e.g., .env, .git/config) from a single source."
+  ]
+}
+```""",
+  thought_signature=b'\n\x8f!\x01\x8f=k_\x99U\rF\x03\x99Y\x14\x06\x95\xe4\xc7B+x}\\\x04\xf5\xbcZG\xa3\x1cJ\x08\xb7\x12b1\x17Tr;\x04\x0f\xfb\xb3\x7f\x04;m\xbb\x83\x91\x81Z\x85\x1er$G\x0c\x1e\xb6|\xd1-o\xe7\x15\xb2\xd5\x99\xfd\x13\xe8\x0eN\xca\x9b\xebh\x06:N/57B\x95p\x15\x16\xa3\xf2\x9c~0...'
+)] role='model'
+METADATA:
+{'cache_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 38338}], 'cached_content_token_count': 38338, 'candidates_token_count': 1124, 'candidates_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 1124}], 'prompt_token_count': 43058, 'prompt_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 43058}], 'thoughts_token_count': 1185, 'tool_use_prompt_token_count': None, 'tool_use_prompt_tokens_details': None, 'total_token_count': 45367, 'traffic_type': <TrafficType.ON_DEMAND: 'ON_DEMAND'>}
+CandidateValidationAgent finished. Pausing 20s to clear Vertex TPM bucket...
+<<< Agent Response: None
+###################################### NEW EVENT ######################################
+Current Time: 2026-03-10 17:20:44.721597
+[Event] Author: CandidateLoopReducerAgent, Type: Event, Final: True, Partial: None, Content: None
+METADATA:
+{'cache_tokens_details': None, 'cached_content_token_count': None, 'candidates_token_count': None, 'candidates_tokens_details': None, 'prompt_token_count': 37132, 'prompt_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 37132}], 'thoughts_token_count': None, 'tool_use_prompt_token_count': None, 'tool_use_prompt_tokens_details': None, 'total_token_count': 37132, 'traffic_type': <TrafficType.ON_DEMAND: 'ON_DEMAND'>}
+CandidateLoopReducerAgent finished. Pausing 20s to clear Vertex TPM bucket...
+<<< Agent Response: None
+###################################### NEW EVENT ######################################
+Current Time: 2026-03-10 17:21:07.645507
+[Event] Author: CandidateLoopControllerAgent, Type: Event, Final: False, Partial: None, Content: parts=[Part(
+  function_call=FunctionCall(
+    args={},
+    id='adk-2b59e562-b9db-4377-aeaf-c8f2d9667c4f',
+    name='load_next_candidate'
+  ),
+  thought_signature=b'\n\xd4\x02\x01\x8f=k_\x92O\xd7]\xe4~\xf6|\x1f\xb9G\xd6\xb2\xde\x91x\xa1\xf0\xceD\x93\x1d\xe9Md\xbd\x17p\xfda\x15\xb7N\x97)J5\x90^\xa9\xc1\xe1\xbc\x960\xcc"\xc7\xa5\x94r\xb4\x1d\x81A\x05\xcdD\xb2jU\x0e\xb7\xd91\xe22\xefl\xac\xfbRW\xffS\x1e~Y\xe3\xe8Q\xd4\x89P\xd4\x1d\xdd$\x85...'
+)] role='model'
+METADATA:
+{'cache_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 28247}], 'cached_content_token_count': 28247, 'candidates_token_count': 5, 'candidates_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 5}], 'prompt_token_count': 38633, 'prompt_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 38633}], 'thoughts_token_count': 83, 'tool_use_prompt_token_count': None, 'tool_use_prompt_tokens_details': None, 'total_token_count': 38721, 'traffic_type': <TrafficType.ON_DEMAND: 'ON_DEMAND'>}
+<<< Agent Response: None
+###################################### NEW EVENT ######################################
+Current Time: 2026-03-10 17:21:07.673364
+[Event] Author: CandidateLoopControllerAgent, Type: Event, Final: False, Partial: None, Content: parts=[Part(
+  function_response=FunctionResponse(
+    id='adk-2b59e562-b9db-4377-aeaf-c8f2d9667c4f',
+    name='load_next_candidate',
+    response={
+      'current_candidate_id': 'ODD-ICS-PROBE-001',
+      'has_candidate': True,
+      'iteration': 3,
+      'remaining': 0
+    }
+  )
+)] role='user'
+<<< Agent Response: None
+###################################### NEW EVENT ######################################
+Current Time: 2026-03-10 17:21:11.478811
+[Event] Author: CandidateLoopControllerAgent, Type: Event, Final: True, Partial: None, Content: parts=[Part(
+  text='Candidate: ODD-ICS-PROBE-001 (3/3)',
+  thought_signature=b'\n\xb5\x05\x01\x8f=k_\x9aW\x13Y4]\x9cE\x1f\xc3\x84\xf3\xc7\xa3\xa9\xde\x91\xaa\xe9\x05\x1b\xfdd\xfe\x05\xfd\xa9\x84\xd9r\xcd\xd9\xb0wR%\xe4\n\xb147H\xbb\xce\xd0\n!\x06\xe8\x82_\xea\xbe\xf0X\xcb\x18\xf9\xc8s\xf7\x8a/u\x19\xf7\x12\xae\x7f\x80+\xfd\n\xee9 \xcaZ\x16*k\xf0C\xef[\xd7f\x950...'
+)] role='model'
+METADATA:
+{'cache_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 38294}], 'cached_content_token_count': 38294, 'candidates_token_count': 18, 'candidates_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 18}], 'prompt_token_count': 38750, 'prompt_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 38750}], 'thoughts_token_count': 195, 'tool_use_prompt_token_count': None, 'tool_use_prompt_tokens_details': None, 'total_token_count': 38963, 'traffic_type': <TrafficType.ON_DEMAND: 'ON_DEMAND'>}
+CandidateLoopControllerAgent finished. Pausing 20s to clear Vertex TPM bucket...
+<<< Agent Response: None
+###################################### NEW EVENT ######################################
+Current Time: 2026-03-10 17:21:46.155259
+[Event] Author: CandidateValidationAgent, Type: Event, Final: False, Partial: None, Content: parts=[Part(
+  function_call=FunctionCall(
+    args={
+      'gte_time_stamp': '2026-03-10T12:00:08Z',
+      'lte_time_stamp': '2026-03-10T16:00:08Z',
+      'size': 20,
+      'term': 'conpot.protocol.keyword',
+      'value': 'kamstrup_protocol'
+    },
+    id='adk-a5e5d26f-5e71-4f6f-9779-8dab9900fb70',
+    name='kibanna_discover_query'
+  ),
+  thought_signature=b'\n\xbc \x01\x8f=k_\x1dJ\x1eE\xc0\xc7?\xf99\xbb\xfc=\xe4\xd39\x12\x17\x1e\x92\x1e-\n{\xe7Kt\xaa\x97\xd8\t\x06\xee\x8d\xe7q\x0f\x9e\rqnA\x91\xe7px\xd3\x07\xcb\x17R\x9d\x90\xed\x1d\xb3\x9e\xee\xfc\xf4\xe7}\xcbU\xbd\xa7<\x02\xd5k\xbc\x8bZ\xca\x9d\xb0]\x02\x1cUsp\xebe\xd7\x06\xe8\xf4\xdc\xe6...'
+), Part(
+  function_call=FunctionCall(
+    args={
+      'request': 'kamstrup meter protocol vulnerability'
+    },
+    id='adk-9e55ac06-5c59-4ebd-ae02-ba95bf11767b',
+    name='search'
+  )
+)] role='model'
+METADATA:
+{'cache_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 38637}], 'cached_content_token_count': 38637, 'candidates_token_count': 78, 'candidates_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 78}], 'prompt_token_count': 45477, 'prompt_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 45477}], 'thoughts_token_count': 1103, 'tool_use_prompt_token_count': None, 'tool_use_prompt_tokens_details': None, 'total_token_count': 46658, 'traffic_type': <TrafficType.ON_DEMAND: 'ON_DEMAND'>}
+<<< Agent Response: None
+###################################### NEW EVENT ######################################
+Current Time: 2026-03-10 17:21:59.556050
+[Event] Author: CandidateValidationAgent, Type: Event, Final: False, Partial: None, Content: parts=[Part(
+  function_response=FunctionResponse(
+    id='adk-a5e5d26f-5e71-4f6f-9779-8dab9900fb70',
+    name='kibanna_discover_query',
+    response={
+      'hits': [],
+      'total': 0
+    }
+  )
+), Part(
+  function_response=FunctionResponse(
+    id='adk-9e55ac06-5c59-4ebd-ae02-ba95bf11767b',
+    name='search',
+    response={
+      'result': """While specific, publicly disclosed vulnerabilities directly targeting the Kamstrup meter protocol (KMP) itself are not widely detailed, an analysis of available information and general smart meter security concerns indicates several areas of potential vulnerability for Kamstrup meters within the broader smart grid ecosystem.
+
+Key points regarding Kamstrup meter protocol and related vulnerabilities include:
+
+*   **Proprietary Nature and Limited Public Tools:** The Kamstrup Meter Protocol (KMP) is proprietary, meaning its internal specifications are not openly published. This can hinder independent security audits, although projects like Conpot have implemented the Kamstrup protocol in honeypots to investigate potential malicious actions. There are no official free tools for probing Kamstrup meters; however, modified versions of tools like PyKamstrup exist, allowing interaction with the protocol. The existence of such tools could be leveraged by those seeking to understand or exploit the protocol.
+*   **Optical Interface for Data Access:** Kamstrup meters, such as the MULTICAL 403, utilize an optical interface for communication. This interface typically requires physical activation (e.g., pressing a button) and magnets to keep it active for a few minutes, suggesting that direct physical access to the meter is necessary for this method of data extraction. While this adds a layer of physical security, it doesn't preclude attacks by individuals with physical access to the meter.
+*   **General Smart Meter Vulnerabilities:** Kamstrup meters, as part of the broader smart metering infrastructure, are susceptible to general vulnerabilities prevalent in the industry. These include:
+    *   **Outdated Protocols and Weak Implementations:** Many smart meters, in general, have been found to use outdated communication protocols or implement security measures poorly.
+    *   **Lack of Strong Authentication and Hardcoded Credentials:** Weak authentication mechanisms or the use of hardcoded credentials can allow unauthorized access to meters and networks.
+    *   **Data Privacy Concerns:** Smart meters collect detailed consumption data, raising concerns about privacy and the potential for this data to be accessed or misused by unauthorized parties. Hackers could obtain consumption patterns to determine occupancy or identify expensive electronics.
+    *   **Denial-of-Service (DoS) and Manipulation Attacks:** Smart meters can be targets for DoS attacks, potentially disrupting data flow or even causing power outages if critical infrastructure is affected. Manipulation of meter data can lead to billing fraud.
+    *   **Supply Chain Vulnerabilities:** The broader metering devices market faces challenges related to supply chain vulnerabilities for critical electronic components.
+*   **Potential for Grid Destabilization:** Research has shown that manipulating smart meters can lead to load oscillations, potentially destabilizing the power transmission grid and causing blackouts.
+*   **Tampering and Physical Security:** While distinct from protocol vulnerabilities, Kamstrup, like other meter manufacturers, addresses physical tampering to prevent water theft, highlighting the need for comprehensive security that includes physical safeguards.
+
+In summary, while there isn't a specific, documented "Kamstrup meter protocol vulnerability" in the public domain in the same way a software CVE might be reported, the proprietary nature of their protocol, combined with the ubiquitous security challenges facing all smart meters, suggests that Kamstrup meters are likely subject to similar risks if not implemented and secured diligently within the larger smart grid infrastructure."""
+    }
+  )
+)] role='user'
+<<< Agent Response: None
+###################################### NEW EVENT ######################################
+Current Time: 2026-03-10 17:22:19.077116
+[Event] Author: CandidateValidationAgent, Type: Event, Final: True, Partial: None, Content: parts=[Part(
+  text="""```json
+{
+  "candidate_id": "ODD-ICS-PROBE-001",
+  "time_window_context": {
+    "start": "2026-03-10T12:00:08Z",
+    "end": "2026-03-10T16:00:08Z"
+  },
+  "classification": "odd_service_minutia",
+  "seed_reason": "Probing of niche Industrial Control System (ICS) protocols detected on Conpot honeypot.",
+  "observed_evidence": {
+    "event_counts": [
+      {
+        "protocol": "kamstrup_protocol",
+        "count": 19
+      },
+      {
+        "protocol": "guardian_ast",
+        "count": 11
+      }
+    ],
+    "context": "Activity consists of low-volume probes against proprietary or uncommon ICS protocols. The specific commands or payloads within the protocol are not available in the aggregated data."
+  },
+  "knownness_checks_performed": [
+    {
+      "tool": "kibanna_discover_query",
+      "parameters": {
+        "term": "conpot.protocol.keyword",
+        "value": "kamstrup_protocol"
+      },
+      "summary": "The query failed to return any events, confirming that source IPs are not easily correlated with this activity using standard tools."
+    },
+    {
+      "tool": "google_search_agent",
+      "parameters": {
+        "request": "kamstrup meter protocol vulnerability"
+      },
+      "summary": "Confirmed that the Kamstrup protocol is a proprietary smart meter protocol with no widely-publicized network vulnerabilities. This suggests the activity is likely targeted reconnaissance rather than opportunistic, large-scale exploitation."
+    }
+  ],
+  "novelty_score": 3,
+  "infrastructure_value_score": 0,
+  "campaign_shape": "unknown",
+  "infra_indicators": {
+    "suspected_compromised_src_ips": [],
+    "asns": [],
+    "suspected_staging_hosts": [],
+    "suspected_c2": [],
+    "domains": [],
+    "urls": []
+  },
+  "service_fingerprint": {
+    "dest_port": [],
+    "protocol": [],
+    "application_hint": "Conpot",
+    "protocol_details": [
+      "kamstrup_protocol (proprietary smart meter)",
+      "guardian_ast"
+    ]
+  },
+  "confidence": "Low",
+  "provisional": true,
+  "evidence_gaps": [
+    "The source IP address for this activity could not be determined. Queries for the raw Conpot events for these protocols returned no results, preventing any infrastructure analysis."
+  ],
+  "failed_queries": [
+    {
+      "tool": "kibanna_discover_query",
+      "error": "Query for 'conpot.protocol.keyword: kamstrup_protocol' returned 0 hits, despite other tools showing 19 events. This indicates a potential issue with the field name or data structure for Conpot logs."
+    }
+  ],
+  "blocked_validation_steps": [
+    "All infrastructure and campaign analysis was blocked due to the inability to identify a source IP."
+  ],
+  "required_followup": [
+    "Investigate data logging and field extraction for the Conpot honeypot to ensure source IPs can be correlated with protocol-level events in the future.",
+    "Maintain monitoring for this activity, as probes against proprietary ICS protocols, while low-volume, can be a precursor to more targeted attacks."
+  ]
+}
+```""",
+  thought_signature=b"\n\xba!\x01\x8f=k_\x1eJ2\xd8}\xca\xdf\xda\xa8\x93\xc9\xa8qLA\xc2&f\xfakh\xd7,?\xcc~x\xc1\x05\xda\xcd\xb7\x97>t\xe3\xd6\x10\x83\x9f\x1eJ\x1a\x06\xa91'\xf0\xcb\xa1>J\xef\x13ZJ\x94\x8f\x98\xd0t\x1e\xca'\xcdi\xfa\xfcRS\x86R\x9b\xe7\x00t\xaflIGJ\x00b\xf2.\xe6\xaa\r\x18...'
+)] role='model'
+METADATA:
+{'cache_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 44088}], 'cached_content_token_count': 44088, 'candidates_token_count': 840, 'candidates_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 840}], 'prompt_token_count': 47330, 'prompt_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 47330}], 'thoughts_token_count': 1100, 'tool_use_prompt_token_count': None, 'tool_use_prompt_tokens_details': None, 'total_token_count': 49270, 'traffic_type': <TrafficType.ON_DEMAND: 'ON_DEMAND'>}
+CandidateValidationAgent finished. Pausing 20s to clear Vertex TPM bucket...
+<<< Agent Response: None
+###################################### NEW EVENT ######################################
+Current Time: 2026-03-10 17:22:45.981330
+[Event] Author: CandidateLoopReducerAgent, Type: Event, Final: True, Partial: None, Content: None
+METADATA:
+{'cache_tokens_details': None, 'cached_content_token_count': None, 'candidates_token_count': None, 'candidates_tokens_details': None, 'prompt_token_count': 38937, 'prompt_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 38937}], 'thoughts_token_count': None, 'tool_use_prompt_token_count': None, 'tool_use_prompt_tokens_details': None, 'total_token_count': 38937, 'traffic_type': <TrafficType.ON_DEMAND: 'ON_DEMAND'>}
+CandidateLoopReducerAgent finished. Pausing 20s to clear Vertex TPM bucket...
+<<< Agent Response: None
+###################################### NEW EVENT ######################################
+Current Time: 2026-03-10 17:23:08.656630
+[Event] Author: CandidateLoopControllerAgent, Type: Event, Final: False, Partial: None, Content: parts=[Part(
+  function_call=FunctionCall(
+    args={},
+    id='adk-d732ac46-df65-40c4-a384-9be1e89ad58d',
+    name='load_next_candidate'
+  ),
+  thought_signature=b'\n\x99\x04\x01\x8f=k_\x01\xf4\x8e\xda\xdbm\x18\xf2[O>\xd7b=\xaa\xc1\x1e\x13\xd38b\x02O#[\xf5\xb8p\xfc-\xd9\x16\xb0\x1f\xbd\xe7\x0eG\xbf\xf3p`\x99\xf1\xe8\x1e@\xa7d\x92\xaad\xc9\t\xafP\xd9\xc8\xd7m\x88t\x89\xfa\xb6}\xd0\xaaC7\xb3\x98\t\t(Q,\xab\x05F\x866\x85\xc1\x19\xcc\xd0\xa3\x06...'
+)] role='model'
+METADATA:
+{'cache_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 38313}], 'cached_content_token_count': 38313, 'candidates_token_count': 5, 'candidates_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 5}], 'prompt_token_count': 40658, 'prompt_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 40658}], 'thoughts_token_count': 137, 'tool_use_prompt_token_count': None, 'tool_use_prompt_tokens_details': None, 'total_token_count': 40800, 'traffic_type': <TrafficType.ON_DEMAND: 'ON_DEMAND'>}
+<<< Agent Response: None
+###################################### NEW EVENT ######################################
+Current Time: 2026-03-10 17:23:08.669933
+[Event] Author: CandidateLoopControllerAgent, Type: Event, Final: False, Partial: None, Content: parts=[Part(
+  function_response=FunctionResponse(
+    id='adk-d732ac46-df65-40c4-a384-9be1e89ad58d',
+    name='load_next_candidate',
+    response={
+      'has_candidate': False,
+      'remaining': 0
+    }
+  )
+)] role='user'
+<<< Agent Response: None
+###################################### NEW EVENT ######################################
+Current Time: 2026-03-10 17:23:11.086202
+[Event] Author: CandidateLoopControllerAgent, Type: Event, Final: False, Partial: None, Content: parts=[Part(
+  function_call=FunctionCall(
+    args={},
+    id='adk-21b979a6-3e4a-46f6-a0a9-1c78f2aa7f5a',
+    name='exit_loop'
+  ),
+  thought_signature=b'\n\xcc\x04\x01\x8f=k_4\t~\xa6\xa6\xdf\xa1j79\x08Yt:\xfc\x01\xa0-\x9aTm\xaa\xaaE2\x9f\xa4\xf0h\x98\x1d\xa23T\xa8M\xfb \xd5W_\xfcaR\xdag1\xedw\xf6r\xea\x16\xcf\x0c%\xd9\x9d\x9aY4,\xef\x13\xeb\x9e?\xf5X\x9c\xdfn\xff\xd8\xa3\xd2\x86\xf6\xcb\xb1.\xad\xc3\x93e\x0b\xe8\xd4\x15...'
+)] role='model'
+METADATA:
+{'cache_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 40297}], 'cached_content_token_count': 40297, 'candidates_token_count': 3, 'candidates_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 3}], 'prompt_token_count': 40811, 'prompt_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 40811}], 'thoughts_token_count': 154, 'tool_use_prompt_token_count': None, 'tool_use_prompt_tokens_details': None, 'total_token_count': 40968, 'traffic_type': <TrafficType.ON_DEMAND: 'ON_DEMAND'>}
+<<< Agent Response: None
+###################################### NEW EVENT ######################################
+Current Time: 2026-03-10 17:23:11.095382
+[Event] Author: CandidateLoopControllerAgent, Type: Event, Final: True, Partial: None, Content: parts=[Part(
+  function_response=FunctionResponse(
+    id='adk-21b979a6-3e4a-46f6-a0a9-1c78f2aa7f5a',
+    name='exit_loop',
+    response={
+      'status': 'loop_exit_requested'
+    }
+  )
+)] role='user'
+CandidateLoopControllerAgent finished. Pausing 20s to clear Vertex TPM bucket...
+<<< Agent Response: None
+###################################### NEW EVENT ######################################
+Current Time: 2026-03-10 17:23:50.109401
+[Event] Author: OSINTAgent, Type: Event, Final: False, Partial: None, Content: parts=[Part(
+  function_call=FunctionCall(
+    args={
+      'request': 'malware "Trinity" ADB "UFO miner"'
+    },
+    id='adk-43104d33-e58c-4b5f-8ea3-e760685d69df',
+    name='search'
+  ),
+  thought_signature=b'\n\xbf*\x01\x8f=k_\xd7\xf2U;\x89c\x9ak\x82\x99sW\x0fK\xbf\x1f3\x14\xd1\xb7j\x1b%V\xf5P \xd7\xd1\x1fQ[\x9c=,\x9c_\x00\x1d\xc6\xe5\xebq\xaf\xd1\x03\x0e\x1d\x1d\xd4\x8a#\x11\xef\xb1l\xcb\x98\x12\xe1%YDJN\x81\r\x03S\xd9o\x97\x04\x1f\xcf\xbc\x010\xc9\x9b\x8ck\x83\xbe?f\x85\xd9\xf4...'
+)] role='model'
+METADATA:
+{'cache_tokens_details': None, 'cached_content_token_count': None, 'candidates_token_count': 13, 'candidates_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 13}], 'prompt_token_count': 40770, 'prompt_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 40770}], 'thoughts_token_count': 1526, 'tool_use_prompt_token_count': None, 'tool_use_prompt_tokens_details': None, 'total_token_count': 42309, 'traffic_type': <TrafficType.ON_DEMAND: 'ON_DEMAND'>}
+<<< Agent Response: None
+###################################### NEW EVENT ######################################
+Current Time: 2026-03-10 17:24:01.198904
+[Event] Author: OSINTAgent, Type: Event, Final: False, Partial: None, Content: parts=[Part(
+  function_response=FunctionResponse(
+    id='adk-43104d33-e58c-4b5f-8ea3-e760685d69df',
+    name='search',
+    response={
+      'result': """There appear to be two distinct malware entities referred to as "Trinity." One is a ransomware variant, and the other is a peer-to-peer (P2P) malware that operates in conjunction with "UFO miner" through Android Debug Bridge (ADB).
+
+**Trinity Ransomware:**
+This "Trinity" is a ransomware-type program first identified around May 2024. It operates by encrypting files, appending a ".trinitylock" extension to them, and demanding a ransom for decryption. It is considered an updated version of the "2023Lock" ransomware and shares some codebase with the "Venus" ransomware. The attackers employ a double extortion strategy, exfiltrating sensitive data before encryption and threatening to leak or sell it if the ransom is not paid. Trinity ransomware often infiltrates systems through phishing emails, malicious websites, or exploitation of software vulnerabilities.
+
+**Trinity P2P ADB Malware and UFO Miner:**
+The other "Trinity" is a P2P malware that spreads through ADB, often alongside "UFO miner". This pairing primarily functions as a cryptocurrency miner, exploiting Android and IoT devices with exposed ADB interfaces. This botnet, sometimes referred to as `com.ufo.miner`, is an evolution of the `ADB.Miner` malware, which was active around 2018-2019.
+
+The attack chain typically involves scanning for devices with open ADB port 5555. Once a vulnerable device is found, the "Trinity" botnet establishes a connection and pushes the "UFO miner" APK to the device. The "UFO miner" then uses genuine tools like `busybox`, `wget`, and `curl` to deploy shell scripts and execute mining code, often written in JavaScript, to mine cryptocurrency like Monero. This exploitation leverages the fact that ADB interfaces, if left exposed and without authentication, act as a wide-open backdoor to vulnerable devices, allowing attackers complete access. Competing botnets, such as Fbot and Satori, have been observed actively trying to remove "com.ufo.miner" from infected devices, indicating a struggle for control over these compromised systems."""
+    }
+  )
+)] role='user'
+<<< Agent Response: None
+###################################### NEW EVENT ######################################
+Current Time: 2026-03-10 17:24:05.430577
+[Event] Author: OSINTAgent, Type: Event, Final: False, Partial: None, Content: parts=[Part(
+  function_call=FunctionCall(
+    args={
+      'request': 'Vulnerability scanner for .env, .git/config, and .aws/credentials'
+    },
+    id='adk-f168b89a-75c6-43ff-9437-54a94963fbb5',
+    name='search'
+  )
+)] role='model'
+METADATA:
+{'cache_tokens_details': None, 'cached_content_token_count': None, 'candidates_token_count': 19, 'candidates_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 19}], 'prompt_token_count': 42754, 'prompt_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 42754}], 'thoughts_token_count': None, 'tool_use_prompt_token_count': None, 'tool_use_prompt_tokens_details': None, 'total_token_count': 42773, 'traffic_type': <TrafficType.ON_DEMAND: 'ON_DEMAND'>}
+<<< Agent Response: None
+###################################### NEW EVENT ######################################
+Current Time: 2026-03-10 17:24:21.630700
+[Event] Author: OSINTAgent, Type: Event, Final: False, Partial: None, Content: parts=[Part(
+  function_response=FunctionResponse(
+    id='adk-f168b89a-75c6-43ff-9437-54a94963fbb5',
+    name='search',
+    response={
+      'result': """To effectively scan for vulnerabilities related to `.env`, `.git/config`, and `.aws/credentials` files, a combination of specialized tools and general secret scanners can be employed. These tools help identify exposed sensitive information such as API keys, database credentials, and access tokens.
+
+**Scanners for `.env` files:**
+
+*   **S4E's .env File Disclosure Vulnerability Scanner** is specifically designed to detect publicly accessible `.env` files, which can expose critical data like database credentials and API tokens.
+*   **Nuclei**, a customizable vulnerability scanner, can be used with specific templates to identify exposed `.env` files.
+*   **Ward**, a security scanner for Laravel projects, includes an `env-scanner` that checks `.env` files for issues like debug mode being enabled in production or secrets present in `.env.example`.
+*   **EnvScan** is a dedicated tool for scanning projects to find secrets and sensitive variables within `.env` and other files, helping to prevent leaks.
+
+**Scanners for `.git/config` and other Git-related exposures:**
+
+*   **git-secrets**, provided by AWS, allows for the configuration of Git commit hooks to prevent the accidental committing of sensitive information, including API keys and passwords, into Git repositories. It can also scan existing repositories and supports custom regular expressions.
+*   General-purpose secret scanners are capable of detecting credentials within `.git/config` if it contains hardcoded secrets. It is crucial to ensure that the `.git` directory is not publicly accessible.
+
+**Scanners for `.aws/credentials`:**
+
+*   **disruptops/cred_scanner** is a file-based scanner designed to identify AWS access and secret keys within files, making it useful for integration with continuous integration (CI) systems.
+*   **git-secrets** can be configured to specifically search for AWS access key patterns.
+*   **S3crets Scanner** is an open-source tool that scans AWS S3 buckets for exposed credentials, including authentication keys and API credentials, addressing a common vector for AWS secret exposure.
+*   Attackers are known to actively scan web servers for publicly exposed `/.aws/credentials` files.
+
+**General-purpose Secret and Credential Scanners (applicable to all three):**
+
+*   **credential-detector (ynori7/credential-detector)** is a configurable tool that scans various file types, including configuration files, for hardcoded credentials such as passwords, API keys, and authorization tokens.
+*   **detect-secrets** is an open-source tool that uses heuristics and rules to scan for a wide array of secrets, offering extensibility through custom rules and suitability for CI pipelines.
+*   **ZeroPath Secrets Scanner** provides a comprehensive solution with over 700 secret detectors, utilizing AI filtering to identify API keys, passwords, and tokens across diverse environments like source code, binaries, and Docker images.
+*   Broader "source code leakage detection" platforms like **Cycode** and **Flare** continuously monitor public repositories and online sources to detect leaked intellectual property and secrets, which would include credentials found in these sensitive files.
+*   **Pentest-Tools.com's Website Vulnerability Scanner** can discover sensitive files and hidden paths, including `.env` and `.git` directories, by probing predefined URLs.
+
+**Prevention and Best Practices:**
+
+To prevent these vulnerabilities, it is recommended to:
+*   Add `.env` files to `.gitignore` to avoid accidental commits to version control.
+*   Integrate secret scanning tools into CI/CD pipelines to automatically detect and prevent the unintentional inclusion of secrets.
+*   Store sensitive information in secure external secret management services such as AWS Secrets Manager, Azure Key Vault, or Doppler, rather than directly in files.
+*   Avoid running AWS Command Line Interface (CLI) tools on publicly accessible servers to prevent the exposure of `/.aws/credentials`."""
+    }
+  )
+)] role='user'
+<<< Agent Response: None
+###################################### NEW EVENT ######################################
+Current Time: 2026-03-10 17:24:24.540902
+[Event] Author: OSINTAgent, Type: Event, Final: True, Partial: None, Content: parts=[Part(
+  text=''
+)] role='model'
+METADATA:
+{'cache_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 41053}], 'cached_content_token_count': 41053, 'candidates_token_count': None, 'candidates_tokens_details': None, 'prompt_token_count': 42062, 'prompt_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 42062}], 'thoughts_token_count': None, 'tool_use_prompt_token_count': None, 'tool_use_prompt_tokens_details': None, 'total_token_count': 42062, 'traffic_type': <TrafficType.ON_DEMAND: 'ON_DEMAND'>}
+OSINTAgent finished. Pausing 20s to clear Vertex TPM bucket...
+<<< Agent Response: None
+###################################### NEW EVENT ######################################
+Current Time: 2026-03-10 17:25:44.989107
+[Event] Author: ReportAgent, Type: Event, Final: False, Partial: None, Content: parts=[Part(
+  function_call=FunctionCall(
+    args={
+      'content': """# Threat Investigation Report: 2026-03-10T12:00:08Z to 2026-03-10T16:00:08Z
+
+## 1) Investigation Scope
+- **investigation_start:** 2026-03-10T12:00:08Z
+- **investigation_end:** 2026-03-10T16:00:08Z
+- **completion_status:** Partial
+- **degraded_mode:** true
+  - **Reason:** Query failures during candidate validation blocked infrastructure analysis for web scanning and ICS probing activities, preventing a complete assessment.
+
+## 2) Executive Triage Summary
+- **Top Services/Ports of Interest:** VNC (5902, 5903), SMB (445), ADB (5555), Web/HTTP (80), SSH (22), and odd-services including ICS/SCADA protocols (kamstrup, guardian_ast) and Redis (6379).
+- **Top Confirmed Known Exploitation:** Activity consistent with the "Trinity" cryptocurrency mining campaign (ca. 2019) was observed via the Adbhoney sensor, exploiting open ADB ports. Widespread scanning for CVE-2006-2369 (RealVNC Auth Bypass) was also noted.
+- **Top Unmapped Exploit-like Items:** Probing of proprietary ICS protocols (`kamstrup_protocol`) was observed on the Conpot honeypot. This activity is unmapped and considered provisional due to a lack of source IP data.
+- **Botnet/Campaign Mapping Highlights:**
+    - A single source IP (106.122.101.255) from China (AS4134) executed a full ADB-based miner installation sequence.
+    - A coordinated cluster of IPs from AS211590 (Bucklog SARL, France) systematically scanned for sensitive web configuration files (`.env`, `.git/config`).
+- **Major Uncertainties:** The source IP(s) and infrastructure behind the ICS protocol probing remain unknown due to tool/query failures, making it impossible to assess the campaign shape or origin.
+
+## 3) Candidate Discovery Summary
+- The discovery phase identified **3** primary candidates for validation from the period's telemetry.
+- **Top Areas of Interest:**
+    - **Adbhoney:** A multi-step attack sequence from a single IP installing a cryptocurrency miner.
+    - **Tanner:** Coordinated scanning for sensitive files (`.env`, `.git/config`) from a cluster of related IPs.
+    - **Conpot:** Probing of unusual ICS/SCADA protocols.
+- **Missing Inputs/Errors:** Initial discovery queries failed to correlate source IPs with Conpot events, requiring the `ODD-ICS-PROBE-001` candidate to be marked as provisional from the outset.
+
+## 4) Novel or Zero-Day Exploit Candidates (UNMAPPED ONLY, ranked)
+*No candidates met the criteria for novel or potential zero-day exploits in this window.*
+
+## 5) Botnet/Campaign Infrastructure Mapping
+### Item 1: Trinity/UFO Miner Campaign
+- **item_id:** BC-ADB-MINER-001
+- **campaign_shape:** fan-out (from a single observed source)
+- **suspected_compromised_src_ips:** 106.122.101.255 (ASN 4134, China)
+- **ASNs / geo hints:** AS4134 (Chinanet), China
+- **suspected_staging indicators:** No download URLs were captured. Payloads (`trinity`, `ufo.apk`) were present in honeypot logs.
+- **suspected_c2 indicators:** None observed.
+- **confidence:** High
+- **operational notes:** This is a known, commodity cryptomining campaign from ~2019 targeting exposed ADB ports. The primary indicator is the IP `106.122.101.255`. Associated malware hash is `0d3c687ffc30e185b836b99bd07fa2b0d460a090626f6bbbd40a95b98ea70257`.
+
+### Item 2: Sensitive File Scanning Campaign
+- **item_id:** BC-WEB-SCAN-001
+- **campaign_shape:** spray
+- **suspected_compromised_src_ips:** 185.177.72.22, 185.177.72.49, 185.177.72.51, 185.177.72.52
+- **ASNs / geo hints:** AS211590 (Bucklog SARL), France
+- **suspected_staging indicators:** Not applicable; these IPs are the source of scanning.
+- **suspected_c2 indicators:** None observed.
+- **confidence:** High
+- **operational notes:** This is a coordinated scanning effort from a single ASN to find exposed credentials and configuration files. This behavior is common, but the coordination from a single provider is notable for infrastructure tracking.
+
+## 6) Odd-Service / Minutia Attacks
+### Item 1: ICS Protocol Probing
+- **item_id:** ODD-ICS-PROBE-001
+- **service_fingerprint:** Conpot honeypot, protocols: `kamstrup_protocol` (19 events), `guardian_ast` (11 events).
+- **why it’s unusual/interesting:** Kamstrup is a proprietary protocol for smart meters. Probing against it is not common background noise and suggests targeted reconnaissance against Operational Technology (OT).
+- **evidence summary:** Low volume probes detected. No payload data or source IPs could be retrieved.
+- **confidence:** Low (Provisional)
+- **recommended monitoring pivots:** Investigate Conpot logging to ensure source IPs are captured. Continue monitoring for any probes against these protocols.
+
+## 7) Known-Exploit / Commodity Exclusions
+- **VNC Scanning (CVE-2006-2369):** High-volume activity (24,692 `GPL INFO VNC server response` alerts) targeting a well-known, dated RealVNC authentication bypass. Classified as commodity scanning.
+- **SMB Scanning:** Widespread, high-volume traffic to port 445 from sources like `41.225.17.210` and `79.98.102.166`. Standard internet background noise.
+- **Credential Stuffing:** Brute-force attempts using common username/password lists (`root`/`admin`, `123456`/`password`) against various services.
+
+## 8) Infrastructure & Behavioral Classification
+- **Exploitation vs. Scanning:**
+    - The ADB "Trinity" activity was **exploitation**.
+    - The Tanner web and Conpot ICS activity were **scanning/reconnaissance**.
+- **Campaign Shape:**
+    - ADB Miner: **Fan-out** (single source targeting many).
+    - Web Scanner: **Spray** (multiple sources targeting many).
+    - ICS Prober: **Unknown**.
+- **Infra Reuse Indicators:**
+    - The web scanning campaign showed clear infrastructure reuse, with multiple IPs originating from the same ASN (211590).
+- **Odd-Service Fingerprints:**
+    - Probing of `kamstrup_protocol` and `guardian_ast` on the Conpot honeypot.
+
+## 9) Evidence Appendix
+### BC-ADB-MINER-001 (Trinity Miner)
+- **Source IPs:** `106.122.101.255` (34 Adbhoney events, 63 total events)
+- **ASNs:** 4134 (Chinanet)
+- **Target Ports/Services:** 5555 (Adbhoney)
+- **Payload/Artifact Excerpts:**
+    - `chmod 0755 /data/local/tmp/trinity`
+    - `pm install /data/local/tmp/ufo.apk`
+    - `am start -n com.ufo.miner/com.example.test.MainActivity`
+    - `/data/local/tmp/nohup /data/local/tmp/trinity`
+- **Temporal Checks:** All activity from this IP occurred within the investigation window.
+
+### BC-WEB-SCAN-001 (Web Scanner)
+- **Source IPs:** `185.177.72.49` (153 events), `185.177.72.52` (153 events), `185.177.72.22` (91 events), `185.177.72.51` (91 events)
+- **ASNs:** 211590 (Bucklog SARL)
+- **Target Ports/Services:** 80 (Tanner/HTTP)
+- **Paths/Endpoints:** `/.env`, `/.aws/credentials`, `/.git/config`, `/%2eenv`, `/.EnV`
+- **Temporal Checks:** All activity from these IPs occurred within the investigation window.
+
+### ODD-ICS-PROBE-001 (ICS Prober)
+- **Source IPs:** unavailable
+- **ASNs:** unavailable
+- **Target Ports/Services:** Conpot (ICS honeypot)
+- **Payload/Artifact Excerpts:** `kamstrup_protocol`, `guardian_ast`
+- **Temporal Checks:** unavailable
+
+## 10) Indicators of Interest
+- **IPs:**
+    - `106.122.101.255` (ADB Miner)
+    - `185.177.72.22` (Web Scanner)
+    - `185.177.72.49` (Web Scanner)
+    - `185.177.72.51` (Web Scanner)
+    - `185.177.72.52` (Web Scanner)
+- **ASNs:**
+    - `211590` (Bucklog SARL)
+- **Malware Hashes:**
+    - `0d3c687ffc30e185b836b99bd07fa2b0d460a090626f6bbbd40a95b98ea70257` (Associated with Adbhoney artifact)
+- **Paths:**
+    - `/.env`
+    - `/.git/config`
+    - `/.aws/credentials`
+- **Malware Artifacts:**
+    - `trinity`
+    - `ufo.apk`
+    - `com.ufo.miner`
+
+## 11) Backend Tool Issues
+- **`two_level_terms_aggregated` (in CandidateDiscoveryAgent):** The tool failed to retrieve source IPs for Conpot activity. This weakened the `ODD-ICS-PROBE-001` candidate from its creation.
+- **`kibanna_discover_query` (in CandidateValidationAgent):** This tool was misused multiple times, weakening conclusions:
+    - For candidate `BC-WEB-SCAN-001`, the query was run without a `type: Tanner` filter, returning irrelevant Suricata flow logs instead of the desired Tanner logs. This blocked direct inspection of the web request payloads.
+    - For candidate `ODD-ICS-PROBE-001`, a query for Conpot events (`conpot.protocol.keyword: kamstrup_protocol`) returned 0 hits, despite other data showing 19 events. This completely blocked all infrastructure analysis and suggests a data indexing or schema problem for Conpot logs.
+
+## 12) Agent Action Summary (Audit Trail)
+- **agent_name:** ParallelInvestigationAgent
+  - **purpose:** Collect broad baseline and signal telemetry across multiple domains.
+  - **inputs_used:** investigation_start, investigation_end.
+  - **actions_taken:** Executed sub-agents for baseline, known signals, credential noise, and honeypot-specific data collection.
+  - **key_results:** Total attacks (28,590), top countries (US, France), top CVEs (CVE-2006-2369), top signatures (VNC), and honeypot-specific data from Adbhoney, Conpot, etc.
+  - **errors_or_gaps:** None.
+- **agent_name:** CandidateDiscoveryAgent
+  - **purpose:** Analyze initial telemetry to identify and prioritize potential threats.
+  - **inputs_used:** Outputs from all ParallelInvestigationAgent sub-agents.
+  - **actions_taken:** Aggregated data across honeypot types and attack patterns.
+  - **key_results:** Identified 3 candidates: `BC-ADB-MINER-001` (Adbhoney), `BC-WEB-SCAN-001` (Tanner), `ODD-ICS-PROBE-001` (Conpot).
+  - **errors_or_gaps:** Failed to correlate source IPs for Conpot activity, weakening the `ODD-ICS-PROBE-001` candidate.
+- **agent_name:** CandidateValidationLoopAgent
+  - **purpose:** Orchestrate the iterative validation of each discovered candidate.
+  - **inputs_used:** List of 3 candidates from CandidateDiscoveryAgent.
+  - **actions_taken:** Ran a validation loop for 3 iterations, processing one candidate each time. Exited normally when the candidate queue was empty.
+  - **key_results:** All 3 candidates were processed, and detailed validation reports were generated.
+  - **errors_or_gaps:** Loop control was successful, but validation steps within the loop encountered tool failures (see Backend Tool Issues).
+- **agent_name:** OSINTAgent
+  - **purpose:** Enrich validated findings with open-source intelligence.
+  - **inputs_used:** Validated candidate reports.
+  - **actions_taken:** Performed searches for "Trinity" malware and scanners for sensitive files like `.env`.
+  - **key_results:** Correctly identified the ADB activity as the known "Trinity/UFO Miner" campaign and confirmed that scanning for `.env` files is a common technique.
+  - **errors_or_gaps:** None.
+- **agent_name:** ReportAgent
+  - **purpose:** Compile the final report from all workflow state outputs.
+  - **inputs_used:** All available state keys from previous agents.
+  - **actions_taken:** Assembled this markdown report.
+  - **key_results:** This report.
+  - **errors_or_gaps:** Noted `Partial` status due to upstream errors.
+- **agent_name:** SaveReportAgent
+  - **purpose:** Persist the final report to the filesystem.
+  - **inputs_used:** Content of this report.
+  - **actions_taken:** Called `default_write_file`.
+  - **key_results:** Pending tool execution.
+  - **errors_or_gaps:** None.
+"""
+    },
+    id='adk-838de513-cea0-4e38-a704-0632849cdce7',
+    name='default_write_file'
+  ),
+  thought_signature=b'\n\xbaM\x01\x8f=k_\xb2|\xb4\xe6\xc1\xce\xce%\xe4\xc4\xaf\x16\x11\xbf\x15L\x86W\xa12\xe9#\x00\xf9\xff\xde\xc5%\xa7!\xe5H~\x8c\x01\xf6\xd0x\xab\xfd&^\xec~`\xd8\xf1\xe1\xaa\x1b\x16\xb3\xf0\xd0\xa8\xb4\xf9O|.\xe1_\x89\xa0s\x10C\xc7\xcf\x81\xb4\x05+7\xa6mkE\x87\xb8\xcc\xacI\xe8\xcd)\x8a\x01`...'
+)] role='model'
+METADATA:
+{'cache_tokens_details': None, 'cached_content_token_count': None, 'candidates_token_count': 3417, 'candidates_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 3417}], 'prompt_token_count': 42432, 'prompt_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 42432}], 'thoughts_token_count': 3135, 'tool_use_prompt_token_count': None, 'tool_use_prompt_tokens_details': None, 'total_token_count': 48984, 'traffic_type': <TrafficType.ON_DEMAND: 'ON_DEMAND'>}
+<<< Agent Response: None
+###################################### NEW EVENT ######################################
+Current Time: 2026-03-10 17:25:45.026227
+[Event] Author: ReportAgent, Type: Event, Final: False, Partial: None, Content: parts=[Part(
+  function_response=FunctionResponse(
+    id='adk-838de513-cea0-4e38-a704-0632849cdce7',
+    name='default_write_file',
+    response={
+      'file_name': 'Default_Agent_Report_2026-03-10_12-16.md',
+      'file_path': '/home/user/Haineypot/reports/default_agent_reports/Default_Agent_Report_2026-03-10_12-16.md',
+      'status': 'success'
+    }
+  )
+)] role='user'
+<<< Agent Response: None
+###################################### NEW EVENT ######################################
+Current Time: 2026-03-10 17:25:48.440985
+[Event] Author: ReportAgent, Type: Event, Final: True, Partial: None, Content: parts=[Part(
+  text="""I have compiled and saved the final threat investigation report. The investigation is now complete.
+"""
+)] role='model'
+METADATA:
+{'cache_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 40552}], 'cached_content_token_count': 40552, 'candidates_token_count': 18, 'candidates_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 18}], 'prompt_token_count': 49063, 'prompt_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 49063}], 'thoughts_token_count': None, 'tool_use_prompt_token_count': None, 'tool_use_prompt_tokens_details': None, 'total_token_count': 49081, 'traffic_type': <TrafficType.ON_DEMAND: 'ON_DEMAND'>}
+ReportAgent finished. Pausing 20s to clear Vertex TPM bucket...
+<<< Agent Response: None
+###################################### NEW EVENT ######################################
+Current Time: 2026-03-10 17:26:25.549586
+[Event] Author: SaveReportAgent, Type: Event, Final: False, Partial: None, Content: parts=[Part(
+  function_call=FunctionCall(
+    args={
+      'content': """# Threat Investigation Report: 2026-03-10T12:00:08Z to 2026-03-10T16:00:08Z
+
+## 1) Investigation Scope
+- **investigation_start:** 2026-03-10T12:00:08Z
+- **investigation_end:** 2026-03-10T16:00:08Z
+- **completion_status:** Partial
+- **degraded_mode:** true
+  - **Reason:** Query failures during candidate validation blocked infrastructure analysis for web scanning and ICS probing activities, preventing a complete assessment.
+
+## 2) Executive Triage Summary
+- **Top Services/Ports of Interest:** VNC (5902, 5903), SMB (445), ADB (5555), Web/HTTP (80), SSH (22), and odd-services including ICS/SCADA protocols (kamstrup, guardian_ast) and Redis (6379).
+- **Top Confirmed Known Exploitation:** Activity consistent with the "Trinity" cryptocurrency mining campaign (ca. 2019) was observed via the Adbhoney sensor, exploiting open ADB ports. Widespread scanning for CVE-2006-2369 (RealVNC Auth Bypass) was also noted.
+- **Top Unmapped Exploit-like Items:** Probing of proprietary ICS protocols (`kamstrup_protocol`) was observed on the Conpot honeypot. This activity is unmapped and considered provisional due to a lack of source IP data.
+- **Botnet/Campaign Mapping Highlights:**
+    - A single source IP (106.122.101.255) from China (AS4134) executed a full ADB-based miner installation sequence.
+    - A coordinated cluster of IPs from AS211590 (Bucklog SARL, France) systematically scanned for sensitive web configuration files (`.env`, `.git/config`).
+- **Major Uncertainties:** The source IP(s) and infrastructure behind the ICS protocol probing remain unknown due to tool/query failures, making it impossible to assess the campaign shape or origin.
+
+## 3) Candidate Discovery Summary
+- The discovery phase identified **3** primary candidates for validation from the period's telemetry.
+- **Top Areas of Interest:**
+    - **Adbhoney:** A multi-step attack sequence from a single IP installing a cryptocurrency miner.
+    - **Tanner:** Coordinated scanning for sensitive files (`.env`, `.git/config`) from a cluster of related IPs.
+    - **Conpot:** Probing of unusual ICS/SCADA protocols.
+- **Missing Inputs/Errors:** Initial discovery queries failed to correlate source IPs with Conpot events, requiring the `ODD-ICS-PROBE-001` candidate to be marked as provisional from the outset.
+
+## 4) Novel or Zero-Day Exploit Candidates (UNMAPPED ONLY, ranked)
+*No candidates met the criteria for novel or potential zero-day exploits in this window.*
+
+## 5) Botnet/Campaign Infrastructure Mapping
+### Item 1: Trinity/UFO Miner Campaign
+- **item_id:** BC-ADB-MINER-001
+- **campaign_shape:** fan-out (from a single observed source)
+- **suspected_compromised_src_ips:** 106.122.101.255 (ASN 4134, China)
+- **ASNs / geo hints:** AS4134 (Chinanet), China
+- **suspected_staging indicators:** No download URLs were captured. Payloads (`trinity`, `ufo.apk`) were present in honeypot logs.
+- **suspected_c2 indicators:** None observed.
+- **confidence:** High
+- **operational notes:** This is a known, commodity cryptomining campaign from ~2019 targeting exposed ADB ports. The primary indicator is the IP `106.122.101.255`. Associated malware hash is `0d3c687ffc30e185b836b99bd07fa2b0d460a090626f6bbbd40a95b98ea70257`.
+
+### Item 2: Sensitive File Scanning Campaign
+- **item_id:** BC-WEB-SCAN-001
+- **campaign_shape:** spray
+- **suspected_compromised_src_ips:** 185.177.72.22, 185.177.72.49, 185.177.72.51, 185.177.72.52
+- **ASNs / geo hints:** AS211590 (Bucklog SARL), France
+- **suspected_staging indicators:** Not applicable; these IPs are the source of scanning.
+- **suspected_c2 indicators:** None observed.
+- **confidence:** High
+- **operational notes:** This is a coordinated scanning effort from a single ASN to find exposed credentials and configuration files. This behavior is common, but the coordination from a single provider is notable for infrastructure tracking.
+
+## 6) Odd-Service / Minutia Attacks
+### Item 1: ICS Protocol Probing
+- **item_id:** ODD-ICS-PROBE-001
+- **service_fingerprint:** Conpot honeypot, protocols: `kamstrup_protocol` (19 events), `guardian_ast` (11 events).
+- **why it’s unusual/interesting:** Kamstrup is a proprietary protocol for smart meters. Probing against it is not common background noise and suggests targeted reconnaissance against Operational Technology (OT).
+- **evidence summary:** Low volume probes detected. No payload data or source IPs could be retrieved.
+- **confidence:** Low (Provisional)
+- **recommended monitoring pivots:** Investigate Conpot logging to ensure source IPs are captured. Continue monitoring for any probes against these protocols.
+
+## 7) Known-Exploit / Commodity Exclusions
+- **VNC Scanning (CVE-2006-2369):** High-volume activity (24,692 `GPL INFO VNC server response` alerts) targeting a well-known, dated RealVNC authentication bypass. Classified as commodity scanning.
+- **SMB Scanning:** Widespread, high-volume traffic to port 445 from sources like `41.225.17.210` and `79.98.102.166`. Standard internet background noise.
+- **Credential Stuffing:** Brute-force attempts using common username/password lists (`root`/`admin`, `123456`/`password`) against various services.
+
+## 8) Infrastructure & Behavioral Classification
+- **Exploitation vs. Scanning:**
+    - The ADB "Trinity" activity was **exploitation**.
+    - The Tanner web and Conpot ICS activity were **scanning/reconnaissance**.
+- **Campaign Shape:**
+    - ADB Miner: **Fan-out** (single source targeting many).
+    - Web Scanner: **Spray** (multiple sources targeting many).
+    - ICS Prober: **Unknown**.
+- **Infra Reuse Indicators:**
+    - The web scanning campaign showed clear infrastructure reuse, with multiple IPs originating from the same ASN (211590).
+- **Odd-Service Fingerprints:**
+    - Probing of `kamstrup_protocol` and `guardian_ast` on the Conpot honeypot.
+
+## 9) Evidence Appendix
+### BC-ADB-MINER-001 (Trinity Miner)
+- **Source IPs:** `106.122.101.255` (34 Adbhoney events, 63 total events)
+- **ASNs:** 4134 (Chinanet)
+- **Target Ports/Services:** 5555 (Adbhoney)
+- **Payload/Artifact Excerpts:**
+    - `chmod 0755 /data/local/tmp/trinity`
+    - `pm install /data/local/tmp/ufo.apk`
+    - `am start -n com.ufo.miner/com.example.test.MainActivity`
+    - `/data/local/tmp/nohup /data/local/tmp/trinity`
+- **Temporal Checks:** All activity from this IP occurred within the investigation window.
+
+### BC-WEB-SCAN-001 (Web Scanner)
+- **Source IPs:** `185.177.72.49` (153 events), `185.177.72.52` (153 events), `185.177.72.22` (91 events), `185.177.72.51` (91 events)
+- **ASNs:** 211590 (Bucklog SARL)
+- **Target Ports/Services:** 80 (Tanner/HTTP)
+- **Paths/Endpoints:** `/.env`, `/.aws/credentials`, `/.git/config`, `/%2eenv`, `/.EnV`
+- **Temporal Checks:** All activity from these IPs occurred within the investigation window.
+
+### ODD-ICS-PROBE-001 (ICS Prober)
+- **Source IPs:** unavailable
+- **ASNs:** unavailable
+- **Target Ports/Services:** Conpot (ICS honeypot)
+- **Payload/Artifact Excerpts:** `kamstrup_protocol`, `guardian_ast`
+- **Temporal Checks:** unavailable
+
+## 10) Indicators of Interest
+- **IPs:**
+    - `106.122.101.255` (ADB Miner)
+    - `185.177.72.22` (Web Scanner)
+    - `185.177.72.49` (Web Scanner)
+    - `185.177.72.51` (Web Scanner)
+    - `185.177.72.52` (Web Scanner)
+- **ASNs:**
+    - `211590` (Bucklog SARL)
+- **Malware Hashes:**
+    - `0d3c687ffc30e185b836b99bd07fa2b0d460a090626f6bbbd40a95b98ea70257` (Associated with Adbhoney artifact)
+- **Paths:**
+    - `/.env`
+    - `/.git/config`
+    - `/.aws/credentials`
+- **Malware Artifacts:**
+    - `trinity`
+    - `ufo.apk`
+    - `com.ufo.miner`
+
+## 11) Backend Tool Issues
+- **`two_level_terms_aggregated` (in CandidateDiscoveryAgent):** The tool failed to retrieve source IPs for Conpot activity. This weakened the `ODD-ICS-PROBE-001` candidate from its creation.
+- **`kibanna_discover_query` (in CandidateValidationAgent):** This tool was misused multiple times, weakening conclusions:
+    - For candidate `BC-WEB-SCAN-001`, the query was run without a `type: Tanner` filter, returning irrelevant Suricata flow logs instead of the desired Tanner logs. This blocked direct inspection of the web request payloads.
+    - For candidate `ODD-ICS-PROBE-001`, a query for Conpot events (`conpot.protocol.keyword: kamstrup_protocol`) returned 0 hits, despite other data showing 19 events. This completely blocked all infrastructure analysis and suggests a data indexing or schema problem for Conpot logs.
+
+## 12) Agent Action Summary (Audit Trail)
+- **agent_name:** ParallelInvestigationAgent
+  - **purpose:** Collect broad baseline and signal telemetry across multiple domains.
+  - **inputs_used:** investigation_start, investigation_end.
+  - **actions_taken:** Executed sub-agents for baseline, known signals, credential noise, and honeypot-specific data collection.
+  - **key_results:** Total attacks (28,590), top countries (US, France), top CVEs (CVE-2006-2369), top signatures (VNC), and honeypot-specific data from Adbhoney, Conpot, etc.
+  - **errors_or_gaps:** None.
+- **agent_name:** CandidateDiscoveryAgent
+  - **purpose:** Analyze initial telemetry to identify and prioritize potential threats.
+  - **inputs_used:** Outputs from all ParallelInvestigationAgent sub-agents.
+  - **actions_taken:** Aggregated data across honeypot types and attack patterns.
+  - **key_results:** Identified 3 candidates: `BC-ADB-MINER-001` (Adbhoney), `BC-WEB-SCAN-001` (Tanner), `ODD-ICS-PROBE-001` (Conpot).
+  - **errors_or_gaps:** Failed to correlate source IPs for Conpot activity, weakening the `ODD-ICS-PROBE-001` candidate.
+- **agent_name:** CandidateValidationLoopAgent
+  - **purpose:** Orchestrate the iterative validation of each discovered candidate.
+  - **inputs_used:** List of 3 candidates from CandidateDiscoveryAgent.
+  - **actions_taken:** Ran a validation loop for 3 iterations, processing one candidate each time. Exited normally when the candidate queue was empty.
+  - **key_results:** All 3 candidates were processed, and detailed validation reports were generated.
+  - **errors_or_gaps:** Loop control was successful, but validation steps within the loop encountered tool failures (see Backend Tool Issues).
+- **agent_name:** OSINTAgent
+  - **purpose:** Enrich validated findings with open-source intelligence.
+  - **inputs_used:** Validated candidate reports.
+  - **actions_taken:** Performed searches for "Trinity" malware and scanners for sensitive files like `.env`.
+  - **key_results:** Correctly identified the ADB activity as the known "Trinity/UFO Miner" campaign and confirmed that scanning for `.env` files is a common technique.
+  - **errors_or_gaps:** None.
+- **agent_name:** ReportAgent
+  - **purpose:** Compile the final report from all workflow state outputs.
+  - **inputs_used:** All available state keys from previous agents.
+  - **actions_taken:** Assembled this markdown report.
+  - **key_results:** This report.
+  - **errors_or_gaps:** Noted `Partial` status due to upstream errors.
+- **agent_name:** SaveReportAgent
+  - **purpose:** Persist the final report to the filesystem.
+  - **inputs_used:** Content of this report.
+  - **actions_taken:** Called `default_write_file`.
+  - **key_results:** Pending tool execution.
+  - **errors_or_gaps:** None.
+"""
+    },
+    id='adk-c73593c1-d345-4a52-81e0-df4371093f41',
+    name='default_write_file'
+  ),
+  thought_signature=b'\n\x92\x06\x01\x8f=k_B\xa9\n\x9b\x061B^\xc2\x7f\xb0\x9b-r"\xc1\xa2\xe85\x14\xba\xef\x1e\x1a\x8f\x1c\xfa]\rjd\xb6bo0r\x13\xab\xd1\xcf\x1b7\xc7iba\xad!$\x05Q\xd6\x88qT?\x19\xb6\x88\xdc\xb3\x94\xa3q\x17\x16\x19];\x976\xfe\x86\xe5\xf8\x14\xe0\xbe\xa9\x1f\xd3L=\x07\x97\x96p\x90n...'
+)] role='model'
+METADATA:
+{'cache_tokens_details': None, 'cached_content_token_count': None, 'candidates_token_count': 3417, 'candidates_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 3417}], 'prompt_token_count': 44066, 'prompt_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 44066}], 'thoughts_token_count': 217, 'tool_use_prompt_token_count': None, 'tool_use_prompt_tokens_details': None, 'total_token_count': 47700, 'traffic_type': <TrafficType.ON_DEMAND: 'ON_DEMAND'>}
+<<< Agent Response: None
+###################################### NEW EVENT ######################################
+Current Time: 2026-03-10 17:26:25.561835
+[Event] Author: SaveReportAgent, Type: Event, Final: False, Partial: None, Content: parts=[Part(
+  function_response=FunctionResponse(
+    id='adk-c73593c1-d345-4a52-81e0-df4371093f41',
+    name='default_write_file',
+    response={
+      'file_name': 'Default_Agent_Report_2026-03-10_12-16.md',
+      'file_path': '/home/user/Haineypot/reports/default_agent_reports/Default_Agent_Report_2026-03-10_12-16.md',
+      'status': 'success'
+    }
+  )
+)] role='user'
+<<< Agent Response: None
+###################################### NEW EVENT ######################################
+Current Time: 2026-03-10 17:26:28.161321
+[Event] Author: SaveReportAgent, Type: Event, Final: True, Partial: None, Content: parts=[Part(
+  text='I have successfully saved the final report to `/home/user/Haineypot/reports/default_agent_reports/Default_Agent_Report_2026-03-10_12-16.md`.'
+)] role='model'
+METADATA:
+{'cache_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 4054}], 'cached_content_token_count': 4054, 'candidates_token_count': 51, 'candidates_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 51}], 'prompt_token_count': 47779, 'prompt_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 47779}], 'thoughts_token_count': None, 'tool_use_prompt_token_count': None, 'tool_use_prompt_tokens_details': None, 'total_token_count': 47830, 'traffic_type': <TrafficType.ON_DEMAND: 'ON_DEMAND'>}
+SaveReportAgent finished. Pausing 20s to clear Vertex TPM bucket...
+<<< Agent Response: None
+###################################### NEW EVENT ######################################
+Current Time: 2026-03-10 17:26:52.052038
+[Event] Author: SaveReportValidatorAgent, Type: Event, Final: False, Partial: None, Content: parts=[Part(
+  function_call=FunctionCall(
+    args={},
+    id='adk-146a9559-986a-45db-86d7-c8d4162702ee',
+    name='default_reports_file_check'
+  ),
+  thought_signature=b'\n\xe1\x03\x01\x8f=k_\x9a\x1c\x04\x84D\x9d \x16A"\xdf\xf3\\\x89e5)(\x9c\xec\x19\xcf\xe1C\xfa \x9f\xa6\x17:\xe6\xa7Z\x06\xb7K\xdeSS\'_oD\x05\x9e)\xb8\xc6O\xe7\xf1\x1dG(\xcb\x80\xb1\x82\x9as7`\xf3\xbdb\xc4<J\x93\xb2:\x1c\x17\x03\x97\x17\xe6\xaa\xdf}$n,\x03\xb0g\xdf\x15\\...'
+)] role='model'
+METADATA:
+{'cache_tokens_details': None, 'cached_content_token_count': None, 'candidates_token_count': 7, 'candidates_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 7}], 'prompt_token_count': 47803, 'prompt_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 47803}], 'thoughts_token_count': 128, 'tool_use_prompt_token_count': None, 'tool_use_prompt_tokens_details': None, 'total_token_count': 47938, 'traffic_type': <TrafficType.ON_DEMAND: 'ON_DEMAND'>}
+<<< Agent Response: None
+###################################### NEW EVENT ######################################
+Current Time: 2026-03-10 17:26:52.076235
+[Event] Author: SaveReportValidatorAgent, Type: Event, Final: False, Partial: None, Content: parts=[Part(
+  function_response=FunctionResponse(
+    id='adk-146a9559-986a-45db-86d7-c8d4162702ee',
+    name='default_reports_file_check',
+    response={
+      'exists': True,
+      'expected_file_name': 'Default_Agent_Report_2026-03-10_12-16.md',
+      'recent_files': [
+        'Default_Agent_Report_2026-03-10_12-16.md',
+        'Default_Agent_Report_2026-03-10_12-16.log',
+        'Default_Agent_Report_2026-03-10_09-12.log',
+      ],
+      'status': 'success'
+    }
+  )
+)] role='user'
+<<< Agent Response: None
+###################################### NEW EVENT ######################################
+Current Time: 2026-03-10 17:26:54.772817
+[Event] Author: SaveReportValidatorAgent, Type: Event, Final: False, Partial: None, Content: parts=[Part(
+  function_call=FunctionCall(
+    args={
+      'reason': 'Report file verified'
+    },
+    id='adk-89703e96-ae3c-4a30-8c7b-9c84e9b2757d',
+    name='exit_save_loop'
+  ),
+  thought_signature=b'\n\xba\x02\x01\x8f=k_b\xb1\x87\xacSXH\\\x00\x9dW\xbf\xba\x7f\x15b\xad\x04\xa6\xcc\x9d\xca^\n\xc3\xf1\x90\xdf\xf9X\x88\xea\xe6\xeb}[*\xd1\xc9F\xc8xY\xccK\xfa\x1dT\x81\x98sD?\xaa\x9f\xd7\xfa\xb7..k#G\xeb\xf3\x89AC[\xd7\x14`\xebJ\xf8@\xdd\x88b\x88\xa4\xa1\xba\xd9\x9ck\x07\xc5\x84...'
+)] role='model'
+METADATA:
+{'cache_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 47716}], 'cached_content_token_count': 47716, 'candidates_token_count': 9, 'candidates_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 9}], 'prompt_token_count': 48053, 'prompt_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 48053}], 'thoughts_token_count': 83, 'tool_use_prompt_token_count': None, 'tool_use_prompt_tokens_details': None, 'total_token_count': 48145, 'traffic_type': <TrafficType.ON_DEMAND: 'ON_DEMAND'>}
+<<< Agent Response: None
+###################################### NEW EVENT ######################################
+Current Time: 2026-03-10 17:26:54.802065
+[Event] Author: SaveReportValidatorAgent, Type: Event, Final: True, Partial: None, Content: parts=[Part(
+  function_response=FunctionResponse(
+    id='adk-89703e96-ae3c-4a30-8c7b-9c84e9b2757d',
+    name='exit_save_loop',
+    response={
+      'reason': 'Report file verified',
+      'status': 'exiting'
+    }
+  )
+)] role='user'
+SaveReportValidatorAgent finished. Pausing 20s to clear Vertex TPM bucket...
+<<< Agent Response: None
+END Tue Mar 10 17:27:16 UTC 2026
