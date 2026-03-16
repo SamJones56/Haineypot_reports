@@ -1,178 +1,148 @@
-# Threat Investigation Report: Honeypot Activity Analysis
+# Threat Hunting Honeypot Investigation Report
 
 ## 1) Investigation Scope
-- **investigation_start:** 2026-03-16T08:00:10Z
-- **investigation_end:** 2026-03-16T12:00:10Z
-- **completion_status:** Partial (degraded evidence)
-- **degraded_mode:** true
-  - **Reason:** A backend query to retrieve source IP information for the Conpot (ICS honeypot) failed. This prevented the complete mapping of observed Industrial Control System (ICS) scanning activity.
+- **investigation_start**: 2026-03-16T08:00:10Z
+- **investigation_end**: 2026-03-16T12:00:10Z
+- **completion_status**: Partial (degraded evidence)
+- **degraded_mode**: true. The deep investigation into unusual Industrial Control System (ICS) activity was blocked due to repeated tool query failures, leaving a significant gap in the analysis.
 
 ## 2) Executive Triage Summary
-- **Top Services/Ports of Interest:**
-  - Port 445 (SMB) and VNC-related ports (5901-5905) received a high volume of commodity scanning and brute-force traffic.
-  - Port 80 (HTTP) was targeted by a coordinated web vulnerability scanning campaign.
-  - Uncommon ICS protocols (`guardian_ast`, `kamstrup_protocol`) were observed, indicating scanning for industrial/utility systems.
-- **Top Confirmed Known Exploitation:**
-  - A multi-IP campaign was identified scanning for CVE-2017-9841, a known remote code execution (RCE) vulnerability in PHPUnit.
-- **Top Unmapped Exploit-like Items:**
-  - No novel or unmapped exploit candidates were validated in this window.
-- **Botnet/Campaign Mapping Highlights:**
-  - A small, focused "spray" campaign was mapped, consisting of two source IPs (`94.103.169.88`, `147.45.60.22`) using identical tooling to scan for a wide range of web vulnerabilities, including CVE-2017-9841 (PHPUnit), CVE-2021-42013 (Apache), ThinkPHP, and PEAR exploits.
-- **Major Uncertainties:**
-  - The source IPs and geographic origin of the ICS scanning activity on our Conpot honeypot remain unknown due to a data pipeline failure.
+- **Top Services of Interest**: High-volume scanning was observed on port 445 (SMB) and VNC ports (5902-5904). A significant emerging campaign targeted a wide range of non-standard web development ports (3004, 3010, 3333, 5001, 8081, etc.).
+- **Odd/Minutia Services**: Probes against Industrial Control System (ICS) protocols (`guardian_ast`, `kamstrup_protocol`) were reported by honeypots. However, a full investigation was blocked by tool failures.
+- **Top Confirmed Known Exploitation**: Widespread, active exploitation of **CVE-2025-55182 (React2Shell)**, a critical and recently disclosed RCE in React Server Components.
+- **Botnet/Campaign Mapping Highlights**: The React2Shell campaign is comprised of at least two distinct actor types: a high-volume, specialized scanner (`193.32.162.28` from Romania) and a lower-volume, general-purpose scanner (`79.124.40.174` from Bulgaria).
+- **Major Uncertainties**: The nature, origin, and scale of the reported ICS activity remain completely unknown due to backend tool failures preventing analysis.
 
 ## 3) Candidate Discovery Summary
-- **Total Attacks Analyzed:** 27,464
-- **Key Areas of Interest Identified:**
-  - Coordinated scanning for PHPUnit RCE (CVE-2017-9841) from multiple source IPs.
-  - Scanning for common Spring Boot actuator endpoints.
-  - Reconnaissance of ICS protocols (Guardian AST for Automatic Tank Gauges, Kamstrup for smart metering).
-- **Discovery Gaps:** The investigation was materially affected by a failed `kibanna_discover_query` against `Conpot` data, preventing source correlation for the ICS activity.
+The discovery process identified several key areas for investigation based on initial telemetry:
+- **Known Exploits**: PHPUnit RCE (CVE-2017-9841).
+- **Emerging Threats**: Recently disclosed CVEs, most notably CVE-2025-55182.
+- **Credential Stuffing**: Use of an unusual but documented credential pair (`345gs5662d34` / `3245gs5662d34`) linked to botnets.
+- **Odd-Service Activity**: Probes against Conpot ICS honeypots.
+- **Investigation into the ICS activity was materially affected by tool failures**, which prevented any validation or analysis of the initial lead.
+
+## 4) Emerging n-day Exploitation
+### CVE-2025-55182 (React2Shell) Exploitation Campaign
+- **cve/signature mapping**: `CVE-2025-55182`, `ET WEB_SPECIFIC_APPS React Server Components React2Shell Unsafe Flight Protocol Property Access (CVE-2025-55182)`
+- **evidence summary**: 120 events directly referencing the CVE were observed. Analysis of attacker behavior revealed thousands of related events. Key artifacts include targeted requests to Next.js paths like `/_next/server` and `/api/route`.
+- **affected service/port**: A wide range of non-standard TCP web ports, including 3004, 3010, 3333, 5001, 8081, 8088, 8888, 9000, and 9443.
+- **confidence**: High
+- **operational notes**: This is a critical, recently disclosed (Dec 2025) unauthenticated RCE being actively and widely exploited. All internet-facing assets using React Server Components (especially Next.js) must be patched immediately.
+
+## 5) Novel or Zero-Day Exploit Candidates
+No novel exploit candidates were validated during this investigation window. The most promising lead (ICS activity) could not be investigated.
 
 ## 6) Botnet/Campaign Infrastructure Mapping
+### CVE-2025-55182 (React2Shell) Campaign
+- **item_id**: CVE-2025-55182
+- **campaign_shape**: Coordinated spray from multiple distinct actors with different behavioral profiles.
+- **suspected_compromised_src_ips**:
+    - **Specialist Scanner**: `193.32.162.28` (1701 events) - High-volume, focused exclusively on this CVE, uses rotating user agents.
+    - **Generalist Scanner**: `79.124.40.174` (248 events) - Lower-volume, scanned for multiple vulnerabilities including this CVE.
+- **ASNs / geo hints**: AS 47890 (Unmanaged Ltd, Romania), AS 50360 (Tamatiya EOOD, Bulgaria).
+- **suspected_staging indicators**: None observed. Activity appears to be direct-to-target scanning.
+- **suspected_c2 indicators**: None observed.
+- **confidence**: High
+- **operational notes**: Block source IPs. Monitor for inbound traffic on unusual web ports targeting Next.js application paths, as this is a strong indicator of this campaign.
 
-### Item ID: BOT-01 (Expanded Web Vulnerability Scanning Campaign)
-- **Related Candidate ID(s):** BOT-01
-- **Campaign Shape:** spray (multiple source IPs using identical scanning patterns).
-- **Suspected Compromised Source IPs:**
-  - `94.103.169.88` (AS215439 - Play2go International Limited, DE)
-  - `147.45.60.22` (AS215540 - Global Connectivity Solutions Llp, RU)
-- **ASNs / Geo Hints:** AS215439 (Germany), AS215540 (Russia).
-- **Suspected Staging Indicators:** No staging indicators were identified; activity appears to be direct scanning.
-- **Suspected C2 Indicators:** None identified.
-- **Confidence:** High
-- **Operational Notes:** The activity is consistent with a broad, automated scanning campaign seeking multiple low-hanging web vulnerabilities. The two identified IPs should be blocked.
+### Commodity PHPUnit Scanning
+- **related candidate_id(s)**: 1
+- **campaign_shape**: spray
+- **suspected_compromised_src_ips**: `94.103.169.88`, `147.45.60.22`.
+- **ASNs / geo hints**: AS 215439 (Play2go International Limited, Germany), AS 215540 (Global Connectivity Solutions Llp, Russia).
+- **confidence**: High
+- **operational notes**: This is low-level opportunistic scanning for an old vulnerability (CVE-2017-9841). It serves as a good baseline for general internet noise.
 
 ## 7) Odd-Service / Minutia Attacks
-
-### Item ID: ODD-01 (Provisional ICS Scanning)
-- **Service Fingerprint:** `guardian_ast` / `kamstrup_protocol` (Conpot ICS Honeypot)
-- **Why it’s unusual/interesting:** This activity represents scanning for specialized Industrial Control Systems (ICS) and smart grid infrastructure (Automatic Tank Gauges and smart meters), which is less common than typical web or service brute-forcing.
-- **Evidence Summary:**
-  - **Protocols Observed:** `guardian_ast` (24 events), `kamstrup_protocol` (16 events).
-  - **Key Artifacts:** Specific request `b'\x01I20100'` observed, which is a known command for Guardian AST systems.
-- **Confidence:** Medium (Provisional)
-- **Recommended Monitoring Pivots:** The primary follow-up is to resolve the backend data pipeline issue for Conpot logs to enable source IP and infrastructure correlation in future windows.
+### Industrial Control System (ICS) Probes (Provisional)
+- **service_fingerprint**: `guardian_ast` and `kamstrup_protocol` (from initial honeypot report).
+- **why it’s unusual/interesting**: Probing of specialized ICS protocols is operationally significant as it may indicate reconnaissance against Operational Technology (OT) environments, which is far less common than typical web or SSH scans.
+- **evidence summary**: The HoneypotSpecific agent reported 24 `guardian_ast` and 16 `kamstrup_protocol` events. **However, all subsequent attempts to query, validate, or investigate this activity failed due to tool errors.** No source IPs, target ports, or event details could be retrieved.
+- **confidence**: Low (unvalidated)
+- **recommended monitoring pivots**: The immediate priority is to **resolve the backend tool/data pipeline issue** preventing queries against Conpot honeypot data. This is a critical visibility gap.
 
 ## 8) Known-Exploit / Commodity Exclusions
-- **Credential Noise:** High volume of brute-force attempts using common usernames (`root`, `admin`, `user`) and passwords (`123456`, `password`).
-- **Commodity Scanning:**
-  - Widespread scanning on port 445 (SMB) from various sources, primarily from India and the UK.
-  - Significant scanning activity targeting VNC ports (5901-5905), identified by the `GPL INFO VNC server response` signature (13,317 events).
-- **Known Bot Patterns / Scanners:**
-  - Activity matching CVE-2017-9841 (PHPUnit RCE) and CVE-2021-42013 (Apache Path Traversal).
-  - Scanning for exposed Spring Boot actuator endpoints (`/actuator/gateway/routes`).
+- **Credential Noise & Brute Force**: High volume of generic usernames (`root`, `admin`) and passwords. Notably, the use of `345gs5662d34` and `3245gs5662d34` was observed, which OSINT confirms is linked to established botnet activity (e.g., Mirai variants) for SSH/Telnet brute-forcing.
+- **Commodity Web Scanning**: Opportunistic scanning for old vulnerabilities like PHPUnit RCE (CVE-2017-9841) and general PHP RFI attempts.
+- **High-Volume Port Scanning**:
+    - **VNC**: Over 13,000 alerts for `GPL INFO VNC server response`, indicating widespread scanning of VNC services.
+    - **SMB**: Thousands of connections to port 445 from India and the UK.
+    - **RDP**: Hundreds of alerts for `ET SCAN MS Terminal Server Traffic on Non-standard Port`.
 
 ## 9) Infrastructure & Behavioral Classification
-- **Exploitation vs. Scanning:**
-  - The BOT-01 campaign involved active exploitation attempts against known web vulnerabilities (PHPUnit, Apache, etc.).
-  - The ODD-01 activity was classified as reconnaissance/scanning for ICS systems.
-- **Campaign Shape:**
-  - The BOT-01 campaign exhibited a "spray" shape, with multiple source IPs using identical tools and targeting the same set of vulnerabilities.
-- **Infra Reuse Indicators:** The two IPs in the BOT-01 campaign used the exact same set of URL paths, strongly indicating infrastructure and tool reuse.
-- **Odd-Service Fingerprints:** `guardian_ast` and `kamstrup_protocol` were detected, indicating interest in ICS/SCADA systems.
+- **CVE-2025-55182 Campaign**: Characterized as active **exploitation**. The campaign uses a **coordinated spray** shape, leveraging at least two distinct actor types: a high-volume, specialized scanner and a low-volume, generalist scanner.
+- **CVE-2017-9841 Activity**: Characterized as opportunistic **scanning**. The campaign shape is a simple **spray**, with actors reusing infrastructure to scan for multiple common web vulnerabilities.
+- **ICS Probing**: The behavior is unclassifiable due to blocked investigation. The service fingerprint of `guardian_ast` and `kamstrup_protocol` makes it highly anomalous.
 
 ## 10) Evidence Appendix
-
-### BOT-01: Expanded Web Vulnerability Scanning Campaign
-- **Source IPs:**
-  - `94.103.169.88`
-  - `147.45.60.22`
-- **ASNs:**
-  - `215439` (Play2go International Limited)
-  - `215540` (Global Connectivity Solutions Llp)
-- **Target Ports/Services:** 80 (HTTP)
-- **Payload/Artifact Excerpts:**
-  - `/V2/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php` (CVE-2017-9841)
-  - `/?%ADd+allow_url_include%3d1+%ADd+auto_prepend_file%3dphp://input` (PHP RCE attempt)
-  - `/cgi-bin/%%32%65%%32%65/` (CVE-2021-42013 - Apache Path Traversal)
-  - `/index.php?s=/index/\\think\\app/invokefunction` (ThinkPHP RCE attempt)
-  - `pearcmd&+config-create` (PEAR command injection attempt)
-- **Staging Indicators:** None observed.
-- **Temporal Checks:**
-  - `94.103.169.88` active from 2026-03-16T11:50:21Z to 2026-03-16T11:51:34Z.
-  - `147.45.60.22` active from 2026-03-16T10:20:51Z to 2026-03-16T10:22:01Z.
-
-### ODD-01: Provisional ICS Scanning
-- **Source IPs:** Unavailable
-- **ASNs:** Unavailable
-- **Target Ports/Services:** Conpot Honeypot (protocols: guardian_ast, kamstrup_protocol)
-- **Payload/Artifact Excerpts:** `b'\x01I20100'`
-- **Staging Indicators:** None observed.
-- **Temporal Checks:** Unavailable
+### Emerging n-day: CVE-2025-55182
+- **source IPs**: `193.32.162.28` (1701 events), `79.124.40.174` (248 events)
+- **ASNs**: 47890 (Romania), 50360 (Bulgaria)
+- **target ports/services**: 3004/tcp, 3010/tcp, 3333/tcp, 5001/tcp, 8081/tcp, 8088/tcp, 9000/tcp, 9443/tcp
+- **paths/endpoints**: `/_next/server`, `/api/route`, `/app`, `/`
+- **payload/artifact excerpts**: Suricata Signature: `ET WEB_SPECIFIC_APPS React Server Components React2Shell Unsafe Flight Protocol Property Access (CVE-2025-55182)`
+- **temporal checks**: Both source IPs were active for nearly the entire 4-hour investigation window.
 
 ## 11) Indicators of Interest
-- **Source IPs (High Confidence Scanner):**
-  - `94.103.169.88`
-  - `147.45.60.22`
-- **URL Paths (Exploitation Artifacts):**
-  - `/V2/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php`
-  - `/cgi-bin/%%32%65%%32%65/`
-  - `/index.php?s=/index/\\think\\app/invokefunction`
+- **CVE**: `CVE-2025-55182`
+- **Source IPs (React2Shell Campaign)**:
+    - `193.32.162.28` (High-volume specialist)
+    - `79.124.40.174` (Generalist scanner)
+- **Source IPs (Commodity PHPUnit Scanning)**:
+    - `94.103.169.88`
+    - `147.45.60.22`
+- **Paths (React2Shell Indicators)**:
+    - `/_next/server`
+    - `/api/route`
+- **Credentials (Known Botnet)**:
+    - `345gs5662d34`
+    - `3245gs5662d34`
 
 ## 12) Backend Tool Issues
-- **Tool:** `kibanna_discover_query`
-- **Failure:** The query failed to retrieve logs for `type: Conpot`.
-- **Affected Validations:** This failure directly blocked the identification of source IPs, ASNs, and geographic locations for the ICS scanning activity (Candidate ODD-01). As a result, the assessment of this activity remains provisional and its infrastructure could not be mapped.
+- **Tool Failures**: The `DeepInvestigationAgent` encountered critical failures when using the `two_level_terms_aggregated` and `kibanna_discover_query` tools to investigate Conpot honeypot data.
+- **Affected Validations**: These failures completely **blocked the investigation into the unusual ICS activity**. The source, scale, and intent of the `guardian_ast` and `kamstrup_protocol` probes could not be determined.
+- **Weakened Conclusions**: The "Odd-Service / Minutia Attacks" section is provisional and has Low confidence. The overall completeness of this report is degraded, as a potentially high-signal event could not be analyzed.
 
 ## 13) Agent Action Summary (Audit Trail)
-
-### ParallelInvestigationAgent
-- **Purpose:** To run initial data collection agents in parallel.
-- **Inputs Used:** `investigation_start`, `investigation_end`.
-- **Actions Taken:** Executed `BaselineAgent`, `KnownSignalAgent`, `CredentialNoiseAgent`, and `HoneypotSpecificAgent`.
-- **Key Results:** Gathered baseline statistics, known CVE/signature matches, common credential stuffing pairs, and honeypot-specific interactions.
-- **Errors_or_Gaps:** None.
-
-### CandidateDiscoveryAgent
-- **Purpose:** To synthesize parallel results and discover initial threat candidates.
-- **Inputs Used:** `baseline_result`, `known_signals_result`, `credential_noise_result`, `honeypot_specific_result`.
-- **Actions Taken:**
-  - Analyzed Tanner logs for suspicious web paths.
-  - Used `kibanna_discover_query` to investigate paths like `/V2/vendor/phpunit...`, `/actuator/gateway/routes`, etc.
-  - Attempted to query Conpot logs.
-  - Used `search` to get context on `guardian_ast`.
-- **Key Results:**
-  - Identified a multi-IP PHPUnit scanning pattern (BOT-01).
-  - Identified ICS scanning on Conpot (ODD-01).
-  - Classified other activity (Spring Boot scanning) as known exclusions.
-- **Errors_or_Gaps:** The `kibanna_discover_query` for Conpot logs failed, leading to a degraded analysis state.
-
-### CandidateValidationLoopAgent
-- **Purpose:** To validate and enrich threat candidates from the discovery queue.
-- **Iterations Run:** 1
-- **Candidates Validated:** 1 (BOT-01)
-- **Actions Taken:**
-  - For BOT-01, used `search` to map the PHPUnit path to CVE-2017-9841.
-  - Used `suricata_lenient_phrase_search` to check for existing signatures (none found).
-  - Used `two_level_terms_aggregated` to confirm the source IPs associated with the exploit paths.
-- **Key Results:** Confirmed BOT-01 is a known exploit campaign for CVE-2017-9841, involving two source IPs.
-- **Errors_or_Gaps:** Did not process ODD-01 as the deep dive on BOT-01 was prioritized.
-
-### DeepInvestigationLoopController
-- **Purpose:** To perform deep-dive pivots on high-value validated candidates.
-- **Iterations Run:** 3
-- **Key Leads Pursued:** `src_ip:94.103.169.88`, `src_ip:147.45.60.22`, `path:/cgi-bin/%%32%65%%32%65/`.
-- **Actions Taken:**
-  - Used `first_last_seen_src_ip` and `top_http_urls_for_src_ip` to map the activity of the two source IPs.
-  - Used `search` and `web_path_samples` to investigate the CGI path artifact.
-- **Key Results:**
-  - Confirmed both IPs were part of the same automated scanning campaign.
-  - Expanded the list of targeted vulnerabilities to include Apache (CVE-2021-42013), ThinkPHP, and PEAR.
-- **Stall/Exit Reason:** The investigation stalled after two consecutive pivots failed to uncover new infrastructure or leads, and the `exit_loop` command was issued.
-
-### OSINTAgent
-- **Purpose:** To enrich validated candidates with public threat intelligence.
-- **Inputs Used:** `validated_candidates` (BOT-01), `candidate_discovery_result` (ODD-01).
-- **Actions Taken:** Ran `search` for "PHPUnit ... CVE" and "kamstrup_protocol vulnerability".
-- **Key Results:**
-  - Confirmed the PHPUnit activity maps to the well-known, actively exploited CVE-2017-9841.
-  - Confirmed that Guardian AST and Kamstrup are known ICS/smart grid protocols and that scanning for them is established, non-novel behavior.
-- **Errors_or_Gaps:** None.
-
-### ReportAgent
-- **Purpose:** To compile the final report from all available workflow state outputs.
-- **Inputs Used:** `investigation_start`, `investigation_end`, `baseline_result`, `known_signals_result`, `credential_noise_result`, `honeypot_specific_result`, `candidate_discovery_result`, `validated_candidates`, `deep_investigation_log`, `osint_validation_result`.
-- **Actions Taken:** Assembled this report.
-- **Key Results:** Generated the final markdown report.
-- **Errors_or_Gaps:** Noted the degraded mode status originating from the `CandidateDiscoveryAgent`.
+- **ParallelInvestigationAgent**:
+    - **purpose**: Gather broad, concurrent telemetry streams.
+    - **inputs_used**: `investigation_start`, `investigation_end`.
+    - **actions_taken**: Executed sub-agents for baseline, known signal, credential, and honeypot-specific data collection.
+    - **key_results**: Successfully provided initial data identifying VNC/SMB scanning, the emerging CVE-2025-55182, and anomalous ICS protocol events.
+    - **errors_or_gaps**: None.
+- **CandidateDiscoveryAgent**:
+    - **purpose**: Synthesize initial telemetry into actionable investigation leads.
+    - **inputs_used**: All outputs from the ParallelInvestigationAgent.
+    - **actions_taken**: Formulated a 6-point investigation plan.
+    - **key_results**: Prioritized PHPUnit, emerging CVEs, ICS activity, and unusual credentials for investigation.
+    - **errors_or_gaps**: None.
+- **CandidateValidationLoopAgent**:
+    - **purpose**: Perform initial validation of a lead.
+    - **inputs_used**: Candidate queue.
+    - **actions_taken**: Ran for 1 iteration, validating the PHPUnit exploit candidate using OSINT and telemetry queries.
+    - **key_results**: Confirmed PHPUnit activity was related to known vulnerability CVE-2017-9841 and was commodity scanning.
+    - **errors_or_gaps**: Loop did not continue to validate other candidates.
+- **DeepInvestigationLoopController**:
+    - **purpose**: Conduct in-depth, iterative investigation of leads.
+    - **inputs_used**: Initial leads, validated candidates.
+    - **actions_taken**: Ran for 5 iterations. Successfully investigated CVE-2025-55182 by pivoting through the CVE, source IPs, and related signatures. Attempted to investigate ICS activity.
+    - **key_results**: Fully characterized the CVE-2025-55182 campaign and its actors.
+    - **errors_or_gaps**: Stalled and exited after 2 consecutive query failures related to Conpot data, leaving the ICS investigation incomplete.
+- **OSINTAgent**:
+    - **purpose**: Enrich findings with public threat intelligence.
+    - **inputs_used**: Validated findings from previous stages.
+    - **actions_taken**: Used search tool to research CVE-2017-9841, CVE-2025-55182, and the `345gs5662d34` credentials.
+    - **key_results**: Confirmed all investigated items were publicly known, reducing their novelty and mapping them to established threats.
+    - **errors_or_gaps**: None.
+- **ReportAgent**:
+    - **purpose**: Compile the final report from all workflow state.
+    - **inputs_used**: All available state outputs from the pipeline.
+    - **actions_taken**: Assembled this markdown report.
+    - **key_results**: The report you are reading.
+    - **errors_or_gaps**: Report completeness is degraded due to the failed ICS investigation.
+- **SaveReportAgent**:
+    - **purpose**: Persist the final report.
+    - **inputs_used**: Content from ReportAgent.
+    - **actions_taken**: Will call `deep_agent_write_file`.
+    - **key_results**: Pending.
+    - **errors_or_gaps**: None.
