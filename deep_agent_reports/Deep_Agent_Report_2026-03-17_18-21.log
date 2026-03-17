@@ -1,0 +1,606 @@
+START Tue Mar 17 21:05:01 UTC 2026
+Session created: App='deep_agent_app', User='user_1', Session='session_8754'
+Runner created for agent 'InvestigationPipelineAgent'.
+###################################### NEW EVENT ######################################
+Current Time: 2026-03-17 21:05:09.155224
+[Event] Author: BaselineAgent, Type: Event, Final: False, Partial: None, Content: parts=[Part(
+  function_call=FunctionCall(
+    args={},
+    id='adk-b9833009-ab3f-4fac-84d6-83047d2bbb67',
+    name='get_report_time'
+  ),
+  thought_signature=b'\n\x95\t\x01\xbe>\xf6\xfbpo\xfa\xf3)h\x0c\x80\xf3{!#$]r1\x91T\x85B\x8a\xf1YG\x81\x16XG\x9c?\x7fP\x8f\x8e\x9a&:\xbcl\xd6\xceZ\x9c\x11\x92\xa7\xc9\xefh\x97%~(xt\xb0UMH\r\xfd`\x1c2d\x94\\\x15\xc4zvT/\xd9\x88]?@yC\xfb\x97\x8b\x8av\t\xd4lR...'
+)] role='model'
+METADATA:
+{'cache_tokens_details': None, 'cached_content_token_count': None, 'candidates_token_count': 12, 'candidates_tokens_details': None, 'prompt_token_count': 1549, 'prompt_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 1549}], 'thoughts_token_count': 360, 'tool_use_prompt_token_count': None, 'tool_use_prompt_tokens_details': None, 'total_token_count': 1921, 'traffic_type': None}
+<<< Agent Response: None
+###################################### NEW EVENT ######################################
+Current Time: 2026-03-17 21:05:09.164443
+[Event] Author: BaselineAgent, Type: Event, Final: False, Partial: None, Content: parts=[Part(
+  function_response=FunctionResponse(
+    id='adk-b9833009-ab3f-4fac-84d6-83047d2bbb67',
+    name='get_report_time',
+    response={
+      'result': (
+        '2026-03-17T18:00:04Z',
+        '2026-03-17T21:00:04Z',
+      )
+    }
+  )
+)] role='user'
+<<< Agent Response: None
+###################################### NEW EVENT ######################################
+Current Time: 2026-03-17 21:05:10.861104
+[Event] Author: BaselineAgent, Type: Event, Final: False, Partial: None, Content: parts=[Part(
+  function_call=FunctionCall(
+    args={
+      'gte_time_stamp': '2026-03-17T18:00:04Z',
+      'lte_time_stamp': '2026-03-17T21:00:04Z'
+    },
+    id='adk-9e2537ee-1624-403f-965e-3aa474b0a5e3',
+    name='get_total_attacks'
+  ),
+  thought_signature=b'\n\xce\x03\x01\xbe>\xf6\xfb\xd5\xff\xaeS\xd2"\xd6U\xc6\xb2\x86\x9f\x14\xda\xfa\xc5\xb6\x83\xf7J\x9a\x1e\xaf\xb7\x1d\xc6\xd4.\x9aJ\xa7\x0b\x95#r\x95\xb4\xbb\xaf|\xc7\xf3Y\x95R\x1fc\xc2E\x92\xe3T\x1c\xba\xb0\\\xdc\xaa0\t\xd9\xe4\n\x10{\x11\x85\x98\xf0\x0c\xb1?\xc0\xfd`\x1bw\xb5\xf8\xb0\xe7N\xde\x0e+\xa8\xaaR\xcf...'
+)] role='model'
+METADATA:
+{'cache_tokens_details': None, 'cached_content_token_count': None, 'candidates_token_count': 69, 'candidates_tokens_details': None, 'prompt_token_count': 1620, 'prompt_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 1620}], 'thoughts_token_count': 107, 'tool_use_prompt_token_count': None, 'tool_use_prompt_tokens_details': None, 'total_token_count': 1796, 'traffic_type': None}
+<<< Agent Response: None
+###################################### NEW EVENT ######################################
+Current Time: 2026-03-17 21:05:10.886475
+[Event] Author: BaselineAgent, Type: Event, Final: False, Partial: None, Content: parts=[Part(
+  function_response=FunctionResponse(
+    id='adk-9e2537ee-1624-403f-965e-3aa474b0a5e3',
+    name='get_total_attacks',
+    response={
+      'total_attacks': 552
+    }
+  )
+)] role='user'
+<<< Agent Response: None
+###################################### NEW EVENT ######################################
+Current Time: 2026-03-17 21:05:11.991459
+[Event] Author: BaselineAgent, Type: Event, Final: False, Partial: None, Content: parts=[Part(
+  function_call=FunctionCall(
+    args={
+      'gte_time_stamp': '2026-03-17T18:00:04Z',
+      'lte_time_stamp': '2026-03-17T21:00:04Z'
+    },
+    id='adk-761770dc-1ed6-4875-b097-b92134b2b902',
+    name='get_top_countries'
+  ),
+  thought_signature=b'\n\x9a\x01\x01\xbe>\xf6\xfb@A\xfc\x12\xd0\xf3e\xa6\xe4k\x12\xd8\xad\xcb\x05\xb1\x0c\x82\xee\xe4\xa8G&\xd7\xde\xf5\xed+\xda\xa22\xa2\x93\xa6\xa4\x83\x7f\xdd\x08H\x9a\xd6\x82yU\xf7\xcawWy\xb5I~\xf5\xdb\x038G\x98\xd8^c\x8d\xc0\x0c\xfd\x98\x9f$\xa0"\xf9O\xa8\xddO\xd3\x01\xe5\xcc)m\xdcd\xdbjN\xbds...'
+)] role='model'
+METADATA:
+{'cache_tokens_details': None, 'cached_content_token_count': None, 'candidates_token_count': 69, 'candidates_tokens_details': None, 'prompt_token_count': 1710, 'prompt_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 1710}], 'thoughts_token_count': 34, 'tool_use_prompt_token_count': None, 'tool_use_prompt_tokens_details': None, 'total_token_count': 1813, 'traffic_type': None}
+<<< Agent Response: None
+###################################### NEW EVENT ######################################
+Current Time: 2026-03-17 21:05:12.076215
+[Event] Author: BaselineAgent, Type: Event, Final: False, Partial: None, Content: parts=[Part(
+  function_response=FunctionResponse(
+    id='adk-761770dc-1ed6-4875-b097-b92134b2b902',
+    name='get_top_countries',
+    response={
+      'top_countries': [
+        {
+          'count': 253,
+          'country': 'United States'
+        },
+        {
+          'count': 48,
+          'country': 'Russia'
+        },
+        {
+          'count': 40,
+          'country': 'Ukraine'
+        },
+        {
+          'count': 35,
+          'country': 'Singapore'
+        },
+        {
+          'count': 31,
+          'country': 'Romania'
+        },
+      ]
+    }
+  )
+)] role='user'
+<<< Agent Response: None
+###################################### NEW EVENT ######################################
+Current Time: 2026-03-17 21:05:13.091726
+[Event] Author: BaselineAgent, Type: Event, Final: False, Partial: None, Content: parts=[Part(
+  function_call=FunctionCall(
+    args={},
+    id='adk-e6b94af4-6721-447d-bd08-1d87d95250d0',
+    name='waiting'
+  ),
+  thought_signature=b"\n\xbe\x02\x01\xbe>\xf6\xfbx\xf8\xa9\x07K\x01`\x16IV\xea\x9c\x94\x91\xc5\x1e6\xb0N!#\xb9,%~\x9d\xd9v\xc9\x84V\x1a\xbc\xb7\xfdz\xee\xbeJ\xad\x8a5\xa2\x0f\xef\xb5&\x19\x9dL\xe0\x82.\xdc$\x18j\xf0%[\xa1a2\xf9D\x03\xb7\x88D\x03\x81\xfd)6\xca\xac\xc6\xec\x935#q\xaa@\xd7 ',\xdf...'
+)] role='model'
+METADATA:
+{'cache_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 1349}], 'cached_content_token_count': 1349, 'candidates_token_count': 8, 'candidates_tokens_details': None, 'prompt_token_count': 1864, 'prompt_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 1864}], 'thoughts_token_count': 84, 'tool_use_prompt_token_count': None, 'tool_use_prompt_tokens_details': None, 'total_token_count': 1956, 'traffic_type': None}
+<<< Agent Response: None
+###################################### NEW EVENT ######################################
+Current Time: 2026-03-17 21:05:58.159284
+[Event] Author: BaselineAgent, Type: Event, Final: False, Partial: None, Content: parts=[Part(
+  function_response=FunctionResponse(
+    id='adk-e6b94af4-6721-447d-bd08-1d87d95250d0',
+    name='waiting',
+    response={
+      'result': 'Successfully waited 45 seconds. You may continue querying.'
+    }
+  )
+)] role='user'
+<<< Agent Response: None
+###################################### NEW EVENT ######################################
+Current Time: 2026-03-17 21:05:59.620591
+[Event] Author: BaselineAgent, Type: Event, Final: False, Partial: None, Content: parts=[Part(
+  function_call=FunctionCall(
+    args={
+      'gte_time_stamp': '2026-03-17T18:00:04Z',
+      'lte_time_stamp': '2026-03-17T21:00:04Z',
+      'size': 5
+    },
+    id='adk-b3661b4f-b194-460d-a9d9-aec2a5b2843d',
+    name='get_attacker_src_ip'
+  ),
+  thought_signature=b'\n\xb5\x03\x01\xbe>\xf6\xfb\x01R\x17+\x95c\xf7\x8b^\x8b\xf3\x1e\xde\xefL\x19=s\xdd,*\x99\x0e\x7f*\xebL[\xabl1@\xaa\xe8e\xe8&i\x91\xb9\x1b+\xa9\x9c\xd3\xaam+~\xc0\xc4\x0b\x9b\x06&\xb5\xefE\xda.2W\x96-\xf8\xad\xfd\xf9\x8a\xa5\x15Y\xe87\x14m~\x11\x992\x96\xf3/\xc4\xca\xc9\xf2\x1a\xe6...'
+)] role='model'
+METADATA:
+{'cache_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 1311}], 'cached_content_token_count': 1311, 'candidates_token_count': 76, 'candidates_tokens_details': None, 'prompt_token_count': 1896, 'prompt_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 1896}], 'thoughts_token_count': 133, 'tool_use_prompt_token_count': None, 'tool_use_prompt_tokens_details': None, 'total_token_count': 2105, 'traffic_type': None}
+<<< Agent Response: None
+###################################### NEW EVENT ######################################
+Current Time: 2026-03-17 21:05:59.749838
+[Event] Author: BaselineAgent, Type: Event, Final: False, Partial: None, Content: parts=[Part(
+  function_response=FunctionResponse(
+    id='adk-b3661b4f-b194-460d-a9d9-aec2a5b2843d',
+    name='get_attacker_src_ip',
+    response={
+      'source_ips': [
+        {
+          'count': 54,
+          'ip': '136.114.97.84'
+        },
+        {
+          'count': 27,
+          'ip': '4.145.113.4'
+        },
+        {
+          'count': 24,
+          'ip': '134.209.37.134'
+        },
+        {
+          'count': 24,
+          'ip': '144.31.2.61'
+        },
+        {
+          'count': 19,
+          'ip': '68.183.173.226'
+        },
+      ]
+    }
+  )
+)] role='user'
+<<< Agent Response: None
+###################################### NEW EVENT ######################################
+Current Time: 2026-03-17 21:06:00.797177
+[Event] Author: BaselineAgent, Type: Event, Final: False, Partial: None, Content: parts=[Part(
+  function_call=FunctionCall(
+    args={
+      'gte_time_stamp': '2026-03-17T18:00:04Z',
+      'inner_size': 3,
+      'lte_time_stamp': '2026-03-17T21:00:04Z',
+      'outer_size': 5
+    },
+    id='adk-fe409290-7884-4350-b625-f0b41650aae0',
+    name='get_country_to_port'
+  ),
+  thought_signature=b'\n\x9e\x01\x01\xbe>\xf6\xfb\xf8\x114\x88\xc6N\x19\xd6\x00\x17\x0f\x13{\xde)\x82\x98\x068\xd3;\xf0\xac\xca\x037J7A\xbft6\xc7\xb0q :h\xe6m\xa7\xbf\xbc\x00\xe1\xa2\xd2\xffSK\xd8\x8d\xcc\xf5?!\xa9\x12\xc8E\xeaK\xe4\x01\x8aOcj\x90;!\xb1\x89\x91\xa2\xf5\x17=2\xa0\xb7\r\xa3\xc1\xbc\x88\x18\xde\x14...'
+)] role='model'
+METADATA:
+{'cache_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 1301}], 'cached_content_token_count': 1301, 'candidates_token_count': 85, 'candidates_tokens_details': None, 'prompt_token_count': 2115, 'prompt_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 2115}], 'thoughts_token_count': 38, 'tool_use_prompt_token_count': None, 'tool_use_prompt_tokens_details': None, 'total_token_count': 2238, 'traffic_type': None}
+<<< Agent Response: None
+###################################### NEW EVENT ######################################
+Current Time: 2026-03-17 21:06:00.965639
+[Event] Author: BaselineAgent, Type: Event, Final: False, Partial: None, Content: parts=[Part(
+  function_response=FunctionResponse(
+    id='adk-fe409290-7884-4350-b625-f0b41650aae0',
+    name='get_country_to_port',
+    response={
+      'country_to_port': {
+        'Romania': [
+          {
+            'count': 5,
+            'port': 22
+          },
+          {
+            'count': 1,
+            'port': 80
+          },
+          {
+            'count': 1,
+            'port': 25943
+          },
+        ],
+        'Russia': [
+          {
+            'count': 8,
+            'port': 9100
+          },
+          {
+            'count': 2,
+            'port': 3049
+          },
+          {
+            'count': 2,
+            'port': 3060
+          },
+        ],
+        'Singapore': [
+          {
+            'count': 3,
+            'port': 5901
+          },
+          {
+            'count': 3,
+            'port': 5902
+          },
+          {
+            'count': 3,
+            'port': 5903
+          },
+        ],
+        'Ukraine': [],
+        'United States': [
+          {
+            'count': 43,
+            'port': 5902
+          },
+          {
+            'count': 16,
+            'port': 5901
+          },
+          {
+            'count': 15,
+            'port': 5903
+          },
+        ]
+      }
+    }
+  )
+)] role='user'
+<<< Agent Response: None
+###################################### NEW EVENT ######################################
+Current Time: 2026-03-17 21:06:02.258993
+[Event] Author: BaselineAgent, Type: Event, Final: False, Partial: None, Content: parts=[Part(
+  function_call=FunctionCall(
+    args={},
+    id='adk-bbf6d062-7cb8-4649-9b24-3e625e608aee',
+    name='waiting'
+  ),
+  thought_signature=b'\n\xc0\x02\x01\xbe>\xf6\xfb\xbc\xd4\x1d\x9f\xde\x8b\xc2\xac\xf6S\x0b,\xc8\x9f3\xf4(8\x05i_\xca\xc9[Bz\xb6\x96\xaa\x84\xcf\x14n^C\x93\xeb\x04\x93\xaee\x7f\xb4\xf5\xf3\xafCs\x83\x13<\xfc\xa4\x93\xf0)\x8f\xc0C\xa0\x90\xe2`\xaa\x13 \xb5\x1dT\xaf\xf3_V2\xf6\xa1\xa6}P<\xa7\x89\xd5\x9e%\x7f\xaa\xde\xcc...'
+)] role='model'
+METADATA:
+{'cache_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 1343}], 'cached_content_token_count': 1343, 'candidates_token_count': 8, 'candidates_tokens_details': None, 'prompt_token_count': 2418, 'prompt_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 2418}], 'thoughts_token_count': 83, 'tool_use_prompt_token_count': None, 'tool_use_prompt_tokens_details': None, 'total_token_count': 2509, 'traffic_type': None}
+<<< Agent Response: None
+###################################### NEW EVENT ######################################
+Current Time: 2026-03-17 21:06:47.324399
+[Event] Author: BaselineAgent, Type: Event, Final: False, Partial: None, Content: parts=[Part(
+  function_response=FunctionResponse(
+    id='adk-bbf6d062-7cb8-4649-9b24-3e625e608aee',
+    name='waiting',
+    response={
+      'result': 'Successfully waited 45 seconds. You may continue querying.'
+    }
+  )
+)] role='user'
+<<< Agent Response: None
+###################################### NEW EVENT ######################################
+Current Time: 2026-03-17 21:06:48.839908
+[Event] Author: BaselineAgent, Type: Event, Final: False, Partial: None, Content: parts=[Part(
+  function_call=FunctionCall(
+    args={
+      'gte_time_stamp': '2026-03-17T18:00:04Z',
+      'lte_time_stamp': '2026-03-17T21:00:04Z',
+      'size': 5
+    },
+    id='adk-107d3899-fd6b-4b5e-9d66-1f13df4952ac',
+    name='get_attacker_asn'
+  ),
+  thought_signature=b'\n\xe2\x02\x01\xbe>\xf6\xfb\xd6Eq\xe6\xfa\x8f0N\xf8\x01\xa6\xfa\xa6\x96\xd8?3N\x03NR\xf6\xb0[>H\xbd\xa4q\xe2\xb8E\xa5L\x93oP\xa0{h\x86\x99\xa7\xcd\xe8\xa0\xa2\'7\xd8c"\xbeB\x82>\x98\x829n\x1fq\xd7\x03\x02i\x04\x1b\x86\xe1^\xe6:\x95h\x12\xed\xe3\xd9\xd8\x90\xa3\x91z\xbb\xe5\xec\xc3\x81...'
+)] role='model'
+METADATA:
+{'cache_tokens_details': None, 'cached_content_token_count': None, 'candidates_token_count': 74, 'candidates_tokens_details': None, 'prompt_token_count': 2450, 'prompt_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 2450}], 'thoughts_token_count': 88, 'tool_use_prompt_token_count': None, 'tool_use_prompt_tokens_details': None, 'total_token_count': 2612, 'traffic_type': None}
+<<< Agent Response: None
+###################################### NEW EVENT ######################################
+Current Time: 2026-03-17 21:06:48.864211
+[Event] Author: BaselineAgent, Type: Event, Final: False, Partial: None, Content: parts=[Part(
+  function_response=FunctionResponse(
+    id='adk-107d3899-fd6b-4b5e-9d66-1f13df4952ac',
+    name='get_attacker_asn',
+    response={
+      'asn_info': [
+        {
+          'asn': 14061,
+          'count': 123,
+          'organization': 'DigitalOcean, LLC'
+        },
+        {
+          'asn': 396982,
+          'count': 79,
+          'organization': 'Google LLC'
+        },
+        {
+          'asn': 47890,
+          'count': 40,
+          'organization': 'Unmanaged Ltd'
+        },
+        {
+          'asn': 211736,
+          'count': 40,
+          'organization': 'FOP Dmytro Nedilskyi'
+        },
+        {
+          'asn': 8075,
+          'count': 37,
+          'organization': 'Microsoft Corporation'
+        },
+      ]
+    }
+  )
+)] role='user'
+<<< Agent Response: None
+###################################### NEW EVENT ######################################
+Current Time: 2026-03-17 21:06:57.110457
+[Event] Author: BaselineAgent, Type: Event, Final: True, Partial: None, Content: parts=[Part(
+  text="""```json
+{
+  "time_window": {
+    "start": "2026-03-17T18:00:04Z",
+    "end": "2026-03-17T21:00:04Z"
+  },
+  "results": [
+    {
+      "tool": "get_report_time",
+      "data": {
+        "start_time": "2026-03-17T18:00:04Z",
+        "end_time": "2026-03-17T21:00:04Z"
+      }
+    },
+    {
+      "tool": "get_total_attacks",
+      "data": {
+        "total_attacks": 552
+      }
+    },
+    {
+      "tool": "get_top_countries",
+      "data": {
+        "top_countries": [
+          {
+            "count": 253,
+            "country": "United States"
+          },
+          {
+            "count": 48,
+            "country": "Russia"
+          },
+          {
+            "count": 40,
+            "country": "Ukraine"
+          },
+          {
+            "count": 35,
+            "country": "Singapore"
+          },
+          {
+            "count": 31,
+            "country": "Romania"
+          }
+        ]
+      }
+    },
+    {
+      "tool": "get_attacker_src_ip",
+      "data": {
+        "source_ips": [
+          {
+            "count": 54,
+            "ip": "136.114.97.84"
+          },
+          {
+            "count": 27,
+            "ip": "4.145.113.4"
+          },
+          {
+            "count": 24,
+            "ip": "134.209.37.134"
+          },
+          {
+            "count": 24,
+            "ip": "144.31.2.61"
+          },
+          {
+            "count": 19,
+            "ip": "68.183.173.226"
+          }
+        ]
+      }
+    },
+    {
+      "tool": "get_country_to_port",
+      "data": {
+        "country_to_port": {
+          "Romania": [
+            {
+              "count": 5,
+              "port": 22
+            },
+            {
+              "count": 1,
+              "port": 80
+            },
+            {
+              "count": 1,
+              "port": 25943
+            }
+          ],
+          "Russia": [
+            {
+              "count": 8,
+              "port": 9100
+            },
+            {
+              "count": 2,
+              "port": 3049
+            },
+            {
+              "count": 2,
+              "port": 3060
+            }
+          ],
+          "Singapore": [
+            {
+              "count": 3,
+              "port": 5901
+            },
+            {
+              "count": 3,
+              "port": 5902
+            },
+            {
+              "count": 3,
+              "port": 5903
+            }
+          ],
+          "Ukraine": [],
+          "United States": [
+            {
+              "count": 43,
+              "port": 5902
+            },
+            {
+              "count": 16,
+              "port": 5901
+            },
+            {
+              "count": 15,
+              "port": 5903
+            }
+          ]
+        }
+      }
+    },
+    {
+      "tool": "get_attacker_asn",
+      "data": {
+        "asn_info": [
+          {
+            "asn": 14061,
+            "count": 123,
+            "organization": "DigitalOcean, LLC"
+          },
+          {
+            "asn": 396982,
+            "count": 79,
+            "organization": "Google LLC"
+          },
+          {
+            "asn": 47890,
+            "count": 40,
+            "organization": "Unmanaged Ltd"
+          },
+          {
+            "asn": 211736,
+            "count": 40,
+            "organization": "FOP Dmytro Nedilskyi"
+          },
+          {
+            "asn": 8075,
+            "count": 37,
+            "organization": "Microsoft Corporation"
+          }
+        ]
+      }
+    }
+  ]
+}
+```""",
+  thought_signature=b'\n\xd4\x0f\x01\xbe>\xf6\xfby\x1dzvV\xd9\xde{\xec#\xe5\x0c\x12\x0b\x8e\r\xd3\xed\xce0\xd5}\x1c\x1c\x04zU\x1cf\xb65n\x81\xd5\xa7G\x18y?G\xb0\xc1\xca\x8e\xf3\x8b\xd4\x12\x80\xec\xad\x87\xab>\xe4P\x1a\xf1\xbd\x88?\xad\xe3\x87zjA\xc0FuqB1%\xd1#j\x9f\xab\xfd\xe4\xc8(\xd2K\x7f\xb4*\x0f...'
+)] role='model'
+METADATA:
+{'cache_tokens_details': None, 'cached_content_token_count': None, 'candidates_token_count': 1176, 'candidates_tokens_details': None, 'prompt_token_count': 2674, 'prompt_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 2674}], 'thoughts_token_count': 864, 'tool_use_prompt_token_count': None, 'tool_use_prompt_tokens_details': None, 'total_token_count': 4714, 'traffic_type': None}
+BaselineAgent finished. Waiting 45s to clear Vertex TPM bucket...
+<<< Agent Response: None
+###################################### NEW EVENT ######################################
+Current Time: 2026-03-17 21:07:44.096787
+[Event] Author: KnownSignalAgent, Type: Event, Final: False, Partial: None, Content: parts=[Part(
+  function_call=FunctionCall(
+    args={
+      'gte_time_stamp': '2026-03-17T18:00:04Z',
+      'lte_time_stamp': '2026-03-17T21:00:04Z',
+      'size': 10
+    },
+    id='adk-1aee1552-3a54-4c61-8ea6-e3a488a5de84',
+    name='get_alert_signature'
+  ),
+  thought_signature=b'\n\xea\x05\x01\xbe>\xf6\xfbR\xdd\xb7!\xe8\x8b\x0f\x85\xba\x1b\xcf\xe5\xfb\x95\xaa\x8e7\x9d\xacV}L\xf7\xf1\x0c7\xe3\x1d\x14/\xa3X\x14\rU\x9e\xd1\xaa\x06\xed\x1bt\x89B\xbct\xfa\xe0\x96q^)nv\x97z\xfe\xf1\xc9`m1\x98\xc4U\x91GR\xcc\x90\x07\x10\xfa\xa0@\x0c\x8d\rh.!\x98#\x1c1\xcc\x1e\xf5[...'
+)] role='model'
+METADATA:
+{'cache_tokens_details': None, 'cached_content_token_count': None, 'candidates_token_count': 75, 'candidates_tokens_details': None, 'prompt_token_count': 3851, 'prompt_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 3851}], 'thoughts_token_count': 216, 'tool_use_prompt_token_count': None, 'tool_use_prompt_tokens_details': None, 'total_token_count': 4142, 'traffic_type': None}
+<<< Agent Response: None
+###################################### NEW EVENT ######################################
+Current Time: 2026-03-17 21:07:44.126197
+[Event] Author: KnownSignalAgent, Type: Event, Final: False, Partial: None, Content: parts=[Part(
+  function_response=FunctionResponse(
+    id='adk-1aee1552-3a54-4c61-8ea6-e3a488a5de84',
+    name='get_alert_signature',
+    response={
+      'alert_signatures': [
+        {
+          'count': 586,
+          'signature': 'GPL INFO VNC server response',
+          'signature_id': 2100560
+        },
+        {
+          'count': 58,
+          'signature': 'ET SCAN MS Terminal Server Traffic on Non-standard Port',
+          'signature_id': 2023753
+        },
+        {
+          'count': 23,
+          'signature': 'ET DROP Dshield Block Listed Source group 1',
+          'signature_id': 2402000
+        },
+        {
+          'count': 15,
+          'signature': 'ET INFO SSH session in progress on Expected Port',
+          'signature_id': 2001978
+        },
+        {
+          'count': 15,
+          'signature': 'SURICATA IPv4 truncated packet',
+          'signature_id': 2200003
+        },
+        <... 5 more items ...>,
+      ]
+    }
+  )
+)] role='user'
+<<< Agent Response: None
+###################################### NEW EVENT ######################################
+Current Time: 2026-03-17 21:07:45.232160
+[Event] Author: KnownSignalAgent, Type: Event, Final: False, Partial: None, Content: parts=[Part(
+  function_call=FunctionCall(
+    args={
+      'gte_time_stamp': '2026-03-17T18:00:04Z',
+      'lte_time_stamp': '2026-03-17T21:00:04Z',
+      'size': 10
+    },
+    id='adk-7f399962-7358-414f-8f3f-1b189d7ef00b',
+    name='get_cve'
+  ),
+  thought_signature=b'\nc\x01\xbe>\xf6\xfb\x8aT\xd1t\xc5\x89X\xcaP,K\xe3\x0c_\x1f\x04\x07\x9a\x05\x10\xa4\th\ry\xe6\x81\xa0G\xb5\xedD\xb1\x1ah#|\x02\xac\xea\x7f\x98\xe1/e\xd7\x04\xad^q\xc7\xd4\x1e\xaa\x197\x13\xebz<\x007\xc2\xbb)\xdczl\x83\xfe\xbd\x81\x06\x1f\xc8r\xc8\xfe\xbe \xf6@&#$\xe0\x07\x94\xb6\xa0...'
+)] role='model'
+METADATA:
+{'cache_tokens_details': None, 'cached_content_token_count': None, 'candidates_token_count': 74, 'candidates_tokens_details': None, 'prompt_token_count': 4298, 'prompt_tokens_details': [{'modality': <MediaModality.TEXT: 'TEXT'>, 'token_count': 4298}], 'thoughts_token_count': 21, 'tool_use_prompt_token_count': None, 'tool_use_prompt_tokens_details': None, 'total_token_count': 4393, 'traffic_type': None}
+<<< Agent Response: None
