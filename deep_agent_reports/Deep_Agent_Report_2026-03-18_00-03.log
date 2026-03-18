@@ -1,0 +1,21 @@
+START Wed Mar 18 03:05:01 UTC 2026
+Traceback (most recent call last):
+  File "/home/user/Haineypot/deep_think.py", line 48, in <module>
+    session = asyncio.run(init_session(APP_NAME, USER_ID, SESSION_ID))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/user/Haineypot/deep_think.py", line 39, in init_session
+    session = await session_service.create_session(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/Haineypot/venv/lib/python3.12/site-packages/google/adk/sessions/database_session_service.py", line 341, in create_session
+    raise AlreadyExistsError(
+google.adk.errors.already_exists_error.AlreadyExistsError: Session with id session_6638 already exists.
+END Wed Mar 18 03:05:04 UTC 2026
