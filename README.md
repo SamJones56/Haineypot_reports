@@ -1,23 +1,11 @@
 ## Report Types:
 
 ### deep_agent_reports
-Deep think agent
+Deep think agent with reflect and generate loop also
 
-### default_agent_Reports
-Default agent with no deep loop
+## Deep investigation loop SVG
+![Figure 1](images/final_svg.svg)
 
-### one_shot_agent_reports
-Non-agential agent
-
-### Current Frameworks
-
-## 30 Minute Investigator Framework
-![Figure 1](images/investigation_pipeline.drawio.png)
-![Figure 2](images/investigation_pipeline.svg)
-
-## Manual Deeper Investigation Framework
-![Figure 3](images/deep_investigation_pipeline.drawio.png)
-![Figure 4](images/deep_pipeline.svg)
 ## OLD Reports:
 ### Daily Reports
 Summary report of the past 24 hours
@@ -35,3 +23,7 @@ Daily report of daily reports - No live quering
 Reports on investigation conducted every 30 minutes
 ### Investigation Summary Reports
 Manually called reports to deeper investigate the summaries
+### Default reports
+Single nested investigation loop
+### One shot reports
+Flat agent
