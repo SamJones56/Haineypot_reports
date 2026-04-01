@@ -23,11 +23,6 @@ The development had 5 distinct phases - below are the phases and the locations o
 4. Live Query Reports [human-in-the-loop]**In development**
    - /live_query_reports/ 
 
-## Report Types:
-
-### deep_agent_reports
-Deep think agent with reflect and generate loop also
-
 ## Reflect and Generate Pipeline Diagram
 ![Figure 1](images/reflect_generate_pipeline.drawio.png)
 ## Reflect and Generate SVG (agents and tools listed)
@@ -44,6 +39,9 @@ Deep think agent with reflect and generate loop also
 ![Figure 7](images/lq3.png)
 ![Figure 8](images/lq4.png)
 
+## Report Types:
+### deep_agent_reports
+Deep think agent with reflect and generate loop also
 ## OLD Reports:
 ### Daily Reports
 Summary report of the past 24 hours
