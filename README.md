@@ -5,6 +5,8 @@ Haineypot was developed using Googles Agent Development kit and uses custom work
 
 The development of Haineypot and the depoyment of T-Pot started on the 19th of Feburary and is being patched still.
 
+See below for diagrams and example output of live_querying capabilites
+
 The development had 5 distinct phases - below are the phases and the locations of associated reports;
 1. Agent Frequency and Instruction Testing [Automation] **Legacy**:
    - /old_reports/hourly_reports (1 hour summarisation reports)
@@ -35,7 +37,11 @@ Deep think agent with reflect and generate loop also
 ## Live Query SVG (agents and tools listed)
 ![Figure 4](images/live_query.svg)
 
-
+## Live Querying Example
+![Figure 5](images/lq1.png)
+![Figure 6](images/lq2.png)
+![Figure 7](images/lq3.png)
+![Figure 8](images/lq4.png)
 
 ## OLD Reports:
 ### Daily Reports
