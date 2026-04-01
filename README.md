@@ -39,9 +39,13 @@ Deep think agent with reflect and generate loop also
 
 ## Live Querying Example
 ![Figure 5](images/lq1.png)
+<hr>
 ![Figure 9](images/lq5.png)
+<hr>
 ![Figure 6](images/lq2.png)
+<hr>
 ![Figure 7](images/lq3.png)
+<hr>
 ![Figure 8](images/lq4.png)
 
 ## OLD Reports:
