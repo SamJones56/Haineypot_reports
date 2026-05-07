@@ -7,6 +7,8 @@ The development of Haineypot and the depoyment of T-Pot started on the 19th of F
 
 See below for diagrams and example output of live_querying capabilites
 
+The efficiency of Haineypot as a tool can understood if cost of unit hours are compared with the equivalent of human cost hours. The total cost of all API calls for the month was around 230 euros. The framework ran multiple times a day, peaking at around 30 executions a day. Using minimum wage in Ireland, the monthly cost would amount to €2391.35, this represents a 10x increase in cost. Haineypot was developed as a tool to assist human cybersecurity analysists. As a tool carrying out automated and interactive investigations it would not replace a human but instead act as an augmentation in the role of a security analyst. During the latter stages of development, the Loop Framework and Reflect and Generate stages of testing, the average cost of execution of the frameworks was just ~€7 euros a day – executing 6 times a day at ~€1.20 per execution. This low cost to result ratio details a system that could be used at scale by larger organisations at higher intervals to reveal and detect a higher resolution of detail.
+
 The development had 5 distinct phases - below are the phases and the locations of associated reports;
 1. Agent Frequency and Instruction Testing [Automation] **Legacy**:
    - /old_reports/hourly_reports (1 hour summarisation reports)
